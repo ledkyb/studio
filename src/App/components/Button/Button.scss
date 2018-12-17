@@ -1,0 +1,25 @@
+@import '../../../index.scss';
+
+a.button {
+  border: 1px solid #EF3C24;
+  color: #EF3C24;
+  font-family: slime-joe, sans-serif;
+  width: 100%;
+  padding: 15px 40px;
+  margin: 0 0 0 -30px;
+  transition: .25s all ease-in;
+
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+    background: $orange;
+  }
+
+}
+
+.button-sub-text {
+  font-size: 11px;
+  font-family: 'avenirheavy', sans-serif;
+  margin: 20px auto 0 auto;
+  text-align: center;
+}

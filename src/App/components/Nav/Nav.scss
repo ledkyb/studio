@@ -1,0 +1,32 @@
+@import "../../../index.scss";
+nav {
+    text-transform: lowercase;
+    padding-top: 40px !important; // override bootstrap default
+    
+    ul.navbar-nav {
+        position: absolute;
+        right: 0;
+    }
+
+    img {
+        width: 50px;
+    }
+
+    li.nav-item {
+        margin: 0 0 0 1.7rem;
+        font-size: 14px;
+
+        a {
+            color: $black;
+            transition: 0.2s color ease-in;
+
+            &:hover {
+                color: $orange !important;
+            }
+        }
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+}

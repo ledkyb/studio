@@ -1,27 +1,26 @@
-import React, { Component } from 'react';
-import logo from '../logo.svg';
+import React, {Component} from 'react';
 import './App.scss';
-//todo: add bootstrap import
+import 'bootstrap/dist/css/bootstrap.css';
+import Home from './components/Sections/Home/Home';
+import About from './components/Sections/About/About';
+import Team from './components/Sections/Team/Team';
+import Blog from './components/Sections/Blog/Blog';
+import Services from './components/Sections/Services/Services';
+import Contact from './components/Sections/Contact/Contact';
+import Tracker from './components/Tracker/Tracker';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+        <div className="container-fluid" style={{background: 'cyan'}}>
+          <Tracker/>
+          <Home/>
+          <About/>
+          <Team/>
+          <Blog/>
+          <Services/>
+          <Contact/>
+        </div>
     );
   }
 }

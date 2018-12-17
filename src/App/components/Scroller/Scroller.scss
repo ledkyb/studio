@@ -1,0 +1,20 @@
+@import '../../../index.scss';
+
+.scroller {
+  .scrollerElement {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #EF3C24;
+    margin: -30px auto 0 auto;
+    transform: rotateZ(45deg);
+    cursor: pointer;
+  }
+}
+
+.scroller-row {
+  position: absolute;
+  display: block;
+  top: 90%;
+  left: 25%;
+  right: 25%;
+}

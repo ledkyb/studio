@@ -1,35 +1,24 @@
-body {
-  .App {
-    text-align: center;
-  }
-  
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 40vmin;
-  }
-  
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  .App-link {
-    color: #61dafb;
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
+@font-face {
+  font-family: avenirlight;
+  src: url("../fonts/avenir-light.otf") format("opentype");
 }
+
+@font-face {
+  font-family: avenirbook;
+  src: url("../fonts/avenir-book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: avenirheavy;
+  src: url("../fonts/avenir-heavy.otf") format("opentype");
+}
+
+@font-face {
+  font-family: big-john;
+  src: url("../fonts/big-john.otf") format("opentype");
+}
+
+@font-face {
+  font-family: slime-joe;
+  src: url("../fonts/slim-joe.otf") format("opentype");
+} 

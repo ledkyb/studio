@@ -1,0 +1,15 @@
+#home {
+  background-image: url("Assets/hero-image-overlayed.jpg");
+  background-color: #fff;
+  background-size: cover;
+  height: 1000px;
+
+  .text-logo {
+    max-width: 200px;
+    margin: 100px 0 0 -20px;
+  }
+
+  .home-button {
+    margin-top: 100px;
+  }
+}

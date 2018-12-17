@@ -1,0 +1,31 @@
+@import '../../../index.scss';
+.tracker {
+  position: relative;
+
+  .secondary-navigation-container {
+    position: fixed;
+  }
+
+  .secondary-navigation {
+    float: right;
+
+    ul {
+      top: 35%;
+      position: fixed;
+    }
+
+    li {
+      list-style-type: none;
+      border: 2px solid $orange;
+      margin: 20px 0;
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+    }
+
+    .active {
+      background-color: $orange;
+    }
+  }
+}
