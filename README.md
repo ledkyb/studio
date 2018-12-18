@@ -69,9 +69,9 @@ The design of the site is broken in to six sections that can be removed without 
 <img src="https://raw.githubusercontent.com/ledkyb/studio/master/design/assets/ls-studios-contact.jpg" width="500" />
 </a>
 
-#### **Build**
+### **Build**
 <a name="build"></a>
-Clone the repository to your local machine and run `yarn install` to install all dependencies.
+To get started, clone the repository to your local machine and run `yarn install` to install all dependencies.
 
 ##### `yarn start`
 
