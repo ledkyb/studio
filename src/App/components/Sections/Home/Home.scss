@@ -5,11 +5,63 @@
   height: 1000px;
 
   .text-logo {
-    max-width: 200px;
-    margin: 100px 0 0 -20px;
+    transition: 450ms all ease-in;
+    max-width: 230px;
+    margin: 100px auto 0 auto;
+    display: block;
   }
 
   .home-button {
     margin-top: 100px;
+  }
+
+  a.button {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+    padding: 15px 0;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .text-logo {
+      max-width: 200px;
+    }
+
+  }
+
+  @media only screen and (max-width: 991px) {
+    .text-logo {
+      max-width: 225px;
+    }
+
+  }
+
+  @media only screen and (max-width: 767px){
+    a.button {
+      width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 575px){
+   a.button {
+      width: 65%;
+    }
+
+    #home .text-logo {
+      max-width: 280px;
+      margin: 80px auto 0 auto;
+      display: block;
+    }
+  }
+
+  @media only screen and (max-width: 425px){
+    a.button {
+      width: 100%;
+    }
+
+    .text-logo {
+      max-width: 300px;
+    }
   }
 }

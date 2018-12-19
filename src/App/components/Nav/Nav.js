@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './Nav.scss';
 import Logo from './Logo/Logo';
+import Hamburger from './Assets/menu.svg';
 
 class Nav extends React.Component {
   render() {
@@ -15,7 +16,7 @@ class Nav extends React.Component {
                   data-toggle="collapse" data-target="#navbarNav"
                   aria-controls="navbarNav" aria-expanded="false"
                   aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
+            <img src={Hamburger} alt="mobile menu" />
           </button>
 
           <div className="collapse navbar-collapse" id="navbarNav">
