@@ -1,0 +1,19 @@
+@import "../../../../../index.scss";
+
+.team-learn-more{  //Right Section
+  background-color: $orange;
+  padding-left: 5rem;
+  padding-top: 125px;
+
+  h2{
+    margin: -20px 0;
+    font-size: 6.5rem;
+  }
+  h3{
+    margin: -25px 0;
+    font-size: 4.5rem;
+  }
+  p{
+    min-width: 325px;
+  }
+}

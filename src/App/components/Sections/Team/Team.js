@@ -1,15 +1,31 @@
 import React, { Component } from 'react'; 
 
-class Team extends React.Component {
+import './Team.scss';
+
+//components
+import UserList from './UserList/UserList';
+import LearnMore from './LearnMore/LearnMore';
+
+class Team extends Component {
     componentWillMount(){
 
     }
 
     render(){
         return(
-            <div className="container" style={{background: 'orange', height: '150px'}}>
-                <p>Team</p>
-            </div>
+            <section id="team" className="row">
+                <div className="container-fluid">
+
+                    <div className="row h-100 d-flex flex-column flex-lg-row">
+                        {/* Left Section */}
+                        <UserList />
+
+                        {/* Right Section */}
+                        <LearnMore />
+                    </div>
+
+                </div>
+            </section>
         )
     }
 }

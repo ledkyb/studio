@@ -1,0 +1,56 @@
+@import "../../../../../../index.scss";
+
+.team-user-item{
+  img{  //user image size
+    width: 200px;  
+    height: 175px;
+  }
+  p{
+    font-size: .85rem;
+    margin: -5px 0;
+  }
+  .team-user-item-title{
+    font-size: .75rem;
+  }
+
+  @media screen and (min-width: 992px){  //HOVER only on desktop
+
+    &:hover{
+      .team-user-item-hover,
+      .team-user-item-hover-plus{
+        display: flex;
+      }
+    }
+
+  }
+}
+
+.team-user-item-line{
+  height: 2px;
+  width: 25px;
+  background-color: $orange;
+}
+
+.team-user-item-hover{
+  display: none;
+  width: 200px;
+  height: 175px;
+  background-color: rgba(239, 60, 36, 0.9);
+
+  .team-user-item-hover-plus{
+    height: 50px;
+    width: 50px;
+  }
+
+  .team-user-item-hover-x{
+    height: 2px;
+    width: 50px;
+    background-color: $gray;
+  }
+
+  .team-user-item-hover-y{
+    height: 50px;
+    width: 2px;
+    background-color: $gray;
+  }
+}
