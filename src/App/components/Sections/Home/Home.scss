@@ -2,7 +2,7 @@
   background-image: url("Assets/hero-image-overlayed.jpg");
   background-color: #fff;
   background-size: cover;
-  height: 1000px;
+  height: 766px;
 
   .text-logo {
     transition: 450ms all ease-in;
@@ -33,6 +33,7 @@
   @media only screen and (max-width: 991px) {
     .text-logo {
       max-width: 225px;
+      margin-top: 200px;
     }
 
   }

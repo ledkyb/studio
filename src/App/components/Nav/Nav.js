@@ -4,9 +4,12 @@ import Logo from './Logo/Logo';
 import Hamburger from './Assets/menu.svg';
 
 class Nav extends React.Component {
-  switch(){
-    const nav = document.getElementById('navbarNav');
+  switch() {
+    const nav = document.getElementById('navbarNav'),
+        menuButton = document.querySelector('.navbar-toggler');
+
     nav.classList.toggle('show');
+    menuButton.classList.toggle('nav-rotated');
   }
 
   render() {
