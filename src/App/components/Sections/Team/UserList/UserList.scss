@@ -1,8 +1,21 @@
 .team-user-container{  //Left Section
-  padding-top: 6rem !important; 
+  // padding-top: 6rem !important; 
   
   .team-user-item-list{
     width: 450px;
     height: 480px;
+  }
+
+  .team-scroll-up-btn{
+    max-width: 40px;
+    height: auto;
+    transform: rotate(90deg);
+  }
+
+  .team-scroll-down-btn{
+    max-width: 40px;
+    height: auto;
+    transform: rotate(-90deg);
+    margin-bottom: 50px;
   }
 }

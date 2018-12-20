@@ -3,7 +3,9 @@ import { TimelineLite } from 'gsap';
 
 import './UserList.scss';
 
+//assets
 import userImg from './UserItem/Assets/user.jpg';
+import arrowBtn from './Assets/left.png'
 
 //components
 import UserItem from './UserItem/UserItem';
@@ -35,6 +37,7 @@ class UserList extends Component {
     this.animScrollUp = null;
     this.state = {
       currentGroup: [userList[0], userList[1], userList[2], userList[3]],
+      showUpArrow: {opacity: "0"}
     }
   }
 
@@ -80,8 +83,6 @@ class UserList extends Component {
     const startOfList = userList[0] !== this.state.currentGroup[0];
     const checkActiveAnim = (!this.animScrollDown.isActive() && !this.animScrollUp.isActive());
     if(checkActiveAnim && startOfList){
-      console.log("TRUE");
-
       this.animScrollUp.play();
     }
   }
@@ -106,7 +107,8 @@ class UserList extends Component {
         }
       }
       this.setState({
-        currentGroup: nextGroup
+        currentGroup: nextGroup,
+        showUpArrow: {opacity: "1"}
       });
     }
   }
@@ -120,30 +122,33 @@ class UserList extends Component {
     if(currentPos >= 4){
       const prevGroup = [];
       let prevElem = currentPos-1;
-      if(currentPos >= 4){
-        for(let i = 0; i < 4; i++){
-          prevGroup.unshift(userList[prevElem]);
-          prevElem--;
-        }
+      for(let i = 0; i < 4; i++){
+        prevGroup.unshift(userList[prevElem]);
+        prevElem--;
+      }
+      if(currentPos == 4){
+        this.setState({
+          showUpArrow: {opacity: "0"}
+        })
       } 
 
       this.setState({
         currentGroup: prevGroup
       });
-    }
+    } 
   }
 
   render(){
     return (
-      <div className=" team-user-container col-6 h-75 d-flex flex-column align-items-center">
+      <div className=" team-user-container col-6 h-100 d-flex flex-column justify-content-between align-items-center">
 
-        <button onClick={this.handleAnimScrollUp}>Up</button>
+        <img className="team-scroll-up-btn" style={this.state.showUpArrow} src={arrowBtn} onClick={this.handleAnimScrollUp} />
 
         <div ref={div => this.groupElement = div} className="team-user-item-list d-flex flex-wrap justify-content-between align-items-center">
           {this.state.currentGroup}
         </div>
 
-        <button onClick={this.handleAnimScrollDown}>Down</button>
+        <img className="team-scroll-down-btn" src={arrowBtn} onClick={this.handleAnimScrollDown} />
       </div>
     );
   }

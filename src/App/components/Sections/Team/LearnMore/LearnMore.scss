@@ -3,11 +3,12 @@
 .team-learn-more{  //Right Section
   background-color: $orange;
   padding-left: 5rem;
-  padding-top: 125px;
+  padding-top: 150px;
+  font-family: big-john, sans-serif;
 
   h2{
     margin: -20px 0;
-    font-size: 6.5rem;
+    font-size: 6rem;    
   }
   h3{
     margin: -25px 0;
@@ -15,5 +16,6 @@
   }
   p{
     min-width: 325px;
+    font-family: avenirlight, sans-serif;
   }
 }
