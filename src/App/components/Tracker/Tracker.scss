@@ -22,6 +22,10 @@
       width: 15px;
       height: 15px;
       cursor: pointer;
+
+      &:hover {
+        background-color: $orange;
+      }
     }
 
     .active {
