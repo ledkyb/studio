@@ -39,29 +39,21 @@
 
   @media only screen and (max-width: 767px){
     a.button {
-      width: 90%;
+      width: 215px;
     }
   }
 
   @media only screen and (max-width: 575px){
-   a.button {
-      width: 65%;
-    }
-
     #home .text-logo {
-      max-width: 280px;
+      max-width: 230px;
       margin: 80px auto 0 auto;
       display: block;
     }
   }
 
   @media only screen and (max-width: 425px){
-    a.button {
-      width: 100%;
-    }
-
     .text-logo {
-      max-width: 300px;
+      max-width: 230px;
     }
   }
 }

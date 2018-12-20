@@ -4,6 +4,11 @@ import Logo from './Logo/Logo';
 import Hamburger from './Assets/menu.svg';
 
 class Nav extends React.Component {
+  switch(){
+    const nav = document.getElementById('navbarNav');
+    nav.classList.toggle('show');
+  }
+
   render() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light">
@@ -12,11 +17,15 @@ class Nav extends React.Component {
             <Logo/>
           </a>
 
-          <button className="navbar-toggler" type="button"
-                  data-toggle="collapse" data-target="#navbarNav"
-                  aria-controls="navbarNav" aria-expanded="false"
-                  aria-label="Toggle navigation">
-            <img src={Hamburger} alt="mobile menu" />
+          <button className="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                  onClick={this.switch}>
+            <img src={Hamburger} alt="mobile menu"/>
           </button>
 
           <div className="collapse navbar-collapse" id="navbarNav">

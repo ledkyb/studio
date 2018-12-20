@@ -1,7 +1,7 @@
 @import "../../../index.scss";
 nav {
     text-transform: lowercase;
-    padding: 40px 0 0 0 !important; // override bootstrap default
+    padding: 40px 15px 0 15px !important; // override bootstrap default
     
     ul.navbar-nav {
         position: absolute;
@@ -13,8 +13,10 @@ nav {
     }
 
     li.nav-item {
-        margin: 0 0 0 1.7rem;
-        font-size: 14px;
+        font-size: 34px;
+        font-family: avenirbook, arial, sans-serif;
+        text-transform: uppercase;
+        margin: 0 0 0 40px;
 
         a {
             color: $black;
@@ -30,9 +32,35 @@ nav {
         border: none;
         padding: 0;
         margin: 0;
+        z-index: 10;
 
         img {
             width: 30px;
+        }
+    }
+
+    @media screen and (max-width: 991px){
+        .navbar-brand img {
+            width: 35px;
+        }
+
+        .navbar-toggler img {
+            width: 25px;
+        }
+
+        ul.navbar-nav {
+            right: unset;
+        }
+
+        .navbar-collapse {
+            height: 100%;
+            position: fixed;
+            background-color: #fff;
+            width: 80%;
+            right: 0;
+            padding: 50px 0;
+            z-index: 1;
+            top: 0;
         }
     }
 }
