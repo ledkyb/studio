@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { TimelineLite } from 'gsap';  
 
 import './UserList.scss';
 
@@ -7,36 +8,87 @@ import userImg from './UserItem/Assets/user.jpg';
 //components
 import UserItem from './UserItem/UserItem';
 
+  //Add More Users HERE
+const userList = [
+  <UserItem name="test1" title="testTitle1" img={userImg} />, 
+  <UserItem name="test2" title="testTitle2" img={userImg} />, 
+  <UserItem name="test3" title="testTitle3" img={userImg} />, 
+  <UserItem name="test4" title="testTitle4" img={userImg} />,
+  <UserItem name="test5" title="testTitle5" img={userImg} />,
+  <UserItem name="test6" title="testTitle6" img={userImg} />,
+  <UserItem name="test7" title="testTitle7" img={userImg} />,
+  <UserItem name="test8" title="testTitle8" img={userImg} />,
+  <UserItem name="test9" title="testTitle9" img={userImg} />,
+  <UserItem name="test10" title="testTitle10" img={userImg} />,
+  <UserItem name="test11" title="testTitle11" img={userImg} />,
+  <UserItem name="test12" title="testTitle12" img={userImg} />,
+  <UserItem name="test13" title="testTitle13" img={userImg} />,
+  <UserItem name="test14" title="testTitle14" img={userImg} />,
+  <UserItem name="test15" title="testTitle15" img={userImg} />,
+];
+
 class UserList extends Component {
   constructor(props){
     super(props);
+    this.groupElement = null;
+    this.animScrollDown = null;  
+    this.animScrollUp = null;
     this.state = {
-      currentGroup: [this.userList[0], this.userList[1], this.userList[2], this.userList[3]],
+      currentGroup: [userList[0], userList[1], userList[2], userList[3]],
     }
   }
 
-  //Add More Users HERE
-  userList = [
-    <UserItem name="test1" title="testTitle1" img={userImg} />, 
-    <UserItem name="test2" title="testTitle2" img={userImg} />, 
-    <UserItem name="test3" title="testTitle3" img={userImg} />, 
-    <UserItem name="test4" title="testTitle4" img={userImg} />,
-    <UserItem name="test5" title="testTitle5" img={userImg} />,
-    <UserItem name="test6" title="testTitle6" img={userImg} />,
-    <UserItem name="test4" title="testTitle4" img={userImg} />,
-    <UserItem name="test5" title="testTitle5" img={userImg} />,
-    <UserItem name="test6" title="testTitle6" img={userImg} />,
-    <UserItem name="test4" title="testTitle4" img={userImg} />,
-    <UserItem name="test5" title="testTitle5" img={userImg} />,
-    <UserItem name="test6" title="testTitle6" img={userImg} />,
-    <UserItem name="test7" title="testTitle7" img={userImg} />,
-    <UserItem name="test8" title="testTitle8" img={userImg} />,
-    <UserItem name="test7" title="testTitle7" img={userImg} />,
-  ];
+  componentDidMount(){
+    this.initScrollAnim();
+  } 
 
-  handleNextUserGroup = () => {
-    let currentPos = this.userList.indexOf(this.state.currentGroup[this.state.currentGroup.length-1]);
-    const remainingUsers = (this.userList.length-1) - currentPos;
+  initScrollAnim = () => {
+    this.animScrollDown = new TimelineLite({ 
+      paused:true,
+      onComplete: () => {
+        this.animScrollDown.restart();
+        this.animScrollDown.pause();
+      }
+    })
+    .to(this.groupElement, 0.5, {y: -200, opacity: 0})
+    .call(this.nextUserGroup)
+    .to(this.groupElement, 0, {y: 200})
+    .to(this.groupElement, 0.5, {y: 0, opacity: 1});
+
+    this.animScrollUp = new TimelineLite({ 
+      paused:true,
+      onComplete: () => {
+        this.animScrollUp.restart();
+        this.animScrollUp.pause();
+      }
+    })
+    .to(this.groupElement, 0.5, {y: 200, opacity: 0})
+    .call(this.prevUserGroup)
+    .to(this.groupElement, 0, {y: -200})
+    .to(this.groupElement, 0.5, {y: 0, opacity: 1});
+  }
+
+  handleAnimScrollDown = () => {
+    const endOfList = userList[userList.length-1] !== this.state.currentGroup[this.state.currentGroup.length-1];
+    const checkActiveAnim = (!this.animScrollDown.isActive() && !this.animScrollUp.isActive());
+    if(checkActiveAnim && endOfList){
+      this.animScrollDown.play();
+    }
+  }
+
+  handleAnimScrollUp = () => {
+    const startOfList = userList[0] !== this.state.currentGroup[0];
+    const checkActiveAnim = (!this.animScrollDown.isActive() && !this.animScrollUp.isActive());
+    if(checkActiveAnim && startOfList){
+      console.log("TRUE");
+
+      this.animScrollUp.play();
+    }
+  }
+
+  nextUserGroup = () => {
+    let currentPos = userList.indexOf(this.state.currentGroup[this.state.currentGroup.length-1]);
+    const remainingUsers = (userList.length-1) - currentPos;
 
     //Checks userList for anymore users and changes state if there is
     if(remainingUsers > 0){
@@ -44,12 +96,12 @@ class UserList extends Component {
       let nextElem = currentPos + 1; //First index of next group
       if(remainingUsers >= 4){
         for(let i = 0; i < 4; i++){
-          nextGroup.push(this.userList[nextElem]);
+          nextGroup.push(userList[nextElem]);
           nextElem++;
         }
       } else {
         for(let i = 0; i < remainingUsers; i++){
-          nextGroup.push(this.userList[nextElem]);
+          nextGroup.push(userList[nextElem]);
           nextElem++;
         }
       }
@@ -57,13 +109,12 @@ class UserList extends Component {
         currentGroup: nextGroup
       });
     }
-
   }
   
 
   //Reverse logic of handleNextUserGroup
-  handlePrevUserGroup = () => {
-    let currentPos = this.userList.indexOf(this.state.currentGroup[0]);
+  prevUserGroup = () => {
+    let currentPos = userList.indexOf(this.state.currentGroup[0]);
     
     //Checks userList for anymore previous users in list
     if(currentPos >= 4){
@@ -71,7 +122,7 @@ class UserList extends Component {
       let prevElem = currentPos-1;
       if(currentPos >= 4){
         for(let i = 0; i < 4; i++){
-          prevGroup.unshift(this.userList[prevElem]);
+          prevGroup.unshift(userList[prevElem]);
           prevElem--;
         }
       } 
@@ -80,20 +131,19 @@ class UserList extends Component {
         currentGroup: prevGroup
       });
     }
-
   }
 
   render(){
     return (
       <div className=" team-user-container col-6 h-75 d-flex flex-column align-items-center">
 
-        <button onClick={this.handlePrevUserGroup}>Up</button>
+        <button onClick={this.handleAnimScrollUp}>Up</button>
 
-        <div ref={div => this.myElement = div} className="team-user-item-list d-flex flex-wrap justify-content-between align-items-center">
+        <div ref={div => this.groupElement = div} className="team-user-item-list d-flex flex-wrap justify-content-between align-items-center">
           {this.state.currentGroup}
         </div>
 
-        <button onClick={this.handleNextUserGroup}>Down</button>
+        <button onClick={this.handleAnimScrollDown}>Down</button>
       </div>
     );
   }
