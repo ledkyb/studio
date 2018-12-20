@@ -1,21 +1,50 @@
+@import "../../../../../index.scss";
+
 .team-user-container{  //Left Section
   // padding-top: 6rem !important; 
   
   .team-user-item-list{
     width: 450px;
-    height: 480px;
+    height: 530px;
+    z-index: 2;
+    @media screen and (max-width: 991px){
+      z-index: 0;
+      width: 100%;
+    }
   }
 
-  .team-scroll-up-btn{
-    max-width: 40px;
-    height: auto;
-    transform: rotate(90deg);
-  }
+  .team-scroll-btn-container{
+    height: 100%;
+    width: 100%;
 
-  .team-scroll-down-btn{
-    max-width: 40px;
-    height: auto;
-    transform: rotate(-90deg);
-    margin-bottom: 50px;
+    @media screen and (max-width: 991px){
+      background-color: $light-orange;
+      height: 50px;
+      width: 100%;
+      bottom: 0;
+      padding: 0 20%;
+    }
+
+    .team-scroll-up-btn{
+      width: 40px;
+      height: auto;
+      transform: rotate(90deg);
+      @media screen and (max-width: 991px){
+        width: 15px;
+        transform: rotate(0deg);
+      }
+    }
+  
+    .team-scroll-down-btn{
+      width: 40px;
+      height: auto;
+      transform: rotate(-90deg);
+      margin-bottom: 50px;
+      cursor: pointer;
+      @media screen and (max-width: 991px){
+        width: 15px;
+        transform: rotate(180deg);
+      }
+    }
   }
 }

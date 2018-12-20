@@ -17,7 +17,7 @@ const UserItem = ({ name, title, img }) => {
       {/* Item */}
       <div>
         <img alt="user" src={img} />
-        <div className="w-100 d-flex align-items-center py-4">
+        <div className="mb-5 mb-lg-0 w-100 d-flex align-items-center py-4">
           <div className="team-user-item-line mx-3"></div>
           <div>
             <p className="font-weight-bold">{name}</p>
