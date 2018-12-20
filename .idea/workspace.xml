@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f54f9672-f3e6-44c3-91af-2bf408333113" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/App/components/Mobile/Assets/envelope.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App/components/Mobile/Assets/home.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App/components/Mobile/Assets/phone.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/components/Mobile/Mobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/components/Mobile/Mobile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/components/Mobile/Mobile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/components/Mobile/Mobile.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App/components/Scroller/Scroller.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/components/Scroller/Scroller.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/components/Sections/Home/Home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/components/Sections/Home/Home.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,7 +35,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App/components/Mobile/Mobile.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
@@ -93,6 +89,15 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/App/components/Sections/Home/Home.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="519">
+              <caret line="43" column="10" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App/App.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -103,22 +108,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App/components/Sections/Home/Home.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="37" column="51" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App/components/Scroller/Scroller.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="281">
+              <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -160,15 +153,15 @@
         <option value="$PROJECT_DIR$/src/App/components/Sections/Home/Home.js" />
         <option value="$PROJECT_DIR$/src/App/components/Button/Button.scss" />
         <option value="$PROJECT_DIR$/src/App/components/Nav/Nav.js" />
-        <option value="$PROJECT_DIR$/src/App/components/Sections/Home/Home.scss" />
         <option value="$PROJECT_DIR$/src/App/components/Scroller/Scroller.js" />
         <option value="$PROJECT_DIR$/src/App/components/Nav/Nav.scss" />
         <option value="$PROJECT_DIR$/src/App/components/Tracker/Tracker.scss" />
         <option value="$PROJECT_DIR$/src/App/App.scss" />
         <option value="$PROJECT_DIR$/src/App/App.js" />
         <option value="$PROJECT_DIR$/src/App/components/Mobile/Mobile.scss" />
-        <option value="$PROJECT_DIR$/src/App/components/Scroller/Scroller.scss" />
         <option value="$PROJECT_DIR$/src/App/components/Mobile/Mobile.js" />
+        <option value="$PROJECT_DIR$/src/App/components/Scroller/Scroller.scss" />
+        <option value="$PROJECT_DIR$/src/App/components/Sections/Home/Home.scss" />
       </list>
     </option>
   </component>
@@ -361,12 +354,12 @@
       <workItem from="1545007209032" duration="572000" />
       <workItem from="1545007790721" duration="129000" />
       <workItem from="1545007928716" duration="50130000" />
-      <workItem from="1545287134985" duration="15157000" />
+      <workItem from="1545287134985" duration="15506000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65988000" />
+    <option name="totallyTimeSpent" value="66337000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="978" y="3" width="950" height="1047" extended-state="0" />
@@ -464,13 +457,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App/components/Sections/Home/Home.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App/components/Sections/Home/Home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -546,13 +532,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App/components/Scroller/Scroller.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App/components/Mobile/Mobile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -560,6 +539,20 @@
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App/components/Scroller/Scroller.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App/components/Sections/Home/Home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="43" column="10" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
         </state>
       </provider>
     </entry>

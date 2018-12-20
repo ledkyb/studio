@@ -1,5 +1,6 @@
 @import '../../../index.scss';
 
+// todo: make reusable - colors = classes
 
 .scroller {
   position: absolute;
@@ -16,6 +17,10 @@
     -webkit-transform: rotateZ(45deg);
     transform: rotateZ(45deg);
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 991px){
+    display: none;
   }
 }
 
