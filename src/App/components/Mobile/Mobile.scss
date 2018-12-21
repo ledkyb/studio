@@ -1,0 +1,32 @@
+@import './../../../index.scss';
+
+#mobileMenu {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  background-color: rgba(255,255,255,0.99);
+
+  .mobile-menu-icon {
+    img {
+      position: relative;
+      display: block;
+      width: 25px;
+      margin: 15px auto;
+      cursor: pointer;
+
+    }
+
+    &:nth-child(2) img{
+      margin-top: 20px;
+    }
+    &:nth-child(3) img{
+     width: 22px;
+    }
+  }
+
+  @media screen and (min-width: 991px){
+    display: none;
+  }
+}

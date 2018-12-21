@@ -7,7 +7,7 @@ a.button {
   width: 100%;
   padding: 15px 40px;
   margin: 0 0 0 -30px;
-  transition: .25s all ease-in;
+  transition: 450ms width ease-in, 300ms background-color ease-in;
 
   &:hover {
     text-decoration: none;

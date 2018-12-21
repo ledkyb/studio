@@ -23,19 +23,19 @@ class Home extends React.Component {
                   </div>
 
                   <div className="row">
-                    <div className="col-4 offset-5">
+                    <div className="col-10 offset-1 col-lg-4 offset-lg-4 col-sm-6 offset-sm-3 col-md-6 offset-md-3">
                       <img className="text-logo" src={textLogo} alt="Ledkyb Studios text logo" />
                     </div>
                   </div>
 
                   <div className="row">
-                    <div className="col-lg-4 offset-lg-5 col-sm-8 offset-sm-2 home-button">
+                    <div className="col-10 offset-1 col-lg-4 offset-lg-4 col-sm-6 offset-sm-3 col-md-6 offset-md-3 home-button">
                       <Button link="#contact" label="start project" />
                     </div>
                   </div>
 
                   <div className="row">
-                    <div className="col-2 offset-5">
+                    <div className="col-10 offset-1">
                       <p className="button-sub-text">Ready to start your project?</p>
                     </div>
                   </div>
