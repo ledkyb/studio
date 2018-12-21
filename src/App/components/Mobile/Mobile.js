@@ -4,7 +4,7 @@ import phoneIcon from './Assets/phone.svg';
 import emailIcon from './Assets/envelope.svg';
 import homeIcon from './Assets/home.svg';
 
-class Mobile extends React.Component {
+class Mobile extends Component {
   render() {
     return (
         <div id="mobileMenu" className="container-fluid">

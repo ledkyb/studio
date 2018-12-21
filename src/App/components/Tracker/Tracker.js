@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './Tracker.scss';
 
-class Tracker extends React.Component {
+class Tracker extends Component {
   render() {
     return (
         <div className="container tracker">
@@ -26,4 +26,4 @@ class Tracker extends React.Component {
   }
 }
 
-export default Tracker; 
+export default Tracker;

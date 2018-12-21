@@ -3,7 +3,7 @@ import './Nav.scss';
 import Logo from './Logo/Logo';
 import Hamburger from './Assets/menu.svg';
 
-class Nav extends React.Component {
+class Nav extends Component {
   switch() {
     const nav = document.getElementById('navbarNav'),
         menuButton = document.querySelector('.navbar-toggler');

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './Button.scss';
 
-class Button extends React.Component {
+class Button extends Component {
   render() {
     return (
         <a className="button" href={this.props.link} >{this.props.label}</a>
