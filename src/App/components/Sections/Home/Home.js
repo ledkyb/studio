@@ -1,4 +1,4 @@
-import React, { Component } from 'react'; 
+import React, { Component } from 'react';
 import Nav from '../../Nav/Nav';
 import './Home.scss';
 
@@ -6,7 +6,7 @@ import textLogo from './Assets/logo-text-black.svg';
 import Button from '../../Button/Buttons';
 import Scroller from '../../Scroller/Scroller';
 
-class Home extends React.Component {
+class Home extends Component {
     componentWillMount(){
 
     }

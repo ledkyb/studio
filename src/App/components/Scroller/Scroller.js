@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './Scroller.scss';
 
-class Scroller extends React.Component {
+class Scroller extends Component {
   render() {
     return (
         <div className="scroller">
