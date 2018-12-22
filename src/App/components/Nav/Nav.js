@@ -1,14 +1,15 @@
 import React, {Component} from 'react';
 import './Nav.scss';
 import Logo from './Logo/Logo';
-import Hamburger from './Assets/menu.svg';
+import Hamburger from './Logo/Assets/menu.svg';
+import Social from './Social/Social';
 
 class Nav extends Component {
   switch() {
     const nav = document.getElementById('navbarNav'),
         menuButton = document.querySelector('.navbar-toggler');
 
-    nav.classList.toggle('show');
+    nav.classList.toggle('slide-nav');
     menuButton.classList.toggle('nav-rotated');
   }
 
@@ -31,7 +32,7 @@ class Nav extends Component {
             <img src={Hamburger} alt="mobile menu"/>
           </button>
 
-          <div className="collapse navbar-collapse" id="navbarNav">
+          <div className="navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item active">
                 <a className="nav-link" href="#">Home <span
@@ -53,6 +54,9 @@ class Nav extends Component {
                 <a className="nav-link" href="#">Contact</a>
               </li>
             </ul>
+
+            <Social/>
+
           </div>
         </nav>
     );
