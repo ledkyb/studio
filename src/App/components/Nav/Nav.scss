@@ -15,6 +15,10 @@ nav {
     right: 0;
   }
 
+  .slide-nav {
+    right: -5% !important;
+  }
+
   img {
     width: 50px;
   }
@@ -36,6 +40,7 @@ nav {
     border: none;
     padding: 0;
     margin: 0;
+    transition: 400ms all ease-in-out;
     z-index: 10;
 
     &:focus {
@@ -48,7 +53,7 @@ nav {
   }
 
   .nav-rotated {
-    transform: rotateZ(90deg);
+    transform: rotateZ(270deg);
   }
 
   @media screen and (max-width: 991px) {
@@ -67,7 +72,7 @@ nav {
     }
 
     li.nav-item {
-      font-size: 34px;
+      font-size: 22px;
       font-family: avenirbook, arial, sans-serif;
       text-transform: uppercase;
       margin: 0 0 0 40px;
@@ -78,26 +83,36 @@ nav {
       margin-top: 60px;
     }
 
-    .show {
-      opacity: 1 !important;
-    }
-
     .navbar-collapse {
       height: 100%;
       position: fixed;
-      opacity: 0;
       background-color: rgba(255, 255, 255, 0.98);
-      width: 80%;
-      right: 0;
+      width: 85%;
+      right: -110%;
+      transition: 500ms all cubic-bezier(.92,.05,.23,1.16);
       padding: 50px 0;
       z-index: 1;
       top: 0;
     }
+
+
   }
 
   @media screen and (max-width: 320px) {
-    .navbar-collapse {
-      width: 75%;
+
+    @media screen and (max-height: 600px){
+      li.nav-item {
+        font-size: 16px;
+      }
+
+      #socialMenu {
+        top: 315px;
+
+         img {
+          width: 35px;
+        }
+      }
+
     }
   }
 }
