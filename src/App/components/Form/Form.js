@@ -4,7 +4,7 @@ import './Form.scss';
 
 const Form = () => {
     return (
-        <section id="form" className="row">
+        <section className="row form">
             <div className="container">
                 <div className="row">
                     <form className="col-12">
@@ -17,9 +17,17 @@ const Form = () => {
                                 <input></input>
                                 <hr />
                             </div>
-                            <div className="col-5">
-                                <textarea className="float-right"></textarea>
-                                {/* <Button label="Send" /> */}
+                            <div className="col-6">
+                                <div className="text-area">
+                                    <textarea className="float-right"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-2 offset-9">
+                                <div className="send-button">
+                                    <Button className="send-button-style" label="send" />
+                                </div>
                             </div>
                         </div>
                     </form>

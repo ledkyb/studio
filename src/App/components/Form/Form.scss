@@ -1,4 +1,4 @@
-#form {
+.form {
     background-color: #fff;
     background-size: cover;
     height: 766px;
@@ -19,7 +19,7 @@
     }
 
     input:focus {
-        // outline: none; 
+        outline: none; 
     }
 
     hr {
@@ -28,16 +28,28 @@
         margin-top: 8px;
     }
 
+    .text-area {
+        height: 100%;
+        padding-right: 64px;
+        padding-left: 28px;
+    }
+
     textarea {
         border-color: #EF3C24;
-        width: 93%;
+        width: 100%;
         height: 100%;
         resize: none;
-        
+        padding: 8px;
     }
 
     textarea:focus {
-        // outline: none;
+        outline: none;
+    }
+
+    .send-button {
+        margin-top: 24px;
+        margin-left: 88px;
+ 
     }
     // .text-logo {
     //   transition: 450ms all ease-in;
