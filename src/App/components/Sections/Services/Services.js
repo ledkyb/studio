@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Services.scss';
-
+import cloud3 from './Assets/cloud-3.svg';
+import cloudTwo from './Assets/cloud-two.svg';
 
 class Services extends Component {
     componentWillMount(){
@@ -29,11 +30,12 @@ class Services extends Component {
                         <li className='list-group-item border-0'>Interactive and Performant Sites</li>
                         <li className='list-group-item border-0'>Code Clean-up & Project Refactoring</li>
                         <li className='list-group-item border-0'>Printing Services</li>
-                        <li className='list-group-item border-0'>Start-up Starter Kits</li>
+                        <li className='list-group-item border-0 mb-5'>Start-up Starter Kits</li>
                     </ul>
                   </div>
                   <div>
-                    <img className="cloud-3" />
+                    <img className="cloud-3" src={cloud3} />
+                    <img className="cloud-two" src={cloudTwo} />
                   </div>
               </div>
           )

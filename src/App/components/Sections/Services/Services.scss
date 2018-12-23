@@ -1,21 +1,4 @@
-/*.diamond {
-  width: 0;
-  height: 0;
-  border: 10px solid transparent;
-  border-bottom-color: #ea5132;
-  position: relative;
-  top: -10px;
-}
-.diamond::after{
-  content:'';
-  position: absolute;
-  left: -10px;
-  top: 10px;
-  width: 0;
-  height: 0;
-  border: 10px solid transparent;
-  border-top-color: #ea5132;
-}*/
+
 .diamond {
   width: 10px;
   height: 10px;
@@ -23,4 +6,20 @@
   margin-left: 12px;
   transform: rotate(-45deg);
   transform-origin: 0 100%;
+}
+
+.cloud-3 {
+  position: relative;
+  right: 85px;
+  top: 20px;
+  width: 80%;
+}
+
+.cloud-two {
+  position: relative;
+  bottom: 120px;
+  right: 50px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  width: 150%;
 }
