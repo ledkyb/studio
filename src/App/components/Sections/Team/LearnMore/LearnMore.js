@@ -4,7 +4,7 @@ import './LearnMore.scss';
 
 const LearnMore = () => {
   return(
-    <div className="team-learn-more col col-lg-6 d-flex h-100 d-flex justify-content-center justify-content-md-start">
+    <div className="team-learn-more col col-lg-6 d-flex h-100 d-flex justify-content-center justify-content-md-start align-items-center">
       <div className="w-100">
           <h3 className="text-white text-center font-weight-bold">MEET</h3>
           <h2 className="text-center font-weight-bold">YOUR</h2>

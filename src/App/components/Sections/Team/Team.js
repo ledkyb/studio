@@ -5,7 +5,6 @@ import './Team.scss';
 //components
 import UserList from './UserList/UserList';
 import LearnMore from './LearnMore/LearnMore';
-import NavBar from '../../Nav/Nav';
 
 class Team extends Component {
     constructor(props){
@@ -28,28 +27,27 @@ class Team extends Component {
     }
 
     render(){
-        let navBar;
-        if(this.state.isMobile){
-            navBar = <NavBar />
-        } else {
-            navBar = null;
-        }
         return(
             <section id="team" className="row">
-                <div className="container-fluid">
 
+                {/* Team Section Background */}
+                <div className="team-bg position-absolute w-100 d-flex flex-column flex-lg-row">
+                    <div className="team-left-bg w-100 h-100 d-flex align-items-end">
+                        <div className="team-btn-bg d-flex d-lg-none w-100"></div>
+                    </div>
+                    <div className="team-right-bg w-100 h-100"></div>
+                </div>
+
+                <div className="container">
                     <div className="row h-100 d-flex flex-column flex-lg-row">
-
-                        {navBar}
-
                         {/* Left Section */}
                         <UserList checkIfMobile={this.checkIfMobile} />
 
                         {/* Right Section */}
                         <LearnMore />
                     </div>
-
                 </div>
+
             </section>
         )
     }

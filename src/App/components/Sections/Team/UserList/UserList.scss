@@ -1,7 +1,6 @@
 @import "../../../../../index.scss";
 
 .team-user-container{  //Left Section
-  // padding-top: 6rem !important; 
   
   .team-user-item-list{
     width: 450px;
@@ -18,7 +17,6 @@
     width: 100%;
 
     @media screen and (max-width: 991px){
-      background-color: $light-orange;
       height: 50px;
       width: 100%;
       bottom: 0;

@@ -79,9 +79,9 @@ class UserList extends Component {
         this.animScrollDown.pause();
       }
     })
-    .to(this.groupElement, 0.5, {y: -200, opacity: 0})
+    .to(this.groupElement, 0.5, {y: -75, opacity: 0})
     .call(this.nextUserGroup)
-    .to(this.groupElement, 0, {y: 200})
+    .to(this.groupElement, 0, {y: 75})
     .to(this.groupElement, 0.5, {y: 0, opacity: 1});
 
     this.animScrollLeft = new TimelineLite({
@@ -91,9 +91,9 @@ class UserList extends Component {
         this.animScrollLeft.pause();
       }
     })
-    .to(this.groupElement, 0.5, {x: -200, opacity: 0})
+    .to(this.groupElement, 0.5, {x: -35, opacity: 0})
     .call(this.nextUserGroup)
-    .to(this.groupElement, 0, {x: 200})
+    .to(this.groupElement, 0, {x: 35})
     .to(this.groupElement, 0.5, {x: 0, opacity: 1});
 
     this.animScrollUp = new TimelineLite({ 
@@ -103,9 +103,9 @@ class UserList extends Component {
         this.animScrollUp.pause();
       }
     })
-    .to(this.groupElement, 0.5, {y: 200, opacity: 0})
+    .to(this.groupElement, 0.5, {y: 75, opacity: 0})
     .call(this.prevUserGroup)
-    .to(this.groupElement, 0, {y: -200})
+    .to(this.groupElement, 0, {y: -75})
     .to(this.groupElement, 0.5, {y: 0, opacity: 1});
 
     this.animScrollRight = new TimelineLite({
@@ -115,9 +115,9 @@ class UserList extends Component {
         this.animScrollRight.pause();
       }
     })
-    .to(this.groupElement, 0.5, {x: 200, opacity: 0})
+    .to(this.groupElement, 0.5, {x: 35, opacity: 0})
     .call(this.prevUserGroup)
-    .to(this.groupElement, 0, {x: -200})
+    .to(this.groupElement, 0, {x: -35})
     .to(this.groupElement, 0.5, {x: 0, opacity: 1});
 
   }

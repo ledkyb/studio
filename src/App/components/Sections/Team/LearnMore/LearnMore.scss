@@ -1,13 +1,7 @@
 @import "../../../../../index.scss";
 
 .team-learn-more{  //Right Section
-  background-color: $orange;
-  padding-left: 5%;
-  padding-top: 150px;
   font-family: big-john, sans-serif;
-  @media screen and (max-width: 991px){
-    padding-top: 50px;
-  }
 
   h2{
     margin: -20px 0;
