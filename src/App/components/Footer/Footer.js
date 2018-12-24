@@ -7,8 +7,8 @@ class Footer extends Component {
 
     render(){
         return(
-            <div className="container" style={{background: 'green', height: '50px'}}>
-                <p>Footer</p>
+            <div className="container align-self-center text-center" style={{color: 'white'}}>
+                © 2018 Ledkyb Studios, LLC. All Rights Reserved.
             </div>
         )
     }

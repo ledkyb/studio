@@ -8,9 +8,9 @@ class SocialMedia extends Component {
     render(){
         return(
           <section id="contact" className="row">
-              <div className="container" style={{background: 'blue', height: '50px'}}>
+              <div className="container">
 
-                  <p>SocialMedia</p>
+                  <p>Social Media</p>
 
               </div>
           </section>
