@@ -12,9 +12,9 @@ class Services extends Component {
           return(
               <div className="container bg-white">
                   <div className='row mt-5 mb-5 align-bottom'>
-                    <h1 className='d-inline-block col-xs-4 font-weight-bold'>SERVICES</h1>
-                    <span className='heading-span d-inline-block col-1 weight-500'>/</span>
-                    <span className='d-inline-block col-4 text-nowrap mb-0 weight-500'>Studio Services</span>
+                    <h1 className='d-inline col-xs-4 font-weight-bold'>SERVICES</h1>
+                    <span className='heading-span d-inline-block col-1 weight-600 p-3'>/</span>
+                    <span className='d-inline col-4 text-nowrap mb-0 weight-600 pt-3 pl-0'>Studio Services</span>
                   </div>
 
                   <div>
