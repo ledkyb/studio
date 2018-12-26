@@ -17,20 +17,54 @@ class Services extends Component {
                     <span className='col-4 text-nowrap align-text-bottom'>Studio Services</span>
                   </div>
 
-                  <div >
+                  <div>
 
-                    <ul className='list-group row'>
-                      <span className='diamond'></span>
-                        <li className='list-group-item border-0'>
+                    <ul className='list-group container'>
+                      <div className='row'>
+                        <span className='d-inline diamond'></span>
+                        <li className='d-inline col-10 list-group-item border-0'>
                         Performance Driven Web Apps</li>
-                        <li className='list-group-item border-0'>Proprietary Tool Development</li>
-                        <li className='list-group-item border-0'>Strategic Branding & Rebranding</li>
-                        <li className='list-group-item border-0'>Graphic Design</li>
-                        <li className='list-group-item border-0'>On-page Search Engine Optimisation</li>
-                        <li className='list-group-item border-0'>Interactive and Performant Sites</li>
-                        <li className='list-group-item border-0'>Code Clean-up & Project Refactoring</li>
-                        <li className='list-group-item border-0'>Printing Services</li>
-                        <li className='list-group-item border-0 mb-5'>Start-up Starter Kits</li>
+                      </div>
+                      <div className='row'>
+                        <span className='d-inline diamond'></span>
+                        <li className='d-inline col-10 list-group-item border-0'>
+                        Proprietary Tool Development</li>
+                      </div>
+                      <div className='row'>
+                        <span className='d-inline diamond'></span>
+                        <li className='d-inline col-10 list-group-item border-0'>
+                        Strategic Branding & Rebranding</li>
+                      </div>
+                      <div className='row'>
+                        <span className='d-inline diamond'></span>
+                        <li className='d-inline col-10 list-group-item border-0'>
+                        Graphic Design</li>
+                      </div>
+                      <div className='row'>
+                        <span className='d-inline diamond'></span>
+                        <li className='d-inline col-10 list-group-item border-0'>
+                        On-page Search Engine Optimisation</li>
+                      </div>
+                      <div className='row'>
+                        <span className='d-inline diamond'></span>
+                        <li className='d-inline col-10 list-group-item border-0'>
+                        Interactive and Performant Sites</li>
+                      </div>
+                      <div className='row'>
+                        <span className='d-inline diamond'></span>
+                        <li className='d-inline col-10 list-group-item border-0'>
+                        Code Clean-up & Project Refactoring</li>
+                      </div>
+                      <div className='row'>
+                        <span className='d-inline diamond'></span>
+                        <li className='d-inline col-10 list-group-item border-0'>
+                        Printing Services</li>
+                      </div>
+                      <div className='row'>
+                        <span className='d-inline diamond'></span>
+                        <li className='d-inline col-10 list-group-item border-0'>
+                        Start-up Starter Kits</li>
+                      </div>
                     </ul>
                   </div>
                   <div>
