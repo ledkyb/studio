@@ -11,10 +11,10 @@ class Services extends Component {
       render(){
           return(
               <div className="container bg-white">
-                  <div className='row mb-5'>
-                    <h1 className='col-xs-4 mt-0'>SERVICES</h1>
-                    <span className='col-1 style={{color: #ea5132}}'>/</span>
-                    <span className='col-4 text-nowrap align-text-bottom'>Studio Services</span>
+                  <div className='row mt-5 mb-5 align-bottom'>
+                    <h1 className='d-inline-block col-xs-4 font-weight-bold'>SERVICES</h1>
+                    <span className='heading-span d-inline-block col-1 weight-500'>/</span>
+                    <span className='d-inline-block col-4 text-nowrap mb-0 weight-500'>Studio Services</span>
                   </div>
 
                   <div>
@@ -22,47 +22,47 @@ class Services extends Component {
                     <ul className='list-group container'>
                       <div className='row'>
                         <span className='d-inline diamond'></span>
-                        <li className='d-inline col-10 list-group-item border-0'>
+                        <li className='weight-500 d-inline col-10 list-group-item border-0'>
                         Performance Driven Web Apps</li>
                       </div>
                       <div className='row'>
                         <span className='d-inline diamond'></span>
-                        <li className='d-inline col-10 list-group-item border-0'>
+                        <li className='weight-500 d-inline col-10 list-group-item border-0'>
                         Proprietary Tool Development</li>
                       </div>
                       <div className='row'>
                         <span className='d-inline diamond'></span>
-                        <li className='d-inline col-10 list-group-item border-0'>
+                        <li className='weight-500 d-inline col-10 list-group-item border-0'>
                         Strategic Branding & Rebranding</li>
                       </div>
                       <div className='row'>
                         <span className='d-inline diamond'></span>
-                        <li className='d-inline col-10 list-group-item border-0'>
+                        <li className='weight-500 d-inline col-10 list-group-item border-0'>
                         Graphic Design</li>
                       </div>
-                      <div className='row'>
+                      <div className='row pb-1'>
                         <span className='d-inline diamond'></span>
-                        <li className='d-inline col-10 list-group-item border-0'>
-                        On-page Search Engine Optimisation</li>
+                        <li className='weight-500 d-inline col-10 list-group-item border-0'>
+                        On-page Search Engine Optimization</li>
                       </div>
                       <div className='row'>
                         <span className='d-inline diamond'></span>
-                        <li className='d-inline col-10 list-group-item border-0'>
+                        <li className='weight-500 d-inline col-10 list-group-item border-0'>
                         Interactive and Performant Sites</li>
                       </div>
                       <div className='row'>
                         <span className='d-inline diamond'></span>
-                        <li className='d-inline col-10 list-group-item border-0'>
+                        <li className='weight-500 d-inline col-10 list-group-item border-0'>
                         Code Clean-up & Project Refactoring</li>
                       </div>
                       <div className='row'>
                         <span className='d-inline diamond'></span>
-                        <li className='d-inline col-10 list-group-item border-0'>
+                        <li className='weight-500 d-inline col-10 list-group-item border-0'>
                         Printing Services</li>
                       </div>
-                      <div className='row'>
+                      <div className='row mb-5'>
                         <span className='d-inline diamond'></span>
-                        <li className='d-inline col-10 list-group-item border-0'>
+                        <li className='weight-500 d-inline col-10 list-group-item border-0'>
                         Start-up Starter Kits</li>
                       </div>
                     </ul>
