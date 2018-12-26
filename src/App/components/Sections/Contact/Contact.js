@@ -1,13 +1,13 @@
-import React, { Component } from 'react'; 
-
+import React, { Component } from 'react';
+import Form from '../../Form/Form';
 class Contact extends React.Component {
-    componentWillMount(){
+    componentWillMount() {
 
     }
 
-    render(){
-        return(
-            ''
+    render() {
+        return (
+            <Form />
         )
     }
 }

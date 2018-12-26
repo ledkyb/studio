@@ -1,108 +1,105 @@
-.form {
-    background-color: #fff;
-    background-size: cover;
-    height: 766px;
-    border: 1px solid #EF3C24;
+// .form {
+//     background-color: #fff;
+//     background-size: cover;
+//     height: 766px;
 
-    label {
-        color: #EF3C24;
-        margin-bottom: 0;
-        margin-top: 36px;
-        font-weight: 500;
-        margin-right: 20px;
-    }
+//     label {
+//         color: #EF3C24;
+//         margin-bottom: 0;
+//         margin-top: 36px;
+//         font-weight: 500;
+//         margin-right: 20px;
+//     }
 
-    input {
-        border: 0;
-        width: 85%;
-        font-size: 28px;
-    }
+//     input {
+//         border: 0;
+//         width: 85%;
+//         font-size: 28px;
+//     }
 
-    input:focus {
-        outline: none; 
-    }
+//     input:focus {
+//         outline: none; 
+//     }
 
-    hr {
-        border-top: 1px solid #EF3C24;
-        margin-bottom: 0;
-        margin-top: 8px;
-    }
+//     hr {
+//         border-top: 1px solid #EF3C24;
+//         margin-bottom: 0;
+//         margin-top: 8px;
+//     }
 
-    .text-area {
-        height: 100%;
-        padding-right: 64px;
-        padding-left: 28px;
-    }
+//     .text-area {
+//         height: 100%;
+//         padding-right: 64px;
+//         padding-left: 28px;
+//     }
 
-    textarea {
-        border-color: #EF3C24;
-        width: 100%;
-        height: 100%;
-        resize: none;
-        padding: 8px;
-    }
+//     textarea {
+//         border-color: #EF3C24;
+//         width: 100%;
+//         height: 100%;
+//         resize: none;
+//         padding: 8px;
+//     }
 
-    textarea:focus {
-        outline: none;
-    }
+//     textarea:focus {
+//         outline: none;
+//     }
 
-    .send-button {
-        margin-top: 24px;
-        margin-left: 88px;
+//     .send-button {
+//         margin-top: 24px;
+//         margin-left: 88px;
  
-    }
-    // .text-logo {
-    //   transition: 450ms all ease-in;
-    //   max-width: 230px;
-    //   margin: 100px auto 0 auto;
-    //   display: block;
-    // }
+//     }
   
-    // .home-button {
-    //   margin-top: 100px;
-    // }
+//     @media only screen and (max-width: 1200px) {
+//         label {
+//             margin-top: 24px;
+//         }
+//         input {
+//             font-size: 24px;
+//         }
+//         .text-area {
+//             padding-right: 50px;
+//         }
+//         .send-button {
+//             margin-top: 24px;
+//             margin-left: 56px;
+//         }
+//     }
   
-    // a.button {
-    //   text-align: center;
-    //   display: block;
-    //   margin: 0 auto;
-    //   width: 65%;
-    //   padding: 15px 0;
-    // }
+//     @media only screen and (max-width: 991px) {
+//         label {
+//             color: #000000;
+//             margin-bottom: 0;
+//             margin-top: 36px;
+//             font-weight: 500;
+//             margin-right: 20px;
+//         }
+//         hr {
+//             border-top: 1px solid #000000;
+//             margin-bottom: 0;
+//             margin-top: 8px;
+//         }
+//         .text-area {
+//             padding-right: 30px;
+//         }
+//         textarea {
+//             border-color: #000000;
+//             width: 100%;
+//             height: 100%;
+//             resize: none;
+//             padding: 8px;
+//         }
   
-    @media only screen and (max-width: 1200px) {
-    //   .text-logo {
-    //     max-width: 200px;
-    //   }
+//     }
   
-    }
+//     @media only screen and (max-width: 767px){
+//     }
   
-    @media only screen and (max-width: 991px) {
-    //   .text-logo {
-    //     max-width: 225px;
-    //     margin-top: 200px;
-    //   }
+//     @media only screen and (max-width: 575px){
+//     }
   
-    }
-  
-    @media only screen and (max-width: 767px){
-    //   a.button {
-    //     width: 100%;
-    //     max-width: 215px;
-    //   }
-    }
-  
-    @media only screen and (max-width: 575px){
-    //   #home .text-logo {
-    //     max-width: 230px;
-    //     margin: 80px auto 0 auto;
-    //     display: block;
-    //   }
-    }
-  
-    @media only screen and (max-width: 425px){
-    //   .text-logo {
-    //     max-width: 230px;
-    //   }
-    }
-  }
+//     @media only screen and (max-width: 425px){
+//     }
+
+//   }
