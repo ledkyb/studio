@@ -1,6 +1,6 @@
-import React, { Component } from 'react'; 
+import React, { Component } from 'react';
 
-class Blog extends React.Component {
+class Blog extends Component {
     componentWillMount(){
 
     }

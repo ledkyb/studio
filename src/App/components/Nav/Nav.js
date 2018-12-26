@@ -1,8 +1,18 @@
 import React, {Component} from 'react';
 import './Nav.scss';
 import Logo from './Logo/Logo';
+import Hamburger from './Logo/Assets/menu.svg';
+import Social from './Social/Social';
 
-class Nav extends React.Component {
+class Nav extends Component {
+  switch() {
+    const nav = document.getElementById('navbarNav'),
+        menuButton = document.querySelector('.navbar-toggler');
+
+    nav.classList.toggle('slide-nav');
+    menuButton.classList.toggle('nav-rotated');
+  }
+
   render() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light">
@@ -11,14 +21,18 @@ class Nav extends React.Component {
             <Logo/>
           </a>
 
-          <button className="navbar-toggler" type="button"
-                  data-toggle="collapse" data-target="#navbarNav"
-                  aria-controls="navbarNav" aria-expanded="false"
-                  aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
+          <button className="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                  onClick={this.switch}>
+            <img src={Hamburger} alt="mobile menu"/>
           </button>
 
-          <div className="collapse navbar-collapse" id="navbarNav">
+          <div className="navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item active">
                 <a className="nav-link" href="#">Home <span
@@ -40,6 +54,9 @@ class Nav extends React.Component {
                 <a className="nav-link" href="#">Contact</a>
               </li>
             </ul>
+
+            <Social/>
+
           </div>
         </nav>
     );

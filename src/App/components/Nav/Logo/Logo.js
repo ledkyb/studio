@@ -1,7 +1,7 @@
-import React, { Component } from 'react';  
+import React, { Component } from 'react';
 import iconLogo from './Assets/icon-color.svg';
 
-class Logo extends React.Component {
+class Logo extends Component {
     render(){
         return (
             <img src={iconLogo} />

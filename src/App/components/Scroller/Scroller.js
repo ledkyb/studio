@@ -1,15 +1,13 @@
 import React, {Component} from 'react';
 import './Scroller.scss';
 
-class Scroller extends React.Component {
+class Scroller extends Component {
   render() {
     return (
-        <div className="container scroller">
-          <div className="col-2 offset-5">
-            <div className="scrollerElement"></div>
-            <div className="scrollerElement"></div>
-            <div className="scrollerElement"></div>
-          </div>
+        <div className="scroller">
+          <div className="scrollerElement"></div>
+          <div className="scrollerElement"></div>
+          <div className="scrollerElement"></div>
         </div>
     );
   }
