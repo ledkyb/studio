@@ -2,12 +2,13 @@ import React from 'react';
 
 import './UserItem.scss';
 
-const UserItem = ({ name, title, img }) => {
+const UserItem = ({ user, loadUser }) => {
+  let { id, name, img, title } = user;
   return (
-    <div className="team-user-item">
+    <div id={id} className="team-user-item">
 
     {/* Item Hovered */}
-    <div className="team-user-item-hover position-absolute justify-content-center align-items-center">
+    <div onClick={() => {loadUser(user)}} className="team-user-item-hover position-absolute justify-content-center align-items-center">
         <div className="team-user-item-hover-plus d-flex justify-content-center align-items-center">
           <div className="team-user-item-hover-x position-absolute"></div>
           <div className="team-user-item-hover-y position-absolute"></div>
@@ -15,13 +16,13 @@ const UserItem = ({ name, title, img }) => {
       </div>
 
       {/* Item */}
-      <div>
+      <div onClick={() => {loadUser(user)}} >
         <img alt="user" src={img} />
         <div className="mb-5 mb-lg-0 w-100 d-flex align-items-center py-4">
-          <div className="team-user-item-line mx-3"></div>
+          <div className="team-user-item-line mx-1 mx-lg-3"></div>
           <div>
             <p className="font-weight-bold">{name}</p>
-            <p className="team-user-item-title">{title}</p>
+            <p className="team-user-item-title mt-1 mt-lg-0">{title}</p>
           </div>
         </div>
       </div>

@@ -1,0 +1,17 @@
+.single-user-img{
+  img{
+    width: 500px;
+    height: 475px;
+
+    @media screen and (max-width: 1199px){
+      width: 400px;
+      height: 375px;
+    }
+
+    @media screen and (max-width: 991px){
+      width: 200px;
+      height: 175px;
+      // margin-bottom: 100px;
+    }
+  }
+}

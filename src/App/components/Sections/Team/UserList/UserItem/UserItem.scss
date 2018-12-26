@@ -12,10 +12,16 @@
   p{
     font-size: .85rem;
     margin: -5px 0;
+    @media screen and (max-width: 991px){
+      font-size: .5rem;
+    }
   }
 
   .team-user-item-title{
     font-size: .75rem;
+    @media screen and (max-width: 991px){
+      font-size: .45rem;
+    }
   }
 
   

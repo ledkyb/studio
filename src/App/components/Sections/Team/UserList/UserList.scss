@@ -12,37 +12,4 @@
     }
   }
 
-  .team-scroll-btn-container{
-    height: 100%;
-    width: 100%;
-
-    @media screen and (max-width: 991px){
-      height: 50px;
-      width: 100%;
-      bottom: 0;
-      padding: 0 20%;
-    }
-
-    .team-scroll-up-btn{
-      width: 40px;
-      height: auto;
-      transform: rotate(90deg);
-      @media screen and (max-width: 991px){
-        width: 15px;
-        transform: rotate(0deg);
-      }
-    }
-  
-    .team-scroll-down-btn{
-      width: 40px;
-      height: auto;
-      transform: rotate(-90deg);
-      margin-bottom: 50px;
-      cursor: pointer;
-      @media screen and (max-width: 991px){
-        width: 15px;
-        transform: rotate(180deg);
-      }
-    }
-  }
 }
