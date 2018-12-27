@@ -1,5 +1,7 @@
 .single-user-img{
   img{
+    transition: 0s all;
+
     width: 500px;
     height: 475px;
 
@@ -11,7 +13,6 @@
     @media screen and (max-width: 991px){
       width: 200px;
       height: 175px;
-      // margin-bottom: 100px;
     }
   }
 }
