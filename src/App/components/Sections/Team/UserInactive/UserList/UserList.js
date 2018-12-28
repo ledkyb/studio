@@ -4,14 +4,14 @@ import { TimelineLite } from 'gsap';
 import './UserList.scss';
 
 //List of team members
-import {teamInfo} from '../team-info';
+import {teamInfo} from '../../team-info';
 
 //assets
 import userImg from './UserItem/Assets/user.jpg';
 
 //components
 import UserItem from './UserItem/UserItem';
-import ScrollBtn from '../ScrollBtn/ScrollBtn';
+import ScrollBtn from '../../ScrollBtn/ScrollBtn';
 
 class UserList extends Component {
   constructor(props){
@@ -29,7 +29,7 @@ class UserList extends Component {
     });
 
     this.state = {
-      currentGroup: [this.userList[0], this.userList[1], this.userList[2], this.userList[3]],
+      currentGroup: [],
       showPrevArrow: {opacity: "0", cursor: "default"},
       showNextArrow: {opacity: "1", cursor: "pointer"},
       isMobile: false
@@ -60,8 +60,8 @@ class UserList extends Component {
     }
   }
 
+  //Initialize scrolling animations
   initScrollAnim = () => {
-    //Initialize scrolling animations
     this.animScrollDown = new TimelineLite({ 
       paused:true,
       onComplete: () => {
@@ -112,9 +112,11 @@ class UserList extends Component {
 
   }
 
+  //Checks for mobile, active anims & current
+  //position to determine which animation to play
   handleAnimScrollNext = () => {
     const endOfList = this.userList[this.userList.length-1] !== this.state.currentGroup[this.state.currentGroup.length-1];
-    const checkActiveAnim = (!this.animScrollDown.isActive() && !this.animScrollUp.isActive());
+    const checkActiveAnim = (!this.animScrollDown.isActive() && !this.animScrollUp.isActive() && !this.animScrollLeft.isActive() && !this.animScrollRight.isActive());
     if(checkActiveAnim && endOfList){
       if(this.state.isMobile){
         this.animScrollLeft.play();
@@ -126,7 +128,7 @@ class UserList extends Component {
 
   handleAnimScrollPrev = () => {
     const startOfList = this.userList[0] !== this.state.currentGroup[0];
-    const checkActiveAnim = (!this.animScrollDown.isActive() && !this.animScrollUp.isActive());
+    const checkActiveAnim = (!this.animScrollDown.isActive() && !this.animScrollUp.isActive() && !this.animScrollLeft.isActive() && !this.animScrollRight.isActive());
     if(checkActiveAnim && startOfList){
       if(this.state.isMobile){
         this.animScrollRight.play();
@@ -136,6 +138,7 @@ class UserList extends Component {
     }
   }
 
+  //Checks this.userList for anymore users and changes state if there is
   nextUserGroup = () => {
     let currentPos = this.userList.indexOf(this.state.currentGroup[this.state.currentGroup.length-1]);
     const remainingUsers = (this.userList.length-1) - currentPos;
@@ -146,7 +149,6 @@ class UserList extends Component {
       groupSize = 4;
     }
 
-    //Checks userList for anymore users and changes state if there is
     if(remainingUsers > 0){
       const nextGroup = [];
       let nextElem = currentPos + 1; //First index of next group
@@ -182,7 +184,6 @@ class UserList extends Component {
       groupSize = 4;
     }
     
-    //Checks userList for anymore previous users in list
     if(currentPos >= groupSize){
       const prevGroup = [];
       let prevElem = currentPos-1;
@@ -205,7 +206,7 @@ class UserList extends Component {
 
   render(){
     return (
-      <div className=" team-user-container col col-lg-6 h-100 d-flex flex-column justify-content-center align-items-center">
+      <div className=" team-user-container col col-lg-6 d-flex flex-column justify-content-center align-items-center">
 
         <div ref={div => this.groupElement = div} className="team-user-item-list d-flex flex-wrap justify-content-around justify-content-lg-between align-items-end align-items-lg-start">
           {this.state.currentGroup}

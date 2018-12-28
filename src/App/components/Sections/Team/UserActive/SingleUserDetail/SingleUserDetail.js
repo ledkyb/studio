@@ -9,7 +9,7 @@ const SingleUserDetail = ({ user, exitUser }) => {
   const findMe = (Object.keys(user.links).length > 0 ? <h4>Find me on</h4> : null);
   return (
     <div className="single-user-detail col col-lg-6 d-flex h-100 d-flex justify-content-end align-items-center">
-      <div className="single-user-detail-text d-flex flex-column align-items-start">
+      <div className="single-user-detail-text d-flex flex-column">
 
           <h5 className="single-user-detail-exit mr-3 text-white align-self-end h-0" onClick={exitUser} >x</h5>
 

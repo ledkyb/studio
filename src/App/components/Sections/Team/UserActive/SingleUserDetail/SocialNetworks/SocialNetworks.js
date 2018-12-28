@@ -11,15 +11,12 @@ import twitterIcon from './Assets/tw.png';
 import stackIcon from './Assets/so.png';
 
 class SocialNetworks extends Component{
-  constructor(props){
-    super(props);
-  }
-
   render(){
     const { links } = this.props;
 
-    const fbElem = (links.facebook == null ? null : <img src={fbIcon} alt="facebook" onClick={() => window.open(links.facebook)} />);
-    const gitElem = (links.github == null ? null : <img className="ml-1 ml-lg-3" src={gitIcon} alt="github" onClick={() => window.open(links.github)} />);
+    //These conditions only render available social networks
+    const gitElem = (links.github == null ? null : <img src={gitIcon} alt="github" onClick={() => window.open(links.github)} />);
+    const fbElem = (links.facebook == null ? null : <img className="ml-1 ml-lg-3" src={fbIcon} alt="facebook" onClick={() => window.open(links.facebook)} />);
     const linkedInElem = (links.linkedin == null ? null : <img className="ml-1 ml-lg-3" src={linkedInIcon} alt="linkedin" onClick={() => window.open(links.linkedin)} />);
     const igElem = (links.instagram == null ? null : <img className="ml-1 ml-lg-3" src={instagramIcon} alt="instagram" onClick={() => window.open(links.instagram)} />);
     const twitterElem = (links.twitter == null ? null : <img className="ml-1 ml-lg-3" src={twitterIcon} alt="twitter" onClick={() => window.open(links.twitter)} />);
@@ -27,8 +24,8 @@ class SocialNetworks extends Component{
 
     return(
       <div className="team-social-networks d-flex">
-        {fbElem}
         {gitElem}
+        {fbElem}
         {linkedInElem}
         {igElem}
         {twitterElem}

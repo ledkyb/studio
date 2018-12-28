@@ -1,4 +1,4 @@
-import userImg from './UserList/UserItem/Assets/user.jpg';
+import userImg from './UserInactive/UserList/UserItem/Assets/user.jpg';
 
 export const teamInfo = [
   {
@@ -72,6 +72,7 @@ export const teamInfo = [
     title: "Fancy Title",
     links: {
       facebook: "https://facebook.com",
+      github: "https://github.com",
       linkedin: "https://linkedin.com",
       instagram: "https://instagram.com",
     },

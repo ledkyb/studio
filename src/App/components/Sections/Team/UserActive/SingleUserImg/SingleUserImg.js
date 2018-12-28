@@ -4,7 +4,7 @@ import { TimelineLite } from 'gsap';
 import './SingleUserImg.scss';
 
 //components
-import ScrollBtn from '../ScrollBtn/ScrollBtn';
+import ScrollBtn from '../../ScrollBtn/ScrollBtn';
 
 class SingleUserImg extends Component{
   constructor(props){
@@ -39,8 +39,8 @@ class SingleUserImg extends Component{
     }
   }
 
+  //Initialize scrolling animations
   initScrollAnim = () => {
-    //Initialize scrolling animations
     this.animScrollDown = new TimelineLite({ 
       paused:true,
       onComplete: () => {
@@ -49,7 +49,7 @@ class SingleUserImg extends Component{
       }
     })
     .to(this.imgElement, 0.5, {y: -75, opacity: 0})
-    .call(this.onNextUser)
+    .call(() => this.props.onNext(this.props.user))
     .to(this.imgElement, 0, {y: 75})
     .to(this.imgElement, 0.5, {y: 0, opacity: 1});
 
@@ -61,7 +61,7 @@ class SingleUserImg extends Component{
       }
     })
     .to(this.imgElement, 0.5, {x: -35, opacity: 0})
-    .call(this.onNextUser)
+    .call(() => this.props.onNext(this.props.user))
     .to(this.imgElement, 0, {x: 35})
     .to(this.imgElement, 0.5, {x: 0, opacity: 1});
 
@@ -73,7 +73,7 @@ class SingleUserImg extends Component{
       }
     })
     .to(this.imgElement, 0.5, {y: 75, opacity: 0})
-    .call(this.onPrevUser)
+    .call(() => this.props.onPrev(this.props.user))
     .to(this.imgElement, 0, {y: -75})
     .to(this.imgElement, 0.5, {y: 0, opacity: 1});
 
@@ -85,22 +85,16 @@ class SingleUserImg extends Component{
       }
     })
     .to(this.imgElement, 0.5, {x: 35, opacity: 0})
-    .call(this.onPrevUser)
+    .call(() => this.props.onPrev(this.props.user))
     .to(this.imgElement, 0, {x: -35})
     .to(this.imgElement, 0.5, {x: 0, opacity: 1});
   }
 
-  onNextUser = () => {
-    this.props.onNext(this.props.user);
-  };
-
-  onPrevUser = () => {
-    this.props.onPrev(this.props.user);
-  }
-
+  //Checks for mobile, active anims & current
+  //position to determine which animation to play
   handleAnimScrollNext = () => {
     const endOfList = this.props.endOfNext;
-    const checkActiveAnim = (!this.animScrollDown.isActive() && !this.animScrollUp.isActive());
+    const checkActiveAnim = (!this.animScrollDown.isActive() && !this.animScrollUp.isActive() && !this.animScrollLeft.isActive() && !this.animScrollRight.isActive());
     if(checkActiveAnim && !endOfList){
       if(this.state.isMobile){
         this.animScrollLeft.play();
@@ -112,7 +106,7 @@ class SingleUserImg extends Component{
 
   handleAnimScrollPrev = () => {
     const startOfList = this.props.endOfPrev;
-    const checkActiveAnim = (!this.animScrollDown.isActive() && !this.animScrollUp.isActive());
+    const checkActiveAnim = (!this.animScrollDown.isActive() && !this.animScrollUp.isActive() && !this.animScrollLeft.isActive() && !this.animScrollRight.isActive());
     if(checkActiveAnim && !startOfList){
       if(this.state.isMobile){
         this.animScrollRight.play();
@@ -123,9 +117,9 @@ class SingleUserImg extends Component{
   }
 
   render(){
-    const { user, onPrev, onNext, showPrevArrow, showNextArrow, loadUser } = this.props;
+    const { user, onPrev, onNext, showPrevArrow, showNextArrow } = this.props;
     return (
-      <div className="single-user-img col col-lg-6 h-100 d-flex flex-row justify-content-center justify-content-lg-start align-items-center">
+      <div className="single-user-img col col-lg-6 h-100 d-flex flex-row justify-content-center align-items-center">
         <img ref={img => this.imgElement = img} src={user.img} alt={user.name} />
         <ScrollBtn 
           onClickPrev={this.handleAnimScrollPrev} 

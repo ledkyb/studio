@@ -5,10 +5,9 @@ import './Team.scss';
 import {teamInfo} from './team-info';
 
 //components
-import UserList from './UserList/UserList';
-import LearnMore from './LearnMore/LearnMore';
-import SingleUserImg from './SingleUserImg/SingleUserImg';
-import SingleUserDetail from './SingleUserDetail/SingleUserDetail';
+import UserInactive from './UserInactive/UserInactive';
+import UserActive from './UserActive/UserActive';
+
 import { underline } from 'ansi-colors';
 
 const teamList = teamInfo;
@@ -17,7 +16,6 @@ class Team extends Component {
     constructor(props){
         super(props);
         this.state = {
-            isMobile: false,
             currentUser: '',
             showPrevArrow: {opacity: "0", cursor: "default"},
             showNextArrow: {opacity: "1", cursor: "pointer"},
@@ -25,20 +23,8 @@ class Team extends Component {
             endOfPrev: true
         }
     }
-    componentWillMount(){
-        this.checkIfMobile();
-        window.addEventListener('resize', this.checkIfMobile)
-    }
 
-    checkIfMobile = () => {
-        if(window.innerWidth <= 991){
-            this.setState({ isMobile: true });
-        } else {
-            this.setState({ isMobile: false });
-        }
-    }
-
-    //Loads selected user into state
+    //Loads selected active user into state
     loadUser = (user) => {
         if(teamList[0] === user){
             this.setState({ 
@@ -68,7 +54,7 @@ class Team extends Component {
         
     }
 
-    //Loads previous user into state
+    //Loads previous active user into state
     prevUser = (user) => {
         let userIndex = teamList.findIndex(teamUser => {
             return teamUser === user;
@@ -91,7 +77,7 @@ class Team extends Component {
         }
     }
 
-    //Loads next user into state
+    //Loads next active user into state
     nextUser = (user) => {
         let userIndex = teamList.findIndex(teamUser => {
             return teamUser.id === user.id;
@@ -120,37 +106,22 @@ class Team extends Component {
 
     render(){
 
-        //If a user is clicked this will change accordingly
-        let teamContent = (this.state.currentUser === '' ? 
+        //If a user is clicked this will render UserActive component
+        const teamContent = (this.state.currentUser === '' ? 
             (
-                <div className="row h-100 d-flex flex-column flex-lg-row">
-                    {/* Left Section */}
-                    <UserList checkIfMobile={this.checkIfMobile} loadUser={this.loadUser} />
-
-                    {/* Right Section */}
-                    <LearnMore />
-                </div>
+                <UserInactive loadUser={this.loadUser}/>
             ) 
             :(
-                <div className="row h-100 d-flex flex-column flex-lg-row">
-                    {/* Left Section */}
-                    <SingleUserImg 
-                        user={this.state.currentUser} 
-                        onPrev={this.prevUser} 
-                        onNext={this.nextUser} 
-                        showPrevArrow={this.state.showPrevArrow}
-                        showNextArrow={this.state.showNextArrow}
-                        loadUser={this.loadUser}
-                        endOfNext={this.state.endOfNext}
-                        endOfPrev={this.state.endOfPrev}
-                    />
-
-                    {/* Right Section */}
-                    <SingleUserDetail 
-                        user={this.state.currentUser}
-                        exitUser={this.exitUser}
-                    /> 
-                </div>
+                <UserActive 
+                    user={this.state.currentUser}
+                    onPrev={this.prevUser}
+                    onNext={this.nextUser}
+                    showPrevArrow={this.state.showPrevArrow}
+                    showNextArrow={this.state.showNextArrow}
+                    endOfNext={this.state.endOfNext}
+                    endOfPrev={this.state.endOfPrev}
+                    exitUser={this.exitUser}
+                />
             )
         )
 
@@ -165,6 +136,7 @@ class Team extends Component {
                     <div className="team-right-bg w-100 h-100"></div>
                 </div>
 
+                {/* Team Section Content */}
                 <div className="container">
                     {teamContent}
                 </div>

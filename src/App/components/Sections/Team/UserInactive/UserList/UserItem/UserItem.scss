@@ -1,10 +1,14 @@
-@import "../../../../../../index.scss";
+@import "../../../../../../../index.scss";
 
 .team-user-item{
   img{  //user image size
     width: 200px;  
     height: 175px;
     @media screen and (max-width: 991px){
+      width: 175px;
+      height: 150px;
+    }
+    @media screen and (max-width: 767px){
       width: 125px;
       height: 100px;
     }
