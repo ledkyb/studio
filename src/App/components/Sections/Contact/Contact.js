@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Footer from '../../Footer/Footer.js';
 import SocialMedia from '../../SocialMedia/SocialMedia.js';
+import './Contact.scss';
 
 class Contact extends Component {
     componentWillMount(){
@@ -9,12 +10,12 @@ class Contact extends Component {
 
     render(){
         return(
-          <section id="contact" className="row" style={{background: 'white'}}>
-              <div className="container" style={{background: 'white', height: '100vh'}}>
+          <section id="contact" className="row mb-5">
+              <div className="container">
 
-                  <div className="row text-center" style={{background: '#EF3C24', height: '30%'}}>
+                  <div className=" header row text-center">
                       <div className="col-12 my-auto">
-                          <h1 className="text-uppercase font-weight-bold mb-3" style={{color: 'white'}}>
+                          <h1 className="text-uppercase font-weight-bold mb-3">
                               Start Your Project
                           </h1>
                           <p>
@@ -23,18 +24,18 @@ class Contact extends Component {
                       </div>
                   </div>
 
-                  <div className="row" style={{border: '1px solid red', height: '60%'}}>
+                  <div className="form row">
                       <div className="container">
                           <p>Contact us.</p>
                           <p>Under construction...</p>
                       </div>
                   </div>
 
-                  <div className="row justify-content-between" style={{height: '10%'}}>
-                      <div className="col-12 mb-5 my-lg-auto col-lg-3" style={{background: 'blue', height: '60%'}} >
+                  <div className="footer row justify-content-between">
+                      <div className="h-50 col-12 my-lg-auto col-lg-4">
                           <SocialMedia />
                       </div>
-                      <div className="col-12 mb-5 mt-4 my-lg-auto col-lg-6 order-lg-first" style={{background: 'green', height: '60%'}}>
+                      <div className="h-50 col-12 my-lg-auto col-lg-6 order-lg-first">
                           <Footer />
                       </div>
                   </div>

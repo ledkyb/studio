@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Footer.scss';
 
 class Footer extends Component {
     componentWillMount(){
@@ -7,7 +8,7 @@ class Footer extends Component {
 
     render(){
         return(
-            <div className="container align-self-center text-center" style={{color: 'white'}}>
+            <div id="footer" className="container align-self-center text-center">
                 © 2018 Ledkyb Studios, LLC. All Rights Reserved.
             </div>
         )
