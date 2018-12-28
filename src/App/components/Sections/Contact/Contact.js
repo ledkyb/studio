@@ -15,7 +15,7 @@ class Contact extends Component {
 
                   <div className=" header row text-center">
                       <div className="col-12 my-auto">
-                          <h1 className="text-uppercase font-weight-bold mb-3">
+                          <h1 className="text-uppercase mb-3">
                               Start Your Project
                           </h1>
                           <p>
