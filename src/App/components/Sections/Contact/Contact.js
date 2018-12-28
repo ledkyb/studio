@@ -14,8 +14,8 @@ class Contact extends Component {
           <section id="contact" className="row mb-5 mb-lg-0">
               <div className="background container">
 
-                  <div className="header row text-center">
-                      <div className="col-12 my-auto">
+                  <div className="header row text-center ">
+                      <div className="align-self-end col-12 my-md-auto my-lg-auto">
                           <h1 className="text-uppercase mb-3">
                               Start Your Project
                           </h1>
