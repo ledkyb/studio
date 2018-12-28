@@ -31,11 +31,11 @@ class Contact extends Component {
                       </div>
                   </div>
 
-                  <div className="footer row justify-content-between">
-                      <div className="h-75 col-12 my-lg-auto col-lg-3">
+                  <div className="footer row justify-content-between align-items-md-end">
+                      <div className="col-12 col-lg-4">
                           <SocialMedia />
                       </div>
-                      <div className="h-25 col-12 my-lg-auto col-lg-6 order-lg-first">
+                      <div className="col-12 col-lg-6 order-lg-first">
                           <Footer />
                       </div>
                   </div>
