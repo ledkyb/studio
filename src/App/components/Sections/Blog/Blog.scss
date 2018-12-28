@@ -1,0 +1,31 @@
+@import '../../../../index.scss';
+
+* {
+  border-style: solid;
+  border-width: 2px;
+  
+}
+
+#blog{
+  height: auto;
+}
+
+#blog1{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#blog2{
+  background-image: url("../Blog/AssetsB/post-one.jpg");
+  height: 403px;
+}
+#blog3{
+  background-image: url("../Blog/AssetsB/post-two.jpg");
+  height: 200px;
+}
+
+#blog4{
+  background-image: url("../Blog/AssetsB/post-three.jpg");
+  height: 200px;
+}
+
+
