@@ -27,15 +27,68 @@
 .cloud-3 {
   position: relative;
   right: 80px;
-  top: 30px;
+  top: 50px;
   width: 70%;
 }
 
 .cloud-two {
   position: relative;
-  bottom: 120px;
-  right: 50px;
+  bottom: 60px;
+  right: 40px;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   width: 150%;
+}
+
+.mobile-image {
+  padding: 0;
+}
+
+
+
+@media only screen and (min-width: 320px) {
+  .cloud-two {
+    right: 40px;
+    bottom: 60px;
+  }
+  .cloud-3 {
+    right: 80px;
+    top: 50px;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .cloud-3 {
+    right: 100px;
+    top: 90px;
+  }
+}
+
+@media only screen and (min-width: 575px) {
+  .cloud-3 {
+    right: 180px;
+    top: 175px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .cloud-3 {
+    animation: cloud-3-animate 10s;
+  }
+  .cloud-two {
+    animation: cloud-two-animate 10s;
+  }
+}
+
+
+
+@keyframes cloud-3-animate {
+  from {right: 180px;
+        top: 175px;}
+  to {right: 9999px; top: 30px;}
+}
+@keyframes cloud-two-animate {
+  from {right: 40px;
+        bottom: 60px;}
+  to {right: -9999px; top: 120px;}
 }
