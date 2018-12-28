@@ -16,7 +16,7 @@ class SocialMedia extends Component {
     render(){
         return(
           <section id="social" className="row">
-              <div className="container">
+              <div className="container d-flex justify-content-around">
 
                   <img className="socialLogo" src={github} alt="Ledkyb GitHub Account link" />
                   <img className="socialLogo" src={linkedIn} alt="Ledkyb LinkedIn Account link" />
