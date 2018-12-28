@@ -1,6 +1,6 @@
-import React, { Component } from 'react'; 
+import React, { Component } from 'react';
 
-class Services extends React.Component {
+class Services extends Component {
     componentWillMount(){
 
     }

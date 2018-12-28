@@ -1,6 +1,6 @@
-import React, { Component } from 'react'; 
+import React, { Component } from 'react';
 
-class Team extends React.Component {
+class Team extends Component {
     componentWillMount(){
 
     }
