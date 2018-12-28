@@ -29,9 +29,9 @@ class Contact extends Component {
                     ** TODO: Insert form component
                     */}
                   <div className="form row">
-                      <div className="container">
-                          <p>Contact us.</p>
-                          <p>Under construction...</p>
+                      <div className="container text-center">
+                          <h4 className="mt-4" style={{fontWeight: "bold"}}>Contact us</h4>
+                          <p>Pardon our dust while we get this feature perfect for you!</p>
                       </div>
                   </div>
 
