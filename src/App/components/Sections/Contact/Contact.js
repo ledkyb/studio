@@ -10,7 +10,7 @@ class Contact extends Component {
 
     render(){
         return(
-          <section id="contact" className="row mb-5">
+          <section id="contact" className="row mb-5 mb-lg-0">
               <div className="container">
 
                   <div className=" header row text-center">
