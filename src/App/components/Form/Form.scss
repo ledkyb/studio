@@ -29,6 +29,13 @@
     .border-all {
         border: 1px solid black;
     }
+
+    // Modifies CSS for Button Component
+    a.button {
+        width: fit-content;
+        margin: 0;
+      }
+
 }
 
 @media (min-width: 992px) {
