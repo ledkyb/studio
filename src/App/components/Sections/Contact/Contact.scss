@@ -6,18 +6,16 @@
 }
 
 h1 {
-  color: #fff;
   font-family: big-john;
-  font-size: 3rem;
+  font-size: 1.2rem;
   font-weight: 900;
   letter-spacing: 3px;
 }
 
 .header {
-  background-color: $orange;
+  background-color: #fff;
   height: 30%;
   font-family: avenirbook;
-  font-size: 1.2em;
 }
 
 .form {
@@ -48,10 +46,22 @@ h1 {
 
 /* Medium devices (desktops, 992px to 1199px) */
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-
+  h1 {
+    color: #fff;
+    font-size: 2rem;
+  }
+  .header {
+    background-color: $orange;
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: $screen-lg-min) {
-
+  h1 {
+    color: #fff;
+    font-size: 2rem;
+  }
+  .header {
+    background-color: $orange;
+  }
 }
