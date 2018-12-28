@@ -25,10 +25,6 @@ class Contact extends Component {
                       </div>
                   </div>
 
-                  {/*
-                    ** Section for Form Component
-                    ** TODO: Insert form component
-                    */}
                   <div className="form row">
                       <div className="container">
                           <Form />
