@@ -11,9 +11,9 @@ class Contact extends Component {
     render(){
         return(
           <section id="contact" className="row mb-5 mb-lg-0">
-              <div className="container">
+              <div className="background container">
 
-                  <div className=" header row text-center">
+                  <div className="header row text-center">
                       <div className="col-12 my-auto">
                           <h1 className="text-uppercase mb-3">
                               Start Your Project
@@ -36,10 +36,10 @@ class Contact extends Component {
                   </div>
 
                   <div className="footer row justify-content-between">
-                      <div className="h-50 col-12 my-lg-auto col-lg-3">
+                      <div className="h-75 col-12 my-lg-auto col-lg-3">
                           <SocialMedia />
                       </div>
-                      <div className="h-50 col-12 my-lg-auto col-lg-6 order-lg-first">
+                      <div className="h-25 col-12 my-lg-auto col-lg-6 order-lg-first">
                           <Footer />
                       </div>
                   </div>
