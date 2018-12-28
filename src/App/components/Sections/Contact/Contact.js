@@ -26,7 +26,7 @@ class Contact extends Component {
                   </div>
 
                   <div className="form row">
-                      <div className="container">
+                      <div className="container my-auto">
                           <Form />
                       </div>
                   </div>
