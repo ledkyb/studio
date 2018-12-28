@@ -8,10 +8,12 @@ class Services extends Component {
 
     }
 
+
+
       render(){
           return(
               <div className="container bg-white">
-                  <div className='row mt-5 mb-5 align-bottom'>
+                  <div className='row mt-5 mb-5'>
                     <h1 className='d-inline col-xs-4 font-weight-bold'>SERVICES</h1>
                     <span className='heading-span d-inline-block col-1 weight-600 text-center p-3'>/</span>
                     <span className='d-inline col-4 text-nowrap mb-0 weight-600 pt-3 pl-0'>Studio Services</span>
@@ -80,8 +82,8 @@ class Services extends Component {
                     </div>
                   </div>
                   <div>
--                    <img className="cloud-3" src={cloud3} />
--                    <img className="cloud-two" src={cloudTwo} />
+-                    <img className="d-md-block d-lg-none d-xl-none cloud-3" src={cloud3} />
+-                    <img className="d-md-block d-lg-none d-xl-none cloud-two" src={cloudTwo} />
 -                  </div>
 
               </div>
