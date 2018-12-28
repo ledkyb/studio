@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import Footer from '../../Footer/Footer.js';
 import SocialMedia from '../../SocialMedia/SocialMedia.js';
 import './Contact.scss';
+import Form from '../../Form/Form';
 
-class Contact extends Component {
-    componentWillMount(){
+class Contact extends React.Component {
+    componentWillMount() {
 
     }
-
+ 
     render(){
         return(
           <section id="contact" className="row mb-5">
@@ -26,8 +27,7 @@ class Contact extends Component {
 
                   <div className="form row">
                       <div className="container">
-                          <p>Contact us.</p>
-                          <p>Under construction...</p>
+                          <Form />
                       </div>
                   </div>
 
@@ -40,9 +40,7 @@ class Contact extends Component {
                       </div>
                   </div>
               </div>
-          </section>
-        )
-    }
+          </section> 
 }
 
 
