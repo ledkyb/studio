@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import Footer from '../../Footer/Footer.js';
 import SocialMedia from '../../SocialMedia/SocialMedia.js';
+import Form from '../../Form/Form';
 import './Contact.scss';
 
-class Contact extends Component {
-    componentWillMount(){
+class Contact extends React.Component {
+    componentWillMount() {
 
     }
 
@@ -29,9 +30,8 @@ class Contact extends Component {
                     ** TODO: Insert form component
                     */}
                   <div className="form row">
-                      <div className="container text-center">
-                          <h4 className="mt-4" style={{fontWeight: "bold"}}>Contact us</h4>
-                          <p>Pardon our dust while we get this feature perfect for you!</p>
+                      <div className="container">
+                          <Form />
                       </div>
                   </div>
 
@@ -45,8 +45,6 @@ class Contact extends Component {
                   </div>
               </div>
           </section>
-        )
-    }
 }
 
 
