@@ -32,7 +32,7 @@ class Contact extends Component {
                   </div>
 
                   <div className="footer row justify-content-between">
-                      <div className="h-50 col-12 my-lg-auto col-lg-4">
+                      <div className="h-50 col-12 my-lg-auto col-lg-3">
                           <SocialMedia />
                       </div>
                       <div className="h-50 col-12 my-lg-auto col-lg-6 order-lg-first">
