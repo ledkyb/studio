@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Services.scss';
 import cloud3 from './Assets/cloud-3.svg';
 import cloudTwo from './Assets/cloud-two.svg';
+import servicesArt from './Assets/services-art.svg';
 
 class Services extends Component {
     componentWillMount(){
@@ -81,11 +82,13 @@ class Services extends Component {
                     </ul>
                     </div>
                   </div>
-                  <div>
--                    <img className="d-md-block d-lg-none d-xl-none cloud-3" src={cloud3} />
--                    <img className="d-md-block d-lg-none d-xl-none cloud-two" src={cloudTwo} />
--                  </div>
-
+                  <div className='mobile-view'>
+                    <img className="d-md-block d-lg-none d-xl-none cloud-3" src={cloud3} />
+                    <img className="d-md-block d-lg-none d-xl-none cloud-two" src={cloudTwo} />
+                 </div>
+                  <div className='full-screen-view'>
+                    <img className='d-none d-lg-block' src={servicesArt} />
+                  </div>
               </div>
           )
       }
