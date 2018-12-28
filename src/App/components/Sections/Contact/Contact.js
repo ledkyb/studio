@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Footer from '../../Footer/Footer.js';
-import SocialMedia from '../../SocialMedia/SocialMedia.js';
+import Footer from '../../Footer/Footer';
+import SocialMedia from '../../SocialMedia/SocialMedia';
 import Form from '../../Form/Form';
 import './Contact.scss';
 
-class Contact extends React.Component {
+class Contact extends Component {
     componentWillMount() {
 
     }
