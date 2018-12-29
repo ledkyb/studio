@@ -1,7 +1,6 @@
 @import "../../../../index.scss";
 
 #services {
-  background-color: #FFF;
 
   .section-title {
     font-size: 3.1rem;
@@ -14,10 +13,21 @@
 
       font-size: 1.45rem;
     }
+
+    @media screen and (max-width: 768px) {
+      font-size: 2.1rem;
+      padding-top: 40px;
+    }
+  }
+
+  .services-art-element {
+
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
   }
 
   .services-list {
-    margin-left: 0.75rem;
 
     .services-list-item {
       font-family: avenirbook, sans-serif;
@@ -25,69 +35,93 @@
       list-style-type: none;
     }
 
-    .col-md-6:nth-child(2) {
-      padding-left: 2.75rem;
-    }
-  }
+    ul {
+      padding-left: 30px;
 
+      &:first-child {
+        margin-bottom: 0;
+      }
 
-  .heading-span {
-    color: #ea5132;
-    height: 42px;
-  }
-
-  .cloud-3 {
-    position: relative;
-    right: 80px;
-    top: 70px;
-    width: 70%;
-  }
-
-  .cloud-two {
-    position: relative;
-    bottom: 35px;
-    right: 40px;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    width: 150%;
-  }
-
-  .mobile-image {
-    padding: 0;
-  }
-
-
-  @media only screen and (min-width: 320px) {
-    .cloud-3 {
-      right: 80px;
-      top: 70px;
-    }
-  }
-
-  @media only screen and (min-width: 425px) {
-    .cloud-3 {
-      right: 100px;
-      top: 140px;
-    }
-  }
-
-  @media only screen and (min-width: 575px) {
-    .cloud-3 {
-      right: 180px;
-      top: 175px;
+      &:nth-child(2) {
+        padding-left: 2.75rem;
+      }
     }
 
   }
 
-  @media only screen and (min-width: 768px) {
-    .cloud-3 {
-      animation: cloud-3-animate 8s;
-      animation-fill-mode: forwards;
+  .services-art-element-mobile {
+    img {
+      display: none;
     }
-    .cloud-two {
-      animation: cloud-two-animate 12s;
-      animation-fill-mode: forwards;
+
+    @media screen and (max-width: 991px) {
+      padding-top: 3rem;
     }
+  }
+
+
+  @media screen and (max-width: 425px) {
+    .section-title {
+      padding-top: 2rem;
+    }
+
+    .services-list {
+      .col-md-6:first-child {
+        margin: 0;
+      }
+
+      .col-md-6:nth-child(2) {
+        padding-left: 15px;
+      }
+
+      .diamond {
+        top: 0.80rem;
+        width: 7px;
+        height: 7px;
+        left: -25px;
+      }
+
+      .services-list-item {
+        font-family: avenirbook, sans-serif;
+        font-size: .9rem;
+        list-style-type: none;
+      }
+    }
+
+    .services-art-element-mobile {
+      img {
+        display: block;
+        position: absolute;
+        bottom: -130px;
+        width: 75%;
+        left: -70px;
+        z-index: -1;
+
+        &:first-child {
+          bottom: -110px;
+          width: 125%;
+          left: -15px;
+          -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+          z-index: 0;
+        }
+      }
+
+    }
+
+    .section-title span {
+      font-size: 1.0rem;
+      padding: 15px;
+
+      &:nth-child(2) {
+        padding: 0;
+      }
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+    }
+
   }
 
 

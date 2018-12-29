@@ -22,10 +22,10 @@ class Services extends Component {
               </p>
             </div>
 
-            <div className='container services-list'>
-              <div className='row'>
+            <div className='row services-list'>
 
-                <ul className='col-md-6'>
+              <div className='col-md-6'>
+                <ul >
                   <li className='services-list-item'>
                     <span className='diamond'/> Performance Driven Web Apps
                   </li>
@@ -47,8 +47,10 @@ class Services extends Component {
                     Optimization
                   </li>
                 </ul>
+              </div>
 
-                <ul className='col-md-6'>
+              <div className='col-md-6'>
+                <ul>
                   <li className='services-list-item'>
                     <span className='diamond'/>Interactive and Performant Sites
                   </li>
@@ -66,20 +68,23 @@ class Services extends Component {
                     <span className='diamond'/>Start-up Starter Kits
                   </li>
                 </ul>
-
               </div>
 
+
             </div>
 
-            <div>
-              <img className="d-md-block d-lg-none d-xl-none cloud-3"
-                   src={cloud3}/>
-              <img className="d-md-block d-lg-none d-xl-none cloud-two"
-                   src={cloudTwo}/>
-            </div>
+           <div className="row services-art-element-mobile">
+             <div className="col-12 mt-5">
+               <img className=" cloud-two"
+                    src={cloudTwo}/>
+               <img className=" cloud-3"
+                    src={cloud3}/>
+
+             </div>
+           </div>
 
             <div className="row">
-              <div className="offset-7 col-md-5">
+              <div className="offset-7 col-md-5 services-art-element">
                 <img src={servicesImage}/>
               </div>
             </div>
