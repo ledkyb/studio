@@ -80,3 +80,18 @@
 .min-height-200 {
   min-height: 200px
 }
+
+// global limiters
+body {
+  width: 100vw;
+}
+
+.fit {
+  width: 100vw;
+}
+
+section.row {
+  @media screen and (max-width: 425px){
+    max-height: 768px;
+  }
+}

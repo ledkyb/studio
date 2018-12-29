@@ -13,7 +13,7 @@ import Mobile from './components/Mobile/Mobile';
 class App extends Component {
   render() {
     return (
-        <div className="container-fluid" style={{background: 'cyan'}}>
+        <div className="container-fluid" >
          {/*components*/}
           <Tracker/>
           <Mobile/>
