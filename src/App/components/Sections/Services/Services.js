@@ -82,12 +82,12 @@ class Services extends Component {
                     </ul>
                     </div>
                   </div>
-                  <div className='mobile-view'>
-                    <img className="d-md-block d-lg-none d-xl-none cloud-3" src={cloud3} />
-                    <img className="d-md-block d-lg-none d-xl-none cloud-two" src={cloudTwo} />
+                  <div className='mobile-view d-md-block d-lg-none'>
+                    <img className='cloud-3' src={cloud3} alt='cloud'/>
+                    <img className='cloud-two' src={cloudTwo} alt='cloud'/>
                  </div>
-                  <div className='full-screen-view'>
-                    <img className='d-none d-lg-block' src={servicesArt} />
+                  <div className='full-screen-view float-right d-none d-lg-block'>
+                    <img className='people-image' src={servicesArt} alt='People working in office'/>
                   </div>
               </div>
           )
