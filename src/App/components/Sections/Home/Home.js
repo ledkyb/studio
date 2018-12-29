@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
+import Scroller from '../../Scroller/Scroller';
 import './Home.scss';
+
 
 import textLogo from './Assets/logo-text-black.svg';
 import Button from '../../Button/Buttons';
@@ -26,6 +28,10 @@ class Home extends Component {
               <div className="col-10 offset-1">
                 <p className="button-sub-text">Ready to start your project?</p>
               </div>
+            </div>
+
+            <div className="row scroller-row">
+              <Scroller/>
             </div>
 
           </div>
