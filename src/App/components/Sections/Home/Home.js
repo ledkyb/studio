@@ -30,8 +30,10 @@ class Home extends Component {
               </div>
             </div>
 
-            <div className="row scroller-row">
-              <Scroller/>
+            <div className="row">
+              <div className="offset-5 col-2 mt-5">
+                <Scroller color="orange" layers={3} />
+              </div>
             </div>
 
           </div>
