@@ -1,0 +1,42 @@
+.section-title {
+  font-size: 2.0rem;
+}
+.desktop{
+  font-size: 1.25rem;
+  float: left;
+}
+.diamond {
+  background: white;
+}
+.about-content {
+  font-size: 1.25rem;
+  color: white;
+}
+.services-list {
+
+  .services-list-item {
+    font-family: avenirbook, sans-serif;
+    list-style-type: none;
+  }
+
+  ul {
+    padding-left: 30px;
+
+    &:first-child {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(2) {
+      padding-left: 2.75rem;
+    }
+  }
+
+}
+
+@media screen and (min-width: 990px) {
+  .about-content {
+    background: transparent;
+    color: black;
+  }
+
+}
