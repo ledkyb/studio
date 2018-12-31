@@ -89,9 +89,9 @@ class Services extends Component {
               </div>
             </div>
 
-            <div className="row min-height-100">
-              <div className="mt-md-4">
-                <Scroller/>
+            <div className="row">
+              <div className="offset-5 col-2 mar">
+                <Scroller color="orange" layers={3} />
               </div>
             </div>
 
