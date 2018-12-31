@@ -1,3 +1,5 @@
+@import '../index.scss';
+
 //font declarations
 @font-face {
   font-family: avenirlight;
@@ -79,6 +81,22 @@
 
 .min-height-200 {
   min-height: 200px
+}
+
+.border-orange {
+  border: 1px solid $orange;
+}
+
+.border-blue {
+  border: 1px solid $blue;
+}
+
+.border-black {
+  border: 1px solid $black;
+}
+
+.border-white {
+  border: 1px solid $light-gray;
 }
 
 // global limiters
