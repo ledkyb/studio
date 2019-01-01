@@ -2,10 +2,6 @@ import React, {Component} from 'react';
 import './Scroller.scss';
 
 class Scroller extends Component {
-  componentWillReceiveProps(nextProps, nextContext) {
-
-  }
-
   render() {
     const color = this.props.color || 'orange';
     const layers = this.props.layers || 3;
