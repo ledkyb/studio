@@ -19,7 +19,7 @@ const Form = () => {
                     </div>
                     <div className="col-lg-5 pl-lg-5 mb-4 pr-lg-2">
                         <div className="row form-group h-100">
-                            <textarea className="col-12 form-control border-all rounded-0 text-dark h-100"></textarea>
+                            <textarea className="col-12 form-control border-all rounded-0 text-dark h-100"/>
                         </div>
                     </div>
                 </div>
