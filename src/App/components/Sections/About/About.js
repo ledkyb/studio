@@ -10,40 +10,40 @@ class About extends Component {
 
     render(){
         return(
-          <section className='row' style={{background: '#ef3c24'}}>
-            <div className='container desktop col-lg-6'>
+          <section className='row about' >
+            <div className='container desktop col-lg-6 m-0' style={{background: '#ef3c24'}}>
               <p className='section-title big-john py-3 text-white'>NOT YOUR <br />AVERAGE STUDIO</p>
 
               <div className='desktop d-none d-lg-block avenir-light text-white'>
                 <p>We take advantage of bleeding edge technology to provide you with the power of an in-house creative team at a fraction of the cost.
                 </p>
-                <ul className='row services-list'>
-                  <li className='services-list-item'><span className='diamond'></span>Exclusively Online</li>
+                <ul className='about-list'>
+                  <li className='about-list-item'><span className='diamond'></span>Exclusively Online</li>
 
-                  <li className='services-list-item'><span className='diamond'></span>Customer Centric</li>
+                  <li className='about-list-item'><span className='diamond'></span>Customer Centric</li>
 
-                  <li className='services-list-item'><span className='diamond'></span>Heavily Invest in Research & Development</li>
+                  <li className='about-list-item'><span className='diamond'></span>Heavily Invest in Research & Development</li>
 
-                  <li className='services-list-item'><span className='diamond'></span>Active Non-profit Supporter</li>
+                  <li className='about-list-item'><span className='diamond'></span>Active Non-profit Supporter</li>
 
-                  <li className='services-list-item'><span className='diamond'></span>Honest & Straightforward</li>
+                  <li className='about-list-item'><span className='diamond'></span>Honest & Straightforward</li>
                 </ul>
-
-
               </div>
+
+
             </div>
             <div className='container about-content col-lg-6'>
-              <p className='avenir-light mr-3 py-3'>Ledkyb Studios is based in the Inland Empire and we operate exclusively
+              <p className='avenir-light'>Ledkyb Studios is based in the Inland Empire and we operate exclusively
               online. This allows us to leverage our low overhead to invest in powerful in-house
               tools. Our team is composed of designers, developers and project managers who are
               passionate about what they do.
               </p>
-              <ul className='row services-list d-none d-lg-block'>
-                <li className='services-list-item'><span className='diamond'></span>Meet Your Team</li>
+              <ul className='row about-list d-none d-lg-block'>
+                <li className='about-list-item'><span className='diamond orange'></span><a href="#">Meet Your Team</a></li>
 
-                <li className='services-list-item'><span className='diamond'></span>Services We Offer</li>
+                <li className='about-list-item'><span className='diamond orange'></span><a href="#">Services We Offer</a></li>
 
-                <li className='services-list-item'><span className='diamond'></span>Check Our Blog Out</li>
+                <li className='about-list-item'><span className='diamond orange'></span><a href="#">Check Our Blog Out</a></li>
               </ul>
             </div>
 
@@ -51,11 +51,9 @@ class About extends Component {
 
             </div>
 
-            <div className="row min-height-100">
-              <div className="mt-md-4">
-                <Scroller/>
-              </div>
-            </div>
+
+            <Scroller/>
+
           </section>
         )
     }

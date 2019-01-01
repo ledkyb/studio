@@ -1,20 +1,32 @@
+.about {
+  background: #ef3c24;
+}
+
 .section-title {
   font-size: 2.0rem;
+
 }
 .desktop{
-  font-size: 1.25rem;
-  float: left;
+  font-size: 1.3rem;
+  padding-left: 2.0rem;
 }
 .diamond {
   background: white;
+  
+    top: 0.80rem;
+    width: 7px;
+    height: 7px;
+    left: -25px;
+
 }
 .about-content {
   font-size: 1.25rem;
   color: white;
+  background: '#ef3c24';
 }
-.services-list {
+.about-list {
 
-  .services-list-item {
+  .about-list-item {
     font-family: avenirbook, sans-serif;
     list-style-type: none;
   }
@@ -33,10 +45,24 @@
 
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 992px) {
+  .about {
+    background: none;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
   .about-content {
-    background: transparent;
+    background: none;
     color: black;
+    padding: 2.5rem;
+    font-size: 1.3rem;
+
+  }
+
+  .orange {
+    background: #ea5132;
   }
 
 }
