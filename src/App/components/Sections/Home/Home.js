@@ -9,7 +9,7 @@ import Button from '../../Button/Buttons';
 class Home extends Component {
   render() {
     return (
-        <section id="home" className="row">
+        <section id="home" className="row" data-bg="light">
           <div className="container">
 
             <div className="row">
