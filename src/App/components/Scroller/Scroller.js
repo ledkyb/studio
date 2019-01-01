@@ -10,7 +10,7 @@ class Scroller extends Component {
         <div className="scroller-container min-height-200">
           <div className="scroller mb-5 mt-5">
             {
-              [...Array(layers)].map(a => <div className={`scrollerElement border-${color}`} />)
+              [...Array(layers)].map((a, i) => <div key={i} className={`scrollerElement border-${color}`} />)
             }
           </div>
         </div>
