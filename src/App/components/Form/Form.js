@@ -9,11 +9,11 @@ const Form = () => {
                 <div className="row">
                     <div className="col-lg-5 offset-lg-1 pr-lg-5 mb-4">
                         <div className="row form-group border-bot mb-lg-4">
-                            <label className="col-2 col-sm-1 col-lg-2 my-0 p-0 pt-2 text-color" for="name">Name</label>
+                            <label className="col-2 col-sm-1 col-lg-2 my-0 p-0 pt-2 text-color" htmlFor="name">Name</label>
                             <input className="col-10 col-lg-9 form-control border-0 text-dark" type="text" id="name" />
                         </div>
                         <div className="row form-group border-bot mb-lg-0">
-                            <label className="col-2 col-sm-1 col-lg-2 my-0 p-0 pt-2 text-color" for="email">Email</label>
+                            <label className="col-2 col-sm-1 col-lg-2 my-0 p-0 pt-2 text-color" htmlFor="email">Email</label>
                             <input className="col-10 form-control border-0 text-dark" type="text" id="email" />
                         </div>
                     </div>
