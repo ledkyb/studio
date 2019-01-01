@@ -5,6 +5,26 @@ import Hamburger from './Logo/Assets/menu.svg';
 import Social from './Social/Social';
 
 class Nav extends Component {
+  componentDidMount() {
+    this.positionTracker();
+  }
+
+  positionTracker(){
+    const logo = document.getElementById('logo'),
+        sections = document.querySelectorAll('[data-bg]');
+
+    console.log('tracking');
+    console.log(sections);
+
+    window.addEventListener('scroll', e => {
+      console.log('fired!');
+    })
+
+    if (document.body.contains(logo)){
+      console.log(logo.offsetTop);
+    }
+  }
+
   switch() {
     const nav = document.getElementById('navbarNav'),
         menuButton = document.querySelector('.navbar-toggler');
@@ -21,7 +41,7 @@ class Nav extends Component {
 
 
               <div className="col col-md-1">
-                <a className="navbar-brand" href="#">
+                <a id="logo" className="navbar-brand" href="https://www.google.com">
                   <Logo/>
                 </a>
               </div>
@@ -31,23 +51,23 @@ class Nav extends Component {
                 <div className="navbar-collapse" id="navbarNav">
                   <ul className="navbar-nav">
                     <li className="nav-item active">
-                      <a className="nav-link" href="#">Home <span
+                      <a className="nav-link" href="https://www.google.com">Home <span
                           className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#">About</a>
+                      <a className="nav-link" href="https://www.google.com">About</a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#">Team</a>
+                      <a className="nav-link" href="https://www.google.com">Team</a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#">Blog</a>
+                      <a className="nav-link" href="https://www.google.com">Blog</a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#">Services</a>
+                      <a className="nav-link" href="https://www.google.com">Services</a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#">Contact</a>
+                      <a className="nav-link" href="https://www.google.com">Contact</a>
                     </li>
                   </ul>
                   <Social/>
