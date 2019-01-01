@@ -1,9 +1,16 @@
 @import '../../../../index.scss';
 
 * {
-  border-style: solid;
   border-width: 2px;
   
+}
+
+.verticalBar {
+  color: red;
+}
+.authorInfo{
+  color: white;
+  font-size: 14px;
 }
 
 #blog{
@@ -14,18 +21,48 @@
   padding-left: 0px;
   padding-right: 0px;
 }
+.postOne{
+  background-color: black;  
+  align-content: center;
+  width: 400px;
+  height: 120px;
+  background-color: rgba(0,0,0,.5); 
+  position: absolute;
+  left: 100px;
+  top: 100px; 
+}
+
+.carosuel{
+  background-color: rgba(0,0,1,.5);  
+}
+.postInner{
+
+}
+
+.postTitle{
+  font-family: "Arial Black", Gadget, sans-serif; 
+  font-size: 20px;
+  color: white;  
+  font-weight: 800;
+  
+}
+
+
+
+
 #blog2{
   background-image: url("../Blog/AssetsB/post-one.jpg");
-  height: 403px;
+  height: 100vh;
 }
 #blog3{
   background-image: url("../Blog/AssetsB/post-two.jpg");
-  height: 200px;
+  height: 63vh;
 }
 
 #blog4{
   background-image: url("../Blog/AssetsB/post-three.jpg");
-  height: 200px;
+  height: 37vh;
+
 }
 
 
