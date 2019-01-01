@@ -1,27 +1,57 @@
 import React, {Component} from 'react';
 import './Nav.scss';
-import Logo from './Logo/Logo';
 import Hamburger from './Logo/Assets/menu.svg';
 import Social from './Social/Social';
 
+import darkLogo from './Logo/Assets/icon-color.svg';
+import lightLogo from './Logo/Assets/icon-white.svg';
+
 class Nav extends Component {
+  constructor(props) {
+    super(props);
+    this.logo = {
+      light: lightLogo,
+      dark: darkLogo,
+    };
+    this.state = {
+      bg: 'light',
+      logo: this.logo['dark'],
+    };
+  }
+
   componentDidMount() {
     this.positionTracker();
   }
 
-  positionTracker(){
-    const logo = document.getElementById('logo'),
-        sections = document.querySelectorAll('[data-bg]');
-
-    console.log('tracking');
-    console.log(sections);
-
+  positionTracker() {
     window.addEventListener('scroll', e => {
-      console.log('fired!');
-    })
+      this.switchLogo();
+    });
 
-    if (document.body.contains(logo)){
-      console.log(logo.offsetTop);
+  }
+
+  switchLogo() {
+    const logo = document.getElementById('logo'),
+        sections = document.querySelectorAll('[data-section]'),
+        scrollPosition = Number(document.documentElement.scrollTop) + 15;
+
+    if (document.body.contains(logo)) {
+      let selected = null;
+
+      for (let section of sections) {
+        if (scrollPosition > section.offsetTop) {
+          selected = section;
+        }
+      }
+
+      if (selected !== null && selected.dataset.bg !== this.state.bg) {
+
+        this.setState({
+          bg: selected.dataset.bg,
+          logo: this.logo[selected.dataset.bg === 'light' ? 'dark' : 'light'],
+        });
+      }
+
     }
   }
 
@@ -41,8 +71,9 @@ class Nav extends Component {
 
 
               <div className="col col-md-1">
-                <a id="logo" className="navbar-brand" href="https://www.google.com">
-                  <Logo/>
+                <a className="navbar-brand" href="https://www.google.com">
+                  <img id="logo" src={this.state.logo}
+                       alt="ledkyb studios logo"/>
                 </a>
               </div>
 
@@ -51,23 +82,29 @@ class Nav extends Component {
                 <div className="navbar-collapse" id="navbarNav">
                   <ul className="navbar-nav">
                     <li className="nav-item active">
-                      <a className="nav-link" href="https://www.google.com">Home <span
+                      <a className="nav-link"
+                         href="https://www.google.com">Home <span
                           className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="https://www.google.com">About</a>
+                      <a className="nav-link"
+                         href="https://www.google.com">About</a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="https://www.google.com">Team</a>
+                      <a className="nav-link"
+                         href="https://www.google.com">Team</a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="https://www.google.com">Blog</a>
+                      <a className="nav-link"
+                         href="https://www.google.com">Blog</a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="https://www.google.com">Services</a>
+                      <a className="nav-link"
+                         href="https://www.google.com">Services</a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="https://www.google.com">Contact</a>
+                      <a className="nav-link"
+                         href="https://www.google.com">Contact</a>
                     </li>
                   </ul>
                   <Social/>

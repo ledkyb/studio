@@ -1,12 +1,11 @@
 @import "../../../index.scss";
 
 .nav {
-  &.container-fluid {
-    background-color: rgba(255,255,255,0.95);
+  .white-logo {
+    filter: brightness(100);
   }
 
   nav {
-    background-color: rgba(255,255,255,0.95);
     text-transform: lowercase;
     z-index: 10;
     padding-top: 20px;
