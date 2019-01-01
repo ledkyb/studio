@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 // components
 import Nav from './components/Nav/Nav';
-import Scroller from './components/Scroller/Scroller';
 import Tracker from './components/Tracker/Tracker';
 import Mobile from './components/Mobile/Mobile';
 
