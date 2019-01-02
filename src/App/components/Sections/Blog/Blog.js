@@ -11,33 +11,33 @@ class Blog extends Component {
   render(){
     return(
       <div id="blog" className="container" >
-        <div id="carouselExampleControls" /* class="carousel slide" */ data-ride="carousel">              
+        <div id="carouselExampleControls"  class="carousel  slide " data-ride="carousel">              
           <div class="carousel-inner">
 
             {/* slide one */}
             <div class="carousel-item active">
               <div class="row">
-                <div id="blog2" class="col-7 ">                  
+                <div class="col-7 blog1 ">                  
                   <div  class="container postOne ">
                     <section class="postInner">
-                    <h1 class="postTitle">POST TITLE, LIMITED TO TWO LINES OF TEXT post1 </h1>
+                    <h1 class="postTitle1">POST TITLE, LIMITED TO TWO LINES OF TEXT p1 </h1>
                     <p class="lead authorInfo">John Doe <span class="verticalBar">|</span> Category <span class="verticalBar">|</span> November 22nd,2018 </p>
                     </section>
                   </div>                        
                 </div>
-                <div id="blog1" class="col-5 ">
+                <div class="col-5 sharedBlogSection ">
                   <div id="blog3" class="col-12 "> 
-                    <div  class="container postOne ">
+                    <div  class="container postTwo ">
                       <section class="postInner">
-                      <h1 class="postTitle">POST TITLE, LIMITED TO TWO LINES OF TEXT post 2</h1>
+                      <h1 class="postTitle2">POST TITLE, LIMITED TO TWO LINES OF TEXT p2</h1>
                       <p class="lead authorInfo">John Doe <span class="verticalBar">|</span> Category <span class="verticalBar">|</span> November 22nd,2018 </p>
                       </section>
                     </div>
                   </div>
                   <div id="blog4" class="col-12 "> 
-                    <div  class="container postOne ">
+                    <div  class="container postThree ">
                       <section class="postInner">
-                      <h1 class="postTitle">POST TITLE, LIMITED TO TWO LINES OF TEXT post3</h1>
+                      <h1 class="postTitle3">POST TITLE, LIMITED TO TWO LINES OF TEXT p3</h1>
                       <p class="lead authorInfo">John Doe <span class="verticalBar">|</span> Category <span class="verticalBar">|</span> November 22nd,2018 </p>
                       </section>
                     </div>
@@ -50,27 +50,27 @@ class Blog extends Component {
             {/* silde two */}
             <div class="carousel-item">
               <div class="row">
-                <div id="blog2" class="col-7 ">                               
+                <div class="col-7 blog1 ">                               
                   <div  class="container postOne ">
                     <section class="postInner">
-                    <h1 class="postTitle">POST TITLE, LIMITED TO TWO LINES OF TEXT p1</h1>
+                    <h1 class="postTitle1">POST TITLE, LIMITED TO TWO LINES OF TEXT pa</h1>
                     <p class="lead authorInfo">John Doe <span class="verticalBar">|</span> Category <span class="verticalBar">|</span> November 22nd,2018 </p>
                     </section>
                   </div>                        
                 </div>
-                <div id="blog1" class="col-5 ">
+                <div class="col-5 sharedBlogSection ">
                   <div id="blog3" class="col-12 "> 
-                    <div  class="container postOne ">
+                    <div  class="container postTwo ">
                       <section class="postInner">
-                      <h1 class="postTitle">POST TITLE, LIMITED TO TWO LINES OF TEXT p2</h1>
+                      <h1 class="postTitle2">POST TITLE, LIMITED TO TWO LINES OF TEXT pb</h1>
                       <p class="lead authorInfo">John Doe <span class="verticalBar">|</span> Category <span class="verticalBar">|</span> November 22nd,2018 </p>
                       </section>
                     </div>
                   </div>
                   <div id="blog4" class="col-12 "> 
-                    <div  class="container postOne ">
+                    <div  class="container postThree ">
                       <section class="postInner">
-                      <h1 class="postTitle">POST TITLE, LIMITED TO TWO LINES OF TEXT p3</h1>
+                      <h1 class="postTitle3">POST TITLE, LIMITED TO TWO LINES OF TEXT pc</h1>
                       <p class="lead authorInfo">John Doe <span class="verticalBar">|</span> Category <span class="verticalBar">|</span> November 22nd,2018 </p>
                       </section>
                     </div>
@@ -82,27 +82,27 @@ class Blog extends Component {
             {/* slide three */}
             <div class="carousel-item">
               <div class="row">
-                <div id="blog2" class="col-7 ">                              
+                <div class="col-7 blog1 ">                              
                   <div  class="container postOne ">
                     <section class="postInner">
-                    <h1 class="postTitle">POST TITLE, LIMITED TO TWO LINES OF TEXT po1</h1>
+                    <h1 class="postTitle1">POST TITLE, LIMITED TO TWO LINES OF TEXT 1</h1>
                     <p class="lead authorInfo">John Doe <span class="verticalBar">|</span> Category <span class="verticalBar">|</span> November 22nd,2018 </p>
                     </section>
                   </div>                 
                 </div>
-                <div id="blog1" class="col-5 ">
+                <div class="col-5 sharedBlogSection ">
                   <div id="blog3" class="col-12 "> 
-                    <div  class="container postOne ">
+                    <div  class="container postTwo ">
                       <section class="postInner">
-                      <h1 class="postTitle">POST TITLE, LIMITED TO TWO LINES OF TEXT po2</h1>
+                      <h1 class="postTitle2">POST TITLE, LIMITED TO TWO LINES OF TEXT 2</h1>
                       <p class="lead authorInfo">John Doe <span class="verticalBar">|</span> Category <span class="verticalBar">|</span> November 22nd,2018 </p>
                       </section>
                     </div>
                   </div>
                   <div id="blog4" class="col-12 "> 
-                    <div  class="container postOne ">
+                    <div  class="container postThree ">
                       <section class="postInner">
-                      <h1 class="postTitle">POST TITLE, LIMITED TO TWO LINES OF TEXT po3</h1>
+                      <h1 class="postTitle3">POST TITLE, LIMITED TO TWO LINES OF TEXT 3</h1>
                       <p class="lead authorInfo">John Doe <span class="verticalBar">|</span> Category <span class="verticalBar">|</span> November 22nd,2018 </p>
                       </section>
                     </div>
