@@ -1,0 +1,28 @@
+@import '../../../../index.scss';
+
+#contact {
+  background-image: url("Assets/Background/cloud-3.png");
+  background-color: #fff;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  // background-size: 2000px;
+  height: 80vh;
+}
+
+h1 {
+  color: #fff;
+}
+
+.header {
+  background-color: $orange;
+  height: 30%;
+}
+
+.form {
+  background-color: #fff;
+  height: 50%;
+}
+
+.footer {
+  height: 20%;
+}
