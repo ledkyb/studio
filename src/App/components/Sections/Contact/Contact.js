@@ -11,7 +11,7 @@ class Contact extends Component {
 
     render(){
         return(
-          <section id="contact" className="row mb-5 mb-lg-0">
+          <section id="contact" className="row">
               <div className="background container">
 
                   <div className="header row text-center ">

@@ -103,6 +103,9 @@
 body {
   width: 100vw;
   overflow-x: hidden;
+  @media screen and (max-width: 990px) {
+    padding-bottom: 60px;
+  }
 }
 
 .fit {
