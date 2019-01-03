@@ -20,8 +20,8 @@ class Blog extends Component {
                 <div class="col-7 blog1 ">                  
                   <div  class="container postOne ">
                     <section class="postInner">
-                    <h1 class="postTitle1">POST TITLE, LIMITED TO TWO LINES OF TEXT p1 </h1>
-                    <p class="lead authorInfo">John Doe <span class="verticalBar">|</span> Category <span class="verticalBar">|</span> November 22nd,2018 </p>
+                      <a href="#"  class="postTitle1">POST TITLE, LIMITED TO TWO LINES OF TEXT p1 </a>
+                      <p class="lead authorInfo">John Doe <span class="verticalBar">|</span> Category <span class="verticalBar">|</span> November 22nd,2018 </p>
                     </section>
                   </div>                        
                 </div>
@@ -29,16 +29,16 @@ class Blog extends Component {
                   <div id="blog3" class="col-12 "> 
                     <div  class="container postTwo ">
                       <section class="postInner">
-                      <h1 class="postTitle2">POST TITLE, LIMITED TO TWO LINES OF TEXT p2</h1>
-                      <p class="lead authorInfo">John Doe <span class="verticalBar">|</span> Category <span class="verticalBar">|</span> November 22nd,2018 </p>
+                        <a href="#"  class="postTitle2">POST TITLE, LIMITED TO TWO LINES OF TEXT p2</a>
+                        <p class="lead authorInfo">John Doe <span class="verticalBar">|</span> Category <span class="verticalBar">|</span> November 22nd,2018 </p>
                       </section>
                     </div>
                   </div>
                   <div id="blog4" class="col-12 "> 
                     <div  class="container postThree ">
                       <section class="postInner">
-                      <h1 class="postTitle3">POST TITLE, LIMITED TO TWO LINES OF TEXT p3</h1>
-                      <p class="lead authorInfo">John Doe <span class="verticalBar">|</span> Category <span class="verticalBar">|</span> November 22nd,2018 </p>
+                        <a href="#"  class="postTitle3">POST TITLE, LIMITED TO TWO LINES OF TEXT p3</a>
+                        <p class="lead authorInfo">John Doe <span class="verticalBar">|</span> Category <span class="verticalBar">|</span> November 22nd,2018 </p>
                       </section>
                     </div>
                   </div>                  
@@ -53,8 +53,8 @@ class Blog extends Component {
                 <div class="col-7 blog1 ">                               
                   <div  class="container postOne ">
                     <section class="postInner">
-                    <h1 class="postTitle1">POST TITLE, LIMITED TO TWO LINES OF TEXT pa</h1>
-                    <p class="lead authorInfo">John Doe <span class="verticalBar">|</span> Category <span class="verticalBar">|</span> November 22nd,2018 </p>
+                      <a href="#"  class="postTitle1">POST TITLE, LIMITED TO TWO LINES OF TEXT pa</a>
+                      <p class="lead authorInfo">John Doe <span class="verticalBar">|</span> Category <span class="verticalBar">|</span> November 22nd,2018 </p>
                     </section>
                   </div>                        
                 </div>
@@ -62,16 +62,16 @@ class Blog extends Component {
                   <div id="blog3" class="col-12 "> 
                     <div  class="container postTwo ">
                       <section class="postInner">
-                      <h1 class="postTitle2">POST TITLE, LIMITED TO TWO LINES OF TEXT pb</h1>
-                      <p class="lead authorInfo">John Doe <span class="verticalBar">|</span> Category <span class="verticalBar">|</span> November 22nd,2018 </p>
+                        <a href="#"  class="postTitle2">POST TITLE, LIMITED TO TWO LINES OF TEXT pb</a>
+                        <p class="lead authorInfo">John Doe <span class="verticalBar">|</span> Category <span class="verticalBar">|</span> November 22nd,2018 </p>
                       </section>
                     </div>
                   </div>
                   <div id="blog4" class="col-12 "> 
                     <div  class="container postThree ">
                       <section class="postInner">
-                      <h1 class="postTitle3">POST TITLE, LIMITED TO TWO LINES OF TEXT pc</h1>
-                      <p class="lead authorInfo">John Doe <span class="verticalBar">|</span> Category <span class="verticalBar">|</span> November 22nd,2018 </p>
+                        <a href="#"  class="postTitle3">POST TITLE, LIMITED TO TWO LINES OF TEXT pc</a>
+                        <p class="lead authorInfo">John Doe <span class="verticalBar">|</span> Category <span class="verticalBar">|</span> November 22nd,2018 </p>
                       </section>
                     </div>
                   </div>                  
@@ -85,8 +85,8 @@ class Blog extends Component {
                 <div class="col-7 blog1 ">                              
                   <div  class="container postOne ">
                     <section class="postInner">
-                    <h1 class="postTitle1">POST TITLE, LIMITED TO TWO LINES OF TEXT 1</h1>
-                    <p class="lead authorInfo">John Doe <span class="verticalBar">|</span> Category <span class="verticalBar">|</span> November 22nd,2018 </p>
+                      <a href="#" class="postTitle1">POST TITLE, LIMITED TO TWO LINES OF TEXT 1</a>
+                      <p class="lead authorInfo">John Doe <span class="verticalBar">|</span> Category <span class="verticalBar">|</span> November 22nd,2018 </p>
                     </section>
                   </div>                 
                 </div>
@@ -94,16 +94,16 @@ class Blog extends Component {
                   <div id="blog3" class="col-12 "> 
                     <div  class="container postTwo ">
                       <section class="postInner">
-                      <h1 class="postTitle2">POST TITLE, LIMITED TO TWO LINES OF TEXT 2</h1>
-                      <p class="lead authorInfo">John Doe <span class="verticalBar">|</span> Category <span class="verticalBar">|</span> November 22nd,2018 </p>
+                        <a href="#" class="postTitle2">POST TITLE, LIMITED TO TWO LINES OF TEXT 2</a>
+                        <p class="lead authorInfo">John Doe <span class="verticalBar">|</span> Category <span class="verticalBar">|</span> November 22nd,2018 </p>
                       </section>
                     </div>
                   </div>
                   <div id="blog4" class="col-12 "> 
                     <div  class="container postThree ">
                       <section class="postInner">
-                      <h1 class="postTitle3">POST TITLE, LIMITED TO TWO LINES OF TEXT 3</h1>
-                      <p class="lead authorInfo">John Doe <span class="verticalBar">|</span> Category <span class="verticalBar">|</span> November 22nd,2018 </p>
+                        <a href="#"  class="postTitle3">POST TITLE, LIMITED TO TWO LINES OF TEXT 3</a>
+                        <p class="lead authorInfo">John Doe <span class="verticalBar">|</span> Category <span class="verticalBar">|</span> November 22nd,2018 </p>
                       </section>
                     </div>
                   </div>                  
