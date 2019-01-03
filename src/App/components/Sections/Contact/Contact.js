@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Footer from '../../Footer/Footer.js';
 import SocialMedia from '../../SocialMedia/SocialMedia.js';
 import './Contact.scss';
