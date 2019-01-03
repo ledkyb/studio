@@ -40,6 +40,9 @@ h1 {
   .headerText, #footer {
     font-size: small;
   }
+  a {
+    color: $orange;
+  }
 }
 
 /* Small devices (tablets, 768px to 991px) */
@@ -50,6 +53,9 @@ h1 {
   //   // background-repeat: no-repeat;
   //   background-size: 75%;
   // }
+  a {
+    color: $orange;
+  }
 }
 
 /* Medium devices (desktops, 992px to 1199px) */
@@ -61,6 +67,9 @@ h1 {
   .header {
     background-color: $orange;
   }
+  a {
+    color: #fff;
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -71,5 +80,8 @@ h1 {
   }
   .header {
     background-color: $orange;
+  }
+  a {
+    color: #fff;
   }
 }
