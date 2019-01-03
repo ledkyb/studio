@@ -4,7 +4,7 @@ import Button from '../Button/Buttons';
 
 const Form = () => {
     return (
-        <div className="form container bg-white py-4">
+        <div className="form container py-4">
             <form>
                 <div className="row">
                     <div className="col-lg-5 offset-lg-1 pr-lg-5 mb-4">
@@ -23,11 +23,11 @@ const Form = () => {
                         </div>
                     </div>
                 </div>
-                <div className="row form-group pr-lg-5">
-                    <div className="col-3 offset-9 col-lg-1 offset-lg-10">
+                <div className="row form-group justify-content-end">
+                    {/*<div className="col-4 col-lg-2 float-right">
                         <Button link="#contact" label="send" />
-                    </div>
-                    {/* <button className="form-control col-3 offset-9 col-lg-1 offset-lg-10 border-all text-color rounded-0">send</button> */}
+                    </div>*/}
+                    <button className="form-control col-3 col-lg-1 col-lg-offset- border-all text-color rounded-0" type="button">send</button>
                 </div>
             </form>
         </div>
