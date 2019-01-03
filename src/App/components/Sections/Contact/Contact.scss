@@ -1,10 +1,5 @@
 @import '../../../../index.scss';
 
-#contact {
-  background-color: #fff;
-  height: 100vh;
-}
-
 h1 {
   font-family: big-john;
   font-size: 1.2rem;
@@ -12,8 +7,11 @@ h1 {
   letter-spacing: 3px;
 }
 
+#contact {
+  height: 100vh;
+}
+
 .header {
-  background-color: #fff;
   height: 30%;
   font-family: avenirbook;
 }
@@ -31,6 +29,9 @@ h1 {
 
 /* Extra small devices (phones, less than 767px) */
 @media (max-width: $screen-xs-max) {
+  a {
+    color: $orange;
+  }
   .background {
     background: url("Assets/Background/cloud-3.png") white bottom -8em left -6em no-repeat;
     background-size: 30em 14em;
@@ -38,19 +39,16 @@ h1 {
   .headerText, #footer {
     font-size: small;
   }
-  a {
-    color: $orange;
-  }
 }
 
 /* Small devices (tablets, 768px to 991px) */
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  a {
+    color: $orange;
+  }
   .background {
     background: url("Assets/Background/cloud-two.png") bottom -2em left 2em no-repeat, url("Assets/Background/cloud-3.png") white bottom -8em left -10em no-repeat;
     background-size: 25em 8em, 30em 14em;
-  }
-  a {
-    color: $orange;
   }
 }
 
@@ -60,15 +58,15 @@ h1 {
     color: #fff;
     font-size: 2rem;
   }
+  a {
+    color: #fff;
+  }
   .background {
     background: url("Assets/Background/cloud-one.png") bottom -1em left 27em no-repeat, url("Assets/Background/cloud-two.png") bottom 0em left 2em no-repeat, url("Assets/Background/cloud-3.png") white bottom -6em left -15em no-repeat;
     background-size: 8em 4em, 30em 10em, 40em 20em;
   }
   .header {
     background-color: $orange;
-  }
-  a {
-    color: #fff;
   }
 }
 
@@ -78,14 +76,17 @@ h1 {
     color: #fff;
     font-size: 2rem;
   }
+  a {
+    color: #fff;
+  }
   .background {
     background: url("Assets/Background/cloud-one.png") bottom -2em left 30em no-repeat, url("Assets/Background/cloud-two.png") bottom 0em left 4em no-repeat, url("Assets/Background/cloud-3.png") bottom -4em left -20em no-repeat, url("Assets/Background/cloud-3.png") white bottom -9em left -10em no-repeat;
     background-size: 10em 5em, 30em 10em, 40em 20em, 40em 20em;
   }
   .header {
     background-color: $orange;
+    height: 30%;
+    font-family: avenirbook;
   }
-  a {
-    color: #fff;
   }
 }
