@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Footer from '../../Footer/Footer';
-import SocialMedia from '../../SocialMedia/SocialMedia';
+import Footer from '../../Footer/Footer.js';
+import SocialMedia from '../../SocialMedia/SocialMedia.js';
 import Form from '../../Form/Form';
 import './Contact.scss';
 

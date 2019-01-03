@@ -9,9 +9,9 @@ class Mobile extends Component {
     return (
         <div id="mobileMenu" className="container-fluid">
           <div className="row">
-            <div className="col-4 mobile-menu-icon" onClick={e => { window.location.href = '#home'}}><img src={homeIcon} /></div>
-            <div className="col-4 mobile-menu-icon" onClick={e => { window.location.href = 'mailto:support@ledkyb.com'}}><img src={emailIcon} /></div>
-            <div className="col-4 mobile-menu-icon" onClick={e => { window.location.href = 'tel:9094365446'}}><img src={phoneIcon} /></div>
+            <div className="col-4 mobile-menu-icon" onClick={e => { window.location.href = '#home'}}><img src={homeIcon} alt="mobile home icon" /></div>
+            <div className="col-4 mobile-menu-icon" onClick={e => { window.location.href = 'mailto:support@ledkyb.com'}}><img src={emailIcon} alt="mobile email icon" /></div>
+            <div className="col-4 mobile-menu-icon" onClick={e => { window.location.href = 'tel:9094365446'}}><img src={phoneIcon} alt="mobile phone icon"/></div>
           </div>
         </div>
     );
