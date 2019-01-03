@@ -35,7 +35,7 @@ class Contact extends Component {
                       <div className="col-12 mb-5 col-lg-4">
                           <SocialMedia />
                       </div>
-                      <div className="col-12 col-lg-6 order-lg-first">
+                      <div className="col-12 col-lg-6 order-lg-first align-self-end">
                           <Footer />
                       </div>
                   </div>
