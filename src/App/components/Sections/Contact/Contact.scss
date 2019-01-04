@@ -12,7 +12,7 @@ h1 {
 }
 
 .header {
-  height: 30%;
+  height: 25%;
   font-family: avenirbook;
 }
 
@@ -21,7 +21,7 @@ h1 {
 }
 
 .footer {
-  height: 20%;
+  height: 25%;
 }
 
 
@@ -67,6 +67,13 @@ h1 {
   }
   .header {
     background-color: $orange;
+    height: 30%;
+  }
+  .form {
+    height: 60%;
+  }
+  .footer {
+    height: 10%;
   }
 }
 
@@ -86,7 +93,11 @@ h1 {
   .header {
     background-color: $orange;
     height: 30%;
-    font-family: avenirbook;
   }
+  .form {
+    height: 60%;
+  }
+  .footer {
+    height: 10%;
   }
 }
