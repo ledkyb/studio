@@ -1,0 +1,46 @@
+.single-user-detail{
+  .single-user-detail-text{
+    width: 90%;
+    h2{
+      font-size: 3.25rem;
+      font-family: big-john, sans-serif;
+      color: black;
+      word-wrap: break-word;
+      @media screen and (max-width: 991px){
+        font-size: 1.75rem;
+      }
+    }
+    h3{
+      font-size: 2rem;
+      font-family: big-john, sans-serif;
+      @media screen and (max-width: 991px){
+        font-size: 1rem;
+      }
+    }
+    p{
+      font-size: 1.50rem;
+      font-family: avenirbook, sans-serif;
+      @media screen and (max-width: 991px){
+        font-size: .95rem;
+      }
+    }
+    h4{
+      font-family: avenirheavy, sans-serif;
+      @media screen and (max-width: 991px){
+        font-size: .8rem;
+      }
+    }
+  }
+
+  .single-user-detail-exit{
+    font-family: avenirheavy, sans-serif;
+    margin: 0;
+    font-size: 2.5rem;
+    &:hover{
+      cursor: pointer;
+    }
+    @media screen and (max-width: 991px){
+      font-size: 1rem;
+    }
+  }
+}
