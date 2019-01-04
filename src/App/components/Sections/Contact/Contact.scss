@@ -33,8 +33,8 @@ h1 {
     color: $orange;
   }
   .background {
-    background: url("Assets/Background/cloud-3.png") white bottom -8em left -6em no-repeat;
-    background-size: 30em 14em;
+    background: url("Assets/Background/cloud-3.png") bottom -7em left -10em no-repeat, url("Assets/Background/cloud-3.png") white bottom -9em left 1em no-repeat;
+    background-size: 30em 15em, 30em 15em;
   }
   .headerText, #footer {
     font-size: small;
@@ -47,7 +47,7 @@ h1 {
     color: $orange;
   }
   .background {
-    background: url("Assets/Background/cloud-two.png") bottom -2em left 2em no-repeat, url("Assets/Background/cloud-3.png") white bottom -8em left -10em no-repeat;
+    background: url("Assets/Background/cloud-two.png") bottom -1em left 10em no-repeat, url("Assets/Background/cloud-3.png") white bottom -5em left -10em no-repeat;
     background-size: 25em 8em, 30em 14em;
   }
 }
