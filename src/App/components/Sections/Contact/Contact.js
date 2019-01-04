@@ -14,30 +14,32 @@ class Contact extends Component {
           <section id="contact" className="row">
               <div className="background container">
 
-                  <div className="header row text-center">
-                      <div className="col-12 align-self-end my-lg-auto">
-                          <h1 className="text-uppercase">
-                              Start Your Project
-                          </h1>
-                          <span className="headerText">
-                              Rather send us an email? Send it to <a href="mailto:support@ledkyb.com?Subject=I%20have%20a%20project">support@ledkyb.com</a>.
-                          </span>
+                      <div className="header row text-center">
+                          <div className="col-12 align-self-end align-self-lg-center">
+                              <h1 className="text-uppercase">
+                                  Start Your Project
+                              </h1>
+                              <span className="headerText">
+                                  Rather send us an email? Send it to <a href="mailto:support@ledkyb.com?Subject=I%20have%20a%20project">support@ledkyb.com</a>.
+                              </span>
+                          </div>
                       </div>
-                  </div>
 
-                  <div className="form row">
-                      <div className="container my-auto">
+                  <div className="container">
+
+                      <div className="formContainer row align-items-center">
                           <Form />
                       </div>
-                  </div>
 
-                  <div className="footer row justify-content-between align-items-md-end">
-                      <div className="col-12 align-self-start col-lg-4 mb-lg-0 align-self-lg-center">
-                          <SocialMedia />
+                      <div className="footer row justify-content-between align-items-md-end">
+                          <div className="col-12 align-self-start col-lg-4 align-self-lg-center">
+                              <SocialMedia />
+                          </div>
+                          <div className="col-12 align-self-end col-lg-6 order-lg-first align-self-lg-center">
+                              <Footer />
+                          </div>
                       </div>
-                      <div className="col-12 align-self-end col-lg-6 ml-lg-5 order-lg-first align-self-lg-center">
-                          <Footer />
-                      </div>
+
                   </div>
               </div>
           </section>
