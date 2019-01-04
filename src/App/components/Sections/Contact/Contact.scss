@@ -12,16 +12,16 @@ h1 {
 }
 
 .header {
-  height: 25%;
+  height: 20vh;
   font-family: avenirbook;
 }
 
 .form {
-  height: 50%;
+  height: 45vh;
 }
 
 .footer {
-  height: 25%;
+  height: calc(35vh - 60px);
 }
 
 
@@ -70,16 +70,16 @@ h1 {
   }
   .header {
     background-color: $orange;
-    height: 30%;
+    height: 30vh;
   }
   .headerText {
     font-size: 1.2em;
   }
   .form {
-    height: 60%;
+    height: 60vh;
   }
   .footer {
-    height: 10%;
+    height: 10vh;
   }
 }
 
@@ -101,15 +101,15 @@ h1 {
   }
   .header {
     background-color: $orange;
-    height: 30%;
+    height: 30vh;
   }
   .headerText {
     font-size: 1.3em;
   }
   .form {
-    height: 60%;
+    height: 60vh;
   }
   .footer {
-    height: 10%;
+    height: 10vh;
   }
 }
