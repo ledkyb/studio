@@ -1,0 +1,83 @@
+@import '../../../index.scss';
+
+.form {
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus {
+        transition: background-color 5000s ease-in-out 0s;
+    }
+
+    label {
+        font-family: 'avenirheavy', sans-serif;
+    }
+
+    input:focus {
+        box-shadow: none;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    textarea:focus {
+        box-shadow: none;
+    }
+
+    .text-color {
+        color: black;
+    }
+
+    .border-bot {
+        border-bottom: 1px solid black;
+    }
+
+    .border-all {
+        border: 1px solid black;
+    }
+
+    // Modifies CSS for Button Component
+    a.button {
+        width: fit-content;
+        margin: 0;
+        border: 1px solid black;
+        color: black;
+        font-family: 'avenirheavy', sans-serif;
+
+        &:hover {
+            text-decoration: none;
+            color: black;
+            background: #fff;
+        }
+    }
+
+}
+
+@media (min-width: 992px) {
+    .form {
+        .text-color {
+            color: #EF3C24;
+        }
+
+        .border-bot {
+            border-bottom: 1px solid #EF3C24;
+        }
+
+        .border-all {
+            border: 1px solid #EF3C24
+        }
+
+        // Modifies CSS for Button Component            
+        a.button {
+            border: 1px solid #EF3C24;
+            color: #EF3C24;
+            font-family: inherit;
+    
+            &:hover {
+                color: #fff;
+                background: $orange;
+            }
+        }
+        
+    }
+}

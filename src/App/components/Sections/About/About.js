@@ -7,7 +7,7 @@ class About extends Component {
 
     render(){
         return(
-            <div className="container" style={{background: 'pink', height: '150px'}}>
+            <div className="container" style={{background: 'pink', height: '150px'}} data-bg="dark" data-section="about">
                 <p>About</p>
             </div>
         )

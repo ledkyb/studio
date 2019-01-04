@@ -1,0 +1,166 @@
+@import "../../../../index.scss";
+
+#services {
+
+  .section-title {
+    font-size: 3.1rem;
+
+    span {
+
+      &:first-child {
+        color: $orange;
+      }
+
+      font-size: 1.45rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 2.1rem;
+      padding-top: 40px;
+    }
+  }
+
+  .services-art-element {
+
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  .services-list {
+
+    .services-list-item {
+      font-family: avenirbook, sans-serif;
+      font-size: 1.65rem;
+      list-style-type: none;
+    }
+
+    ul {
+      padding-left: 30px;
+
+      &:first-child {
+        margin-bottom: 0;
+      }
+
+      &:nth-child(2) {
+        padding-left: 2.75rem;
+      }
+    }
+
+  }
+
+  .services-art-element-mobile {
+    img {
+      display: none;
+    }
+
+    @media screen and (max-width: 991px) {
+      padding-top: 3rem;
+    }
+  }
+
+
+  @media screen and (max-width: 425px) {
+    .section-title {
+      padding-top: 2rem;
+    }
+
+    .services-list {
+      .col-md-6:first-child {
+        margin: 0;
+      }
+
+      .col-md-6:nth-child(2) {
+        padding-left: 15px;
+      }
+
+      .diamond {
+        top: 0.80rem;
+        width: 7px;
+        height: 7px;
+        left: -25px;
+      }
+
+      .services-list-item {
+        font-family: avenirbook, sans-serif;
+        font-size: .9rem;
+        list-style-type: none;
+      }
+    }
+
+    .services-art-element-mobile {
+      img {
+        display: block;
+        position: absolute;
+        bottom: -130px;
+        width: 75%;
+        left: -70px;
+        z-index: -1;
+
+        &:first-child {
+          bottom: -110px;
+          width: 125%;
+          left: -15px;
+          -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+          z-index: 0;
+        }
+      }
+
+    }
+
+    .section-title span {
+      font-size: 1.0rem;
+      padding: 15px;
+
+      &:nth-child(2) {
+        padding: 0;
+      }
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+    }
+
+  }
+
+
+  /*@keyframes cloud-3-animate {
+    from {right: 180px;
+          top: 175px;}
+    to {right: -9999px; top: 120px;}
+  }*/
+  @keyframes cloud-3-animate {
+    0% {
+      right: 180px;
+      top: 175px;
+    }
+    75% {
+      right: 9999px;
+      top: 120px;
+    }
+    100% {
+      display: none;
+    }
+  }
+
+  /*@keyframes cloud-two-animate {
+    from {right: 40px;
+          bottom: 60px;}
+    to {right: -9999px; top: 120px;}
+  }*/
+  @keyframes cloud-two-animate {
+    0% {
+      right: 40px;
+      bottom: 60px;
+    }
+    75% {
+      right: -9999px;
+      top: 120px;
+    }
+    100% {
+      display: none;
+    }
+  }
+
+}
