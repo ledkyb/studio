@@ -1,6 +1,5 @@
 import React from 'react';
 import './Form.scss';
-import Button from '../Button/Buttons';
 
 const Form = () => {
     return (
@@ -24,7 +23,7 @@ const Form = () => {
                     </div>
                 </div>
                 <div className="row form-group justify-content-end">
-                    <button className="form-control col-3 col-lg-2 border-all text-color rounded-0" type="button">send</button>
+                    <button className="button form-control col-3 col-lg-2 border-all text-color rounded-0" type="button">send</button>
                 </div>
             </form>
         </div>
