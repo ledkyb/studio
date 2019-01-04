@@ -64,10 +64,6 @@ class About extends Component {
                   </div>
                 </div>
 
-
-
-
-
               </div>
             </div>
           </section>
