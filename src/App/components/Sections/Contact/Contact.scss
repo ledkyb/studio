@@ -2,7 +2,7 @@
 
 h1 {
   font-family: big-john;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: 900;
   letter-spacing: 3px;
 }
@@ -72,6 +72,9 @@ h1 {
     background-color: $orange;
     height: 30%;
   }
+  .headerText {
+    font-size: 1.2em;
+  }
   .form {
     height: 60%;
   }
@@ -84,7 +87,7 @@ h1 {
 @media (min-width: $screen-lg-min) {
   h1 {
     color: #fff;
-    font-size: 2rem;
+    font-size: 3rem;
   }
   a {
     color: #fff;
@@ -99,6 +102,9 @@ h1 {
   .header {
     background-color: $orange;
     height: 30%;
+  }
+  .headerText {
+    font-size: 1.3em;
   }
   .form {
     height: 60%;
