@@ -8,7 +8,7 @@ class Footer extends Component {
 
     render(){
         return(
-            <div id="footer" className="container align-self-center text-center">
+            <div id="footer">
                 © 2018 Ledkyb Studios, LLC. All Rights Reserved.
             </div>
         )
