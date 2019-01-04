@@ -2,8 +2,21 @@
 
 #about {
   background: $orange;
-  padding: 0;
 
+
+  .content-container {
+    max-width: 550px;
+
+    @media screen and (max-width: 991.98px){
+    /*  max-width: 720px;*/
+      float: none !important;
+    }
+
+    @media screen and (max-width: 767px){
+     max-width: 550px;
+    }
+
+  }
 
   .about-title {
     font-size: 2.0rem;
@@ -14,13 +27,22 @@
     font-size: 1.3rem;
     background: $orange;
 
+
   }
 
 
   .about-content {
     font-size: 1.25rem;
     color: white;
+
+    p {
+      padding-top: 1.0rem;
+    }
+
   }
+
+
+
 
   .about-list {
 
@@ -54,8 +76,9 @@
 
 
   }
-
 }
+
+
 
 @media screen and (min-width: 992px) {
   #about {
@@ -66,11 +89,22 @@
       font-size: 2.5rem;
     }
 
+    .desktop-right {
+      padding: 2.5rem 2.0rem 1.0rem 1.0rem;
+    }
+
+    .desktop-left {
+      padding-left: 3.5rem;
+    }
+
     .about-content {
       background: none;
       color: $black;
-      padding: 2.5rem 1.5rem;
       font-size: 1.3rem;
+
+      p {
+        padding-top: 2.5rem;
+      }
     }
 
     .about-list {
@@ -82,6 +116,9 @@
         width: 10px;
         top: 1.25rem;
         left: -25px;
+      }
+      .about-li-top {
+        padding-bottom: 1.0rem;
       }
     }
 
