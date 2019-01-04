@@ -32,10 +32,10 @@ class Contact extends Component {
                   </div>
 
                   <div className="footer row justify-content-between align-items-md-end">
-                      <div className="col-12 mb-5 col-lg-4">
+                      <div className="col-12 align-self-start col-lg-4 mb-lg-0 align-self-lg-center">
                           <SocialMedia />
                       </div>
-                      <div className="col-12 col-lg-6 order-lg-first align-self-end">
+                      <div className="col-12 align-self-end col-lg-6 ml-lg-5 order-lg-first align-self-lg-center">
                           <Footer />
                       </div>
                   </div>
