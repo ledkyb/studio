@@ -67,7 +67,7 @@ class Form extends Component {
           </div>
           <div className="row form-group pr-lg-5 pt-lg-2">
             <div className="ml-auto pr-lg-5">
-              <div onClick={this.submit}>
+              <div className="send-btn" onClick={this.submit}>
                 <Button link="#contact" label="send" />
               </div>
             </div>
