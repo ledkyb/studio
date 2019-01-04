@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Form.scss';
+import Button from '../Button/Buttons';
 
 class Form extends Component {
   state = {
@@ -36,11 +37,11 @@ class Form extends Component {
 
   render() {
     return (
-      <div className="form container bg-white py-4">
+      <div className="form container bg-transparent">
         <form>
           <div className="row">
             <div className="col-lg-5 offset-lg-1 pr-lg-5 mb-4">
-              <div className="row form-group border-bot mb-lg-4">
+              <div className="row form-group border-bot mb-lg-5">
                 <label
                   className="col-2 col-sm-1 col-lg-2 my-0 p-0 pt-2 text-color"
                   htmlFor="name">Name</label>
