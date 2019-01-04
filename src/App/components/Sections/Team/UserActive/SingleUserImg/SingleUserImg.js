@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
-import { TimelineLite } from 'gsap';  
 
 import './SingleUserImg.scss';
 
 //components
 import ScrollBtn from '../../ScrollBtn/ScrollBtn';
 
+//Scroll Animation
+import { ScrollAnim } from '../../ScrollAnim/ScrollAnim';
+
 class SingleUserImg extends Component{
   constructor(props){
     super(props);
 
+    this.scrollAnim = null;
     this.imgElement = null;
-    this.animScrollDown = null; 
-    this.animScrollRight = null; 
-    this.animScrollUp = null;
-    this.animScrollLeft = null;
 
     this.state = {
       isMobile: false
@@ -24,7 +23,12 @@ class SingleUserImg extends Component{
   componentDidMount(){
     this.checkIfMobile();
     window.addEventListener('resize', this.checkIfMobile);
-    this.initScrollAnim();
+    this.scrollAnim = new ScrollAnim(
+      this.imgElement, 
+      () => this.props.onPrev(this.props.user), 
+      () => this.props.onNext(this.props.user)
+    );
+    this.scrollAnim.initScrollAnim();
   }
 
   checkIfMobile = () => {
@@ -39,79 +43,26 @@ class SingleUserImg extends Component{
     }
   }
 
-  //Initialize scrolling animations
-  initScrollAnim = () => {
-    this.animScrollDown = new TimelineLite({ 
-      paused:true,
-      onComplete: () => {
-        this.animScrollDown.restart();
-        this.animScrollDown.pause();
-      }
-    })
-    .to(this.imgElement, 0.5, {y: -75, opacity: 0})
-    .call(() => this.props.onNext(this.props.user))
-    .to(this.imgElement, 0, {y: 75})
-    .to(this.imgElement, 0.5, {y: 0, opacity: 1});
-
-    this.animScrollLeft = new TimelineLite({
-      paused: true,
-      onComplete: () => {
-        this.animScrollLeft.restart();
-        this.animScrollLeft.pause();
-      }
-    })
-    .to(this.imgElement, 0.5, {x: -35, opacity: 0})
-    .call(() => this.props.onNext(this.props.user))
-    .to(this.imgElement, 0, {x: 35})
-    .to(this.imgElement, 0.5, {x: 0, opacity: 1});
-
-    this.animScrollUp = new TimelineLite({ 
-      paused:true,
-      onComplete: () => {
-        this.animScrollUp.restart();
-        this.animScrollUp.pause();
-      }
-    })
-    .to(this.imgElement, 0.5, {y: 75, opacity: 0})
-    .call(() => this.props.onPrev(this.props.user))
-    .to(this.imgElement, 0, {y: -75})
-    .to(this.imgElement, 0.5, {y: 0, opacity: 1});
-
-    this.animScrollRight = new TimelineLite({
-      paused: true,
-      onComplete: () => {
-        this.animScrollRight.restart();
-        this.animScrollRight.pause();
-      }
-    })
-    .to(this.imgElement, 0.5, {x: 35, opacity: 0})
-    .call(() => this.props.onPrev(this.props.user))
-    .to(this.imgElement, 0, {x: -35})
-    .to(this.imgElement, 0.5, {x: 0, opacity: 1});
-  }
-
   //Checks for mobile, active anims & current
   //position to determine which animation to play
   handleAnimScrollNext = () => {
     const endOfList = this.props.endOfNext;
-    const checkActiveAnim = (!this.animScrollDown.isActive() && !this.animScrollUp.isActive() && !this.animScrollLeft.isActive() && !this.animScrollRight.isActive());
-    if(checkActiveAnim && !endOfList){
+    if(this.scrollAnim.checkActiveAnim && !endOfList){
       if(this.state.isMobile){
-        this.animScrollLeft.play();
+        this.scrollAnim.playLeft();
       } else {
-        this.animScrollDown.play();
+        this.scrollAnim.playDown();
       }
     }
   }
 
   handleAnimScrollPrev = () => {
     const startOfList = this.props.endOfPrev;
-    const checkActiveAnim = (!this.animScrollDown.isActive() && !this.animScrollUp.isActive() && !this.animScrollLeft.isActive() && !this.animScrollRight.isActive());
-    if(checkActiveAnim && !startOfList){
+    if(this.scrollAnim.checkActiveAnim && !startOfList){
       if(this.state.isMobile){
-        this.animScrollRight.play();
+        this.scrollAnim.playRight();
       } else {
-        this.animScrollUp.play();
+        this.scrollAnim.playUp();
       }
     }
   }
