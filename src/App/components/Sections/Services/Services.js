@@ -10,7 +10,7 @@ import Scroller from '../../Scroller/Scroller';
 class Services extends Component {
   render() {
     return (
-        <section id="services" className="row bg-white">
+        <section id="services" className="row">
           <div className="container">
 
             <div className='row mt-5 mb-3'>

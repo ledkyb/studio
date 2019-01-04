@@ -1,3 +1,5 @@
+@import '../index.scss';
+
 //font declarations
 @font-face {
   font-family: avenirlight;
@@ -23,6 +25,13 @@
   font-family: slime-joe;
   src: url("../fonts/slim-joe.otf") format("opentype");
 }
+
+// branding
+
+.orange-bg {
+  background-color: $orange;
+}
+
 
 //font classes
 .avenir-light {
