@@ -8,7 +8,7 @@ h1 {
 }
 
 #contact {
-  height: 100vh;
+  height: calc(100vh - 60px);
 }
 
 .header {
@@ -32,9 +32,6 @@ h1 {
   a {
     color: $orange;
   }
-  #contact {
-    height: calc(100vh - 60px);
-  }
   .background {
     background: url("Assets/Background/cloud-3.png") white bottom -8em left -6em no-repeat;
     background-size: 30em 14em;
@@ -48,9 +45,6 @@ h1 {
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
   a {
     color: $orange;
-  }
-  #contact {
-    height: calc(100vh - 60px);
   }
   .background {
     background: url("Assets/Background/cloud-two.png") bottom -2em left 2em no-repeat, url("Assets/Background/cloud-3.png") white bottom -8em left -10em no-repeat;
@@ -66,6 +60,9 @@ h1 {
   }
   a {
     color: #fff;
+  }
+  #contact {
+    height: 100vh;
   }
   .background {
     background: url("Assets/Background/cloud-one.png") bottom -1em left 27em no-repeat, url("Assets/Background/cloud-two.png") bottom 0em left 2em no-repeat, url("Assets/Background/cloud-3.png") white bottom -6em left -15em no-repeat;
@@ -91,6 +88,9 @@ h1 {
   }
   a {
     color: #fff;
+  }
+  #contact {
+    height: 100vh;
   }
   .background {
     background: url("Assets/Background/cloud-one.png") bottom -2em left 30em no-repeat, url("Assets/Background/cloud-two.png") bottom 0em left 4em no-repeat, url("Assets/Background/cloud-3.png") bottom -4em left -20em no-repeat, url("Assets/Background/cloud-3.png") white bottom -9em left -10em no-repeat;
