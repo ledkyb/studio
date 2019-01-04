@@ -12,7 +12,7 @@ class Contact extends Component {
     render(){
         return(
           <section id="contact" className="row">
-              <div className="background container">
+              <div className="background container-fluid">
 
                       <div className="header row text-center">
                           <div className="col-12 align-self-end align-self-lg-center">
