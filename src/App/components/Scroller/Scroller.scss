@@ -1,40 +1,29 @@
 @import '../../../index.scss';
 
-// todo: make reusable - colors = classes
+.scroller-container {
 
-.scroller {
-  position: absolute;
-  left: 25%;
-  display: block;
-  bottom: -240px;
-  right: 25%;
-
-  .scrollerElement {
-    width: 35px;
-    height: 35px;
-    border: 1px solid #EF3C24;
-    margin: -20px auto 0 auto;
-    -webkit-transform: rotateZ(45deg);
-    transform: rotateZ(45deg);
-    cursor: pointer;
-  }
-
-  @media screen and (max-width: 991px){
-    display: none;
-  }
-}
-
-.scroller-row {
-  position: relative;
-
-  .container > div {
-    background: black;
-    height: 0;
+  .scroller {
+    padding: 15px;
     position: absolute;
+    bottom: 0;
     left: 25%;
     right: 25%;
-    display: block;
-    margin: 0 auto;
-    bottom: 0;
+
+    .scrollerElement {
+      width: 35px;
+      height: 35px;
+      margin: 0 auto;
+      -webkit-transform: rotateZ(45deg);
+      transform: rotateZ(45deg);
+      cursor: pointer;
+
+      &:not(:first-child) {
+        margin-top: -20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    display: none;
   }
 }
