@@ -8,8 +8,6 @@ import {teamInfo} from './team-info';
 import UserInactive from './UserInactive/UserInactive';
 import UserActive from './UserActive/UserActive';
 
-import { underline } from 'ansi-colors';
-
 const teamList = teamInfo;
 
 class Team extends Component {

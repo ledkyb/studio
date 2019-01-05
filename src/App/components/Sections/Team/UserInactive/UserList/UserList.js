@@ -1,27 +1,23 @@
 import React, { Component } from 'react';
-import { TimelineLite } from 'gsap';  
 
 import './UserList.scss';
 
 //List of team members
 import {teamInfo} from '../../team-info';
 
-//assets
-import userImg from './UserItem/Assets/user.jpg';
-
 //components
 import UserItem from './UserItem/UserItem';
 import ScrollBtn from '../../ScrollBtn/ScrollBtn';
+
+//Scroll Animation
+import { ScrollAnim } from '../../ScrollAnim/ScrollAnim';
 
 class UserList extends Component {
   constructor(props){
     super(props);
 
+    this.scrollAnim = null;
     this.groupElement = null;
-    this.animScrollDown = null; 
-    this.animScrollRight = null; 
-    this.animScrollUp = null;
-    this.animScrollLeft = null;
 
     //load users from team-info.js
     this.userList = teamInfo.map((user, i) => {
@@ -39,7 +35,12 @@ class UserList extends Component {
   componentDidMount(){
     this.checkIfMobile();
     window.addEventListener('resize', this.checkIfMobile);
-    this.initScrollAnim();
+    this.scrollAnim = new ScrollAnim(
+      this.groupElement,
+      this.prevUserGroup,
+      this.nextUserGroup
+    );
+    this.scrollAnim.initScrollAnim();
   } 
 
   checkIfMobile = () => {
@@ -60,80 +61,26 @@ class UserList extends Component {
     }
   }
 
-  //Initialize scrolling animations
-  initScrollAnim = () => {
-    this.animScrollDown = new TimelineLite({ 
-      paused:true,
-      onComplete: () => {
-        this.animScrollDown.restart();
-        this.animScrollDown.pause();
-      }
-    })
-    .to(this.groupElement, 0.5, {y: -75, opacity: 0})
-    .call(this.nextUserGroup)
-    .to(this.groupElement, 0, {y: 75})
-    .to(this.groupElement, 0.5, {y: 0, opacity: 1});
-
-    this.animScrollLeft = new TimelineLite({
-      paused: true,
-      onComplete: () => {
-        this.animScrollLeft.restart();
-        this.animScrollLeft.pause();
-      }
-    })
-    .to(this.groupElement, 0.5, {x: -15, opacity: 0})
-    .call(this.nextUserGroup)
-    .to(this.groupElement, 0, {x: 15})
-    .to(this.groupElement, 0.5, {x: 0, opacity: 1});
-
-    this.animScrollUp = new TimelineLite({ 
-      paused:true,
-      onComplete: () => {
-        this.animScrollUp.restart();
-        this.animScrollUp.pause();
-      }
-    })
-    .to(this.groupElement, 0.5, {y: 75, opacity: 0})
-    .call(this.prevUserGroup)
-    .to(this.groupElement, 0, {y: -75})
-    .to(this.groupElement, 0.5, {y: 0, opacity: 1});
-
-    this.animScrollRight = new TimelineLite({
-      paused: true,
-      onComplete: () => {
-        this.animScrollRight.restart();
-        this.animScrollRight.pause();
-      }
-    })
-    .to(this.groupElement, 0.5, {x: 15, opacity: 0})
-    .call(this.prevUserGroup)
-    .to(this.groupElement, 0, {x: -15})
-    .to(this.groupElement, 0.5, {x: 0, opacity: 1});
-
-  }
-
   //Checks for mobile, active anims & current
   //position to determine which animation to play
   handleAnimScrollNext = () => {
     const endOfList = this.userList[this.userList.length-1] !== this.state.currentGroup[this.state.currentGroup.length-1];
-    const checkActiveAnim = (!this.animScrollDown.isActive() && !this.animScrollUp.isActive() && !this.animScrollLeft.isActive() && !this.animScrollRight.isActive());
-    if(checkActiveAnim && endOfList){
+    if(this.scrollAnim.checkActiveAnim && endOfList){
       if(this.state.isMobile){
-        this.animScrollLeft.play();
+        this.scrollAnim.playLeft();
       } else {
-        this.animScrollDown.play();
+        this.scrollAnim.playDown();
       }
     }
   }
 
   handleAnimScrollPrev = () => {
     const startOfList = this.userList[0] !== this.state.currentGroup[0];
-    const checkActiveAnim = (!this.animScrollDown.isActive() && !this.animScrollUp.isActive() && !this.animScrollLeft.isActive() && !this.animScrollRight.isActive());
-    if(checkActiveAnim && startOfList){
+    if(this.scrollAnim.checkActiveAnim && startOfList){
       if(this.state.isMobile){
-        this.animScrollRight.play();
+        this.scrollAnim.playRight();
       } else {
-        this.animScrollUp.play();
+        this.scrollAnim.playUp();
       }
     }
   }
@@ -173,7 +120,6 @@ class UserList extends Component {
     }
   }
   
-
   //Reverse logic of handleNextUserGroup
   prevUserGroup = () => {
     let currentPos = this.userList.indexOf(this.state.currentGroup[0]);
