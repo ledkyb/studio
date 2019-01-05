@@ -14,7 +14,7 @@ class About extends Component {
             <div className="container" style={{background: 'pink', height: '150px'}} data-bg="dark" data-section="about">
                 <p>About</p>
             </div>
-          </section>
+          
         )
     }
 }
