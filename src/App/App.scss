@@ -26,6 +26,10 @@
   src: url("../fonts/slim-joe.otf") format("opentype");
 }
 
+.orange-bg {
+  background-color: $orange;
+}
+
 //font classes
 .avenir-light {
   font-family: avenirlight, sans-serif;
@@ -82,7 +86,7 @@
 .min-height-200 {
   min-height: 200px
 }
-
+ 
 .border-orange {
   border: 1px solid $orange;
 }
@@ -98,14 +102,14 @@
 .border-white {
   border: 1px solid $light-gray;
 }
-
-// global limiters
+ 
 body {
   width: 100vw;
-  overflow-x: hidden;
+  overflow-x: hidden; 
+  
   @media screen and (max-width: 990px) {
     padding-bottom: 60px;
-  }
+  } 
 }
 
 .fit {
