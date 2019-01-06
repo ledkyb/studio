@@ -1,0 +1,129 @@
+@import '../../../../index.scss';
+
+
+.carosuel{
+  background-color: rgba(0,0,1,.5);  
+}
+
+
+
+#blog{
+  padding: 0px;
+}
+
+.sharedBlogSection{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.postOne{
+  background-color: black;  
+  align-content: center;
+  width: 430px;
+  height: 110px;
+  background-color: rgba(0,0,0,.8); 
+  position: absolute;
+  left: 150px;
+  top: 40px; 
+}
+.postTwo{
+  background-color: black;  
+  align-content: center;
+  width: 350px;
+  height: 90px;
+  background-color: rgba(0,0,0,.8); 
+  position: absolute;
+  left: 35px;
+  bottom: 30px; 
+}
+
+.postThree{
+  background-color: black;  
+  align-content: center;
+  width: 350px;
+  height: 80px;
+  background-color: rgba(0,0,0,.8); 
+  position: absolute;
+  left: 30px;
+  bottom: 30px; 
+}
+
+
+.postTitle1{
+  font-family: "Arial Black", Gadget, sans-serif; 
+  font-size: 28px;
+  color: white;  
+  font-weight: 1000;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  text-align: left;
+  
+}
+
+.postTitle2{
+  font-family: "Arial Black", Gadget, sans-serif; 
+  font-size: 22px;
+  color: white;  
+  font-weight: 800;
+  margin-top: 5px;
+  text-align: left;
+  margin-bottom: 0px;
+
+  
+}
+
+.postTitle3{
+  font-family: "Arial Black", Gadget, sans-serif; 
+  font-size: 20px;
+  color: white;
+  font-weight: 800;
+  margin-top: 4px;
+  text-align: left;
+  margin-bottom: 0px;
+  
+}
+
+
+.authorInfo{
+  color: white;
+  font-size: 12px;
+}
+
+.verticalBar {
+  color: red;
+}
+
+
+.carousel-control-next{
+  width: 90px;
+}
+
+.carousel-control-prev{
+  width: 90px;
+  opacity: .4;
+}
+
+
+
+.blog1{
+  background-image: url("../Blog/AssetsB/post-one.jpg");
+  height: 100vh;
+  max-height: 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+#blog3{
+  background-image: url("../Blog/AssetsB/post-two.jpg");
+  height: 63vh;
+  background-repeat: no-repeat;
+  object-fit: cover ;
+}
+
+#blog4{
+  background-image: url("../Blog/AssetsB/post-three.jpg");
+  height: 37vh;
+  background-repeat: no-repeat;
+  object-fit: cover;
+
+}
+
+
