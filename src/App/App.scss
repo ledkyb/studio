@@ -26,22 +26,10 @@
   src: url("../fonts/slim-joe.otf") format("opentype");
 }
 
-<<<<<<< HEAD
-||||||| merged common ancestors
-<<<<<<<<< Temporary merge branch 1
-// branding
-
 .orange-bg {
   background-color: $orange;
 }
 
-
-=======
-.orange-bg {
-  background-color: $orange;
-}
-
->>>>>>> 090cd9d3b731b0e725e9405113fd49611668d8f6
 //font classes
 .avenir-light {
   font-family: avenirlight, sans-serif;
@@ -67,7 +55,6 @@
 * {
   transition: 300ms all ease-in;
 }
-<<<<<<< HEAD
 
 // art elements
 .diamond {
@@ -100,124 +87,6 @@
   min-height: 200px
 }
 
-||||||| merged common ancestors
-<<<<<<<<< Temporary merge branch 1
-
-// art elements
-.diamond {
-  width: 10px;
-  height: 10px;
-  background: #ea5132;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  display: block;
-  position: relative;
-  top: 1.5rem;
-  left: -25px;
-}
-
-
-// utility
-.min-height-50 {
-  min-height: 50px;
-}
-
-.min-height-100 {
-  min-height: 100px
-}
-
-.min-height-150 {
-  min-height: 150px
-}
-
-.min-height-200 {
-  min-height: 200px
-}
-
-// global limiters
-body {
-  width: 100vw;
-  overflow-x: hidden;
-}
-
-.fit {
-  width: 100vw;
-}
-
-section.row {
-  @media screen and (max-width: 425px){
-    max-height: 768px;
-  }
-}
-||||||||| merged common ancestors
- 
-=========
-
-// art elements
-.diamond {
-  width: 10px;
-  height: 10px;
-  background: #ea5132;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  display: block;
-  position: relative;
-  top: 1.5rem;
-  left: -25px;
-}
-
-
-// utility
-.min-height-50 {
-  min-height: 50px;
-}
-
-.min-height-100 {
-  min-height: 100px
-}
-
-.min-height-150 {
-  min-height: 150px
-}
-
-.min-height-200 {
-  min-height: 200px
-}
-
-=======
-
-// art elements
-.diamond {
-  width: 10px;
-  height: 10px;
-  background: #ea5132;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  display: block;
-  position: relative;
-  top: 1.5rem;
-  left: -25px;
-}
-
-
-// utility
-.min-height-50 {
-  min-height: 50px;
-}
-
-.min-height-100 {
-  min-height: 100px
-}
-
-.min-height-150 {
-  min-height: 150px
-}
-
-.min-height-200 {
-  min-height: 200px
-}
- 
->>>>>>> 090cd9d3b731b0e725e9405113fd49611668d8f6
 .border-orange {
   border: 1px solid $orange;
 }
@@ -233,14 +102,14 @@ section.row {
 .border-white {
   border: 1px solid $light-gray;
 }
- 
+
 body {
   width: 100vw;
-  overflow-x: hidden; 
-  
+  overflow-x: hidden;
+
   @media screen and (max-width: 990px) {
     padding-bottom: 60px;
-  } 
+  }
 }
 
 .fit {
