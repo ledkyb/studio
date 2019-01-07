@@ -5,30 +5,16 @@
   background-color: rgba(0,0,1,.5);  
 }
 
-
-
-#blog{
-  padding: 0px;
-}
-
-.sharedBlogSection{
-  padding-left: 0px;
-  padding-right: 0px;
-}
 .postOne{
   background-color: black;  
-  align-content: center;
-  width: 430px;
-  height: 110px;
+  max-width: 430px;  
   background-color: rgba(0,0,0,.8); 
-  position: absolute;
-  left: 150px;
-  top: 40px; 
+  height: 100px;
 }
+
 .postTwo{
-  background-color: black;  
-  align-content: center;
-  width: 350px;
+  background-color: black; 
+  max-width: 350px;
   height: 90px;
   background-color: rgba(0,0,0,.8); 
   position: absolute;
@@ -40,17 +26,16 @@
   background-color: black;  
   align-content: center;
   width: 350px;
-  height: 80px;
+  height: 84px;
   background-color: rgba(0,0,0,.8); 
   position: absolute;
   left: 30px;
   bottom: 30px; 
 }
 
-
 .postTitle1{
   font-family: "Arial Black", Gadget, sans-serif; 
-  font-size: 28px;
+  font-size: 1.6rem;
   color: white;  
   font-weight: 1000;
   margin-top: 10px;
@@ -61,7 +46,7 @@
 
 .postTitle2{
   font-family: "Arial Black", Gadget, sans-serif; 
-  font-size: 22px;
+  font-size: 1.3rem;
   color: white;  
   font-weight: 800;
   margin-top: 5px;
@@ -73,10 +58,10 @@
 
 .postTitle3{
   font-family: "Arial Black", Gadget, sans-serif; 
-  font-size: 20px;
+  font-size: 1.24rem;
   color: white;
   font-weight: 800;
-  margin-top: 4px;
+  margin-top: 0px;
   text-align: left;
   margin-bottom: 0px;
   
@@ -85,7 +70,8 @@
 
 .authorInfo{
   color: white;
-  font-size: 12px;
+  font-size: .7rem;
+  font-weight: 600;
 }
 
 .verticalBar {
@@ -106,24 +92,58 @@
 
 .blog1{
   background-image: url("../Blog/AssetsB/post-one.jpg");
+  background-size: 100% 100%;
   height: 100vh;
   max-height: 100%;
   background-repeat: no-repeat;
-  object-fit: cover;
 }
 #blog3{
   background-image: url("../Blog/AssetsB/post-two.jpg");
-  height: 63vh;
+  background-size: 100% 100%;
+  height: 60vh;
   background-repeat: no-repeat;
-  object-fit: cover ;
 }
 
 #blog4{
-  background-image: url("../Blog/AssetsB/post-three.jpg");
-  height: 37vh;
+  background-image: url("../Blog/AssetsB/post-two.jpg");
+  background-size: 100% 100%;
+  height: 40vh;
   background-repeat: no-repeat;
-  object-fit: cover;
-
 }
 
 
+// @media (min-height: 740px) {
+//   #blog3 {
+//     height: 40vh;
+
+//   } 
+//   #blog4 {
+//     height: 1 0vh;
+//   }
+// }
+
+@media (max-height: 1025px ) and ( max-width: 770px) {
+  .blog1{
+    max-height: 86vh ;
+  }
+  #blog3{
+    max-height: 52vh;
+  }
+  #blog4{
+    max-height: 34vh;
+  }
+  .postTitle2{
+    font-size: 1.1rem;
+
+  }
+  .postTwo{
+    left: 0px;
+  }
+  .postTitle3{
+    font-size: 1rem;
+  }
+  .postThree{
+    left: 0px;
+  }
+  
+}
