@@ -1,38 +1,46 @@
 @import '../../../../index.scss';
 
-
-.carosuel{
-  background-color: rgba(0,0,1,.5);  
+#blog1{
+  background-image: url("../Blog/AssetsB/post-one.jpg");
+  background-size: 100% 100%;
+  height: 100vh;
+  max-height: 100%;
+  background-repeat: no-repeat;
 }
-
+#blog2{
+  background-image: url("../Blog/AssetsB/post-two.jpg");
+  background-size: 100% 100%;
+  height: 60vh;
+  background-repeat: no-repeat;
+}
+#blog3{
+  background-image: url("../Blog/AssetsB/post-two.jpg");
+  background-size: 100% 100%;
+  height: 40vh;
+  background-repeat: no-repeat;
+}
 .postOne{
-  background-color: black;  
-  max-width: 430px;  
+  background-color: black;      
   background-color: rgba(0,0,0,.8); 
-  height: 100px;
+  height: auto;
 }
-
 .postTwo{
-  background-color: black; 
-  max-width: 350px;
-  height: 90px;
+  background-color: black;   
+  height: auto;
   background-color: rgba(0,0,0,.8); 
   position: absolute;
   left: 35px;
   bottom: 30px; 
 }
-
 .postThree{
   background-color: black;  
-  align-content: center;
-  width: 350px;
-  height: 84px;
+  align-content: center;  
+  height: auto;
   background-color: rgba(0,0,0,.8); 
   position: absolute;
   left: 30px;
   bottom: 30px; 
 }
-
 .postTitle1{
   font-family: "Arial Black", Gadget, sans-serif; 
   font-size: 1.6rem;
@@ -40,10 +48,8 @@
   font-weight: 1000;
   margin-top: 10px;
   margin-bottom: 2px;
-  text-align: left;
-  
+  text-align: left;  
 }
-
 .postTitle2{
   font-family: "Arial Black", Gadget, sans-serif; 
   font-size: 1.3rem;
@@ -51,11 +57,8 @@
   font-weight: 800;
   margin-top: 5px;
   text-align: left;
-  margin-bottom: 0px;
-
-  
+  margin-bottom: 0px;  
 }
-
 .postTitle3{
   font-family: "Arial Black", Gadget, sans-serif; 
   font-size: 1.24rem;
@@ -63,87 +66,111 @@
   font-weight: 800;
   margin-top: 0px;
   text-align: left;
-  margin-bottom: 0px;
-  
+  margin-bottom: 0px;  
 }
-
-
 .authorInfo{
   color: white;
   font-size: .7rem;
   font-weight: 600;
 }
-
 .verticalBar {
   color: red;
 }
-
-
+.carosuel{
+  background-color: rgba(0,0,1,.5);  
+}
 .carousel-control-next{
   width: 90px;
-}
+  opacity: .4;
 
+}
 .carousel-control-prev{
   width: 90px;
   opacity: .4;
 }
 
-
-
-.blog1{
-  background-image: url("../Blog/AssetsB/post-one.jpg");
-  background-size: 100% 100%;
-  height: 100vh;
-  max-height: 100%;
-  background-repeat: no-repeat;
-}
-#blog3{
-  background-image: url("../Blog/AssetsB/post-two.jpg");
-  background-size: 100% 100%;
-  height: 60vh;
-  background-repeat: no-repeat;
-}
-
-#blog4{
-  background-image: url("../Blog/AssetsB/post-two.jpg");
-  background-size: 100% 100%;
-  height: 40vh;
-  background-repeat: no-repeat;
-}
-
-
-// @media (min-height: 740px) {
-//   #blog3 {
-//     height: 40vh;
-
-//   } 
-//   #blog4 {
-//     height: 1 0vh;
-//   }
-// }
-
-@media (max-height: 1025px ) and ( max-width: 770px) {
-  .blog1{
-    max-height: 86vh ;
+@media (max-height: 1280px ) and ( max-width: 990px) {
+  #blog1{
+    max-height: 29vh ;
+  }
+  #blog2{
+    max-height: 29vh;
   }
   #blog3{
-    max-height: 52vh;
+    max-height: 29vh;
+    margin-bottom: 5rem;
   }
-  #blog4{
-    max-height: 34vh;
+  .postTitle1{
+    font-size: 1.2rem;
+    padding-left: 1em;
   }
   .postTitle2{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    padding-left: 1em;
 
   }
+  .postTitle3{
+    font-size: 1.2rem;
+    padding-left: 1em;
+
+  }
+  .postOne{
+    position: absolute;
+    bottom: 0; 
+    left: 0px;    
+    }
   .postTwo{
+    position: absolute;
+    bottom: 0; 
+    left: 0px;
+  }  
+  .postThree{
+    position: absolute;
+    bottom: 0; 
     left: 0px;
   }
-  .postTitle3{
-    font-size: 1rem;
+  .authorInfo {
+    padding-left: 2em;
+  }
+  .carousel-control-prev{
+    background-color: orange;
+    opacity: 1;
+    height: 5.05rem;
+    bottom: 0;
+    width: 50%;
+    margin-top: 890px;
+  }
+  .carousel-control-next{
+    background-color: orange;
+    opacity: 1;
+    height: 5.05rem;
+    bottom: 0;
+    width: 50%;
+    margin-top: 890px;
+  }  
+}
+
+@media ( min-width: 990px) {
+  .postOne {
+    max-width: 430px;    
+  }
+  .postTwo{
+    max-width: 350px;
   }
   .postThree{
-    left: 0px;
+    max-width: 350px;
   }
-  
+}
+
+
+@media (min-width: 768px ) and ( max-width: 990px){
+  .postTitle1{
+    font-size: 1.5rem;
+  }
+  .postTitle2{
+    font-size: 1.5rem;
+  }
+  .postTitle3{
+    font-size: 1.5rem;
+  }
 }
