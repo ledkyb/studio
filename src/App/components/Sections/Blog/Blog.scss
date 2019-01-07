@@ -138,7 +138,8 @@
     height: 5.05rem;
     bottom: 0;
     width: 50%;
-    margin-top: 890px;
+    margin-top: 87vh;
+    color: sandybrown;
   }
   .carousel-control-next{
     background-color: orange;
@@ -146,8 +147,9 @@
     height: 5.05rem;
     bottom: 0;
     width: 50%;
-    margin-top: 890px;
-  }  
+    margin-top: 87vh;
+  }
+    
 }
 
 @media ( min-width: 990px) {
@@ -173,4 +175,7 @@
   .postTitle3{
     font-size: 1.5rem;
   }
+  
 }
+
+@media (max-width: 990px){}
