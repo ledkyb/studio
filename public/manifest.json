@@ -1,15 +1,20 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Ledkyb",
+  "name": "Ledkyb Studios Website",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "./images/logo/SVG/app-icon.svg",
+      "sizes": "512x512 256x256 128x128 96x96 72x72 48x48",
+      "type": "image/svg"
+    },
+    {
+      "src": "./images/logo/PNG/app-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#EF3C24",
   "background_color": "#ffffff"
 }
