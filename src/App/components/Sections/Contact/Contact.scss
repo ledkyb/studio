@@ -108,8 +108,8 @@ h1 {
     height: 100vh;
   }
   .background {
-    background: url("Assets/Background/cloud-one.png") bottom -2em left 30em no-repeat, url("Assets/Background/cloud-two.png") bottom 0em left 4em no-repeat, url("Assets/Background/cloud-3.png") bottom -4em left -20em no-repeat, url("Assets/Background/cloud-3.png") white bottom -9em left -10em no-repeat;
-    background-size: 10em 5em, 30em 10em, 40em 20em, 40em 20em;
+    background: url("Assets/Background/cloud-one.png") bottom -1em left 30em no-repeat, url("Assets/Background/cloud-two.png") bottom 0em left 4em no-repeat, url("Assets/Background/cloud-3.png") bottom -3em left -20em no-repeat, url("Assets/Background/cloud-3.png") white bottom -7em left -10em no-repeat;
+    background-size: 10em 5em, 30em 11em, 40em 20em, 40em 20em;
   }
   .header {
     background-color: $orange;
