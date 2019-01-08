@@ -20,7 +20,7 @@ class Blog extends Component {
                 <div className="col-7 blog1 ">
                   <div className="container postOne ">
                     <section className="postInner">
-                      <a href="#"  className="postTitle1">POST TITLE, LIMITED TO TWO LINES OF TEXT p1 </a>
+                      <a href="#blog"  className="postTitle1">POST TITLE, LIMITED TO TWO LINES OF TEXT p1 </a>
                       <p className="lead authorInfo">John Doe <span className="verticalBar">|</span> Category <span className="verticalBar">|</span> November 22nd,2018 </p>
                     </section>
                   </div>
@@ -29,7 +29,7 @@ class Blog extends Component {
                   <div id="blog3" className="col-12 ">
                     <div  className="container postTwo ">
                       <section className="postInner">
-                        <a href="#"  className="postTitle2">POST TITLE, LIMITED TO TWO LINES OF TEXT p2</a>
+                        <a href="#blog"  className="postTitle2">POST TITLE, LIMITED TO TWO LINES OF TEXT p2</a>
                         <p className="lead authorInfo">John Doe <span className="verticalBar">|</span> Category <span className="verticalBar">|</span> November 22nd,2018 </p>
                       </section>
                     </div>
@@ -37,7 +37,7 @@ class Blog extends Component {
                   <div id="blog4" className="col-12 ">
                     <div  className="container postThree ">
                       <section className="postInner">
-                        <a href="#"  className="postTitle3">POST TITLE, LIMITED TO TWO LINES OF TEXT p3</a>
+                        <a href="#blog"  className="postTitle3">POST TITLE, LIMITED TO TWO LINES OF TEXT p3</a>
                         <p className="lead authorInfo">John Doe <span className="verticalBar">|</span> Category <span className="verticalBar">|</span> November 22nd,2018 </p>
                       </section>
                     </div>
@@ -53,7 +53,7 @@ class Blog extends Component {
                 <div className="col-7 blog1 ">
                   <div  className="container postOne ">
                     <section className="postInner">
-                      <a href="#"  className="postTitle1">POST TITLE, LIMITED TO TWO LINES OF TEXT pa</a>
+                      <a href="#blog"  className="postTitle1">POST TITLE, LIMITED TO TWO LINES OF TEXT pa</a>
                       <p className="lead authorInfo">John Doe <span className="verticalBar">|</span> Category <span className="verticalBar">|</span> November 22nd,2018 </p>
                     </section>
                   </div>
@@ -62,7 +62,7 @@ class Blog extends Component {
                   <div id="blog3" className="col-12 ">
                     <div  className="container postTwo ">
                       <section className="postInner">
-                        <a href="#"  className="postTitle2">POST TITLE, LIMITED TO TWO LINES OF TEXT pb</a>
+                        <a href="#blog"  className="postTitle2">POST TITLE, LIMITED TO TWO LINES OF TEXT pb</a>
                         <p className="lead authorInfo">John Doe <span className="verticalBar">|</span> Category <span className="verticalBar">|</span> November 22nd,2018 </p>
                       </section>
                     </div>
@@ -70,7 +70,7 @@ class Blog extends Component {
                   <div id="blog4" className="col-12 ">
                     <div  className="container postThree ">
                       <section className="postInner">
-                        <a href="#"  className="postTitle3">POST TITLE, LIMITED TO TWO LINES OF TEXT pc</a>
+                        <a href="#blog"  className="postTitle3">POST TITLE, LIMITED TO TWO LINES OF TEXT pc</a>
                         <p className="lead authorInfo">John Doe <span className="verticalBar">|</span> Category <span className="verticalBar">|</span> November 22nd,2018 </p>
                       </section>
                     </div>
@@ -85,7 +85,7 @@ class Blog extends Component {
                 <div className="col-7 blog1 ">
                   <div  className="container postOne ">
                     <section className="postInner">
-                      <a href="#" className="postTitle1">POST TITLE, LIMITED TO TWO LINES OF TEXT 1</a>
+                      <a href="#blog" className="postTitle1">POST TITLE, LIMITED TO TWO LINES OF TEXT 1</a>
                       <p className="lead authorInfo">John Doe <span className="verticalBar">|</span> Category <span className="verticalBar">|</span> November 22nd,2018 </p>
                     </section>
                   </div>
@@ -94,7 +94,7 @@ class Blog extends Component {
                   <div id="blog3" className="col-12 ">
                     <div  className="container postTwo ">
                       <section className="postInner">
-                        <a href="#" className="postTitle2">POST TITLE, LIMITED TO TWO LINES OF TEXT 2</a>
+                        <a href="#blog" className="postTitle2">POST TITLE, LIMITED TO TWO LINES OF TEXT 2</a>
                         <p className="lead authorInfo">John Doe <span className="verticalBar">|</span> Category <span className="verticalBar">|</span> November 22nd,2018 </p>
                       </section>
                     </div>
@@ -102,7 +102,7 @@ class Blog extends Component {
                   <div id="blog4" className="col-12 ">
                     <div  className="container postThree ">
                       <section className="postInner">
-                        <a href="#"  className="postTitle3">POST TITLE, LIMITED TO TWO LINES OF TEXT 3</a>
+                        <a href="#blog"  className="postTitle3">POST TITLE, LIMITED TO TWO LINES OF TEXT 3</a>
                         <p className="lead authorInfo">John Doe <span className="verticalBar">|</span> Category <span className="verticalBar">|</span> November 22nd,2018 </p>
                       </section>
                     </div>
