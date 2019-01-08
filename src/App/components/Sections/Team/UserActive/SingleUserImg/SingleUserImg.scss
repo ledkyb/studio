@@ -2,17 +2,23 @@
   img{
     transition: 0s all;
 
-    width: 500px;
-    height: 475px;
+    max-width: 500px;
+    max-height: 475px;
+    width: auto;
+    height: auto;
 
     @media screen and (max-width: 1199px){
-      width: 400px;
-      height: 375px;
+      max-width: 400px;
+      max-height: 375px;
+      width: auto;
+      height: auto;
     }
 
     @media screen and (max-width: 991px){
-      width: 200px;
-      height: 175px;
+      max-width: 200px;
+      max-height: 175px;
+      width: auto;
+      height: auto;
     }
   }
 }
