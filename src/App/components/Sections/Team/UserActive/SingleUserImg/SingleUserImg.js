@@ -68,7 +68,7 @@ class SingleUserImg extends Component{
   }
 
   render(){
-    const { user, onPrev, onNext, showPrevArrow, showNextArrow } = this.props;
+    const { user, showPrevArrow, showNextArrow } = this.props;
     return (
       <div className="single-user-img col col-lg-6 h-100 d-flex flex-row justify-content-center align-items-center">
         <img ref={img => this.imgElement = img} src={user.img} alt={user.name} />
