@@ -28,7 +28,7 @@
     }
   }
 
-  @media screen and (min-width: 991px){
+  @media screen and (min-width: $screen-sm-min){
     display: none;
   }
 }
