@@ -3,20 +3,20 @@
     transition: 0s all;
 
     max-width: 500px;
-    max-height: 475px;
+    max-height: 500px;
     width: auto;
     height: auto;
 
     @media screen and (max-width: 1199px){
       max-width: 400px;
-      max-height: 375px;
+      max-height: 400px;
       width: auto;
       height: auto;
     }
 
     @media screen and (max-width: 991px){
       max-width: 200px;
-      max-height: 175px;
+      max-height: 200px;
       width: auto;
       height: auto;
     }
