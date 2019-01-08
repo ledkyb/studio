@@ -137,7 +137,7 @@ class UserList extends Component {
         prevGroup.unshift(this.userList[prevElem]);
         prevElem--;
       }
-      if(currentPos == groupSize){
+      if(currentPos === groupSize){
         this.setState({
           showPrevArrow: {opacity: "0", cursor: "default"}
         })
