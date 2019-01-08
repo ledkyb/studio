@@ -11,6 +11,12 @@ h1 {
   height: calc(100vh - 60px);
 }
 
+#footer {
+  @media (min-width: 1555px) {
+    color: $black;
+  }
+}
+
 .header {
   height: 20vh;
   font-family: avenirbook;
