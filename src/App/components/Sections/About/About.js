@@ -13,7 +13,7 @@ class About extends Component {
         return( 
           <section id='about' className='row'>
             <div className='container-fluid' >
-              <div className='row'>
+              <div className='row h-100'>
 
 
                 <div className="col-12 col-lg-6 orange-bg">
