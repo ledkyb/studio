@@ -16,22 +16,24 @@
   .home-button {
     margin-top: 100px;
   
+    a.button {
+      border: 1px solid #EF3C24;
+      color: #EF3C24;
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      width: 65%;
+      padding: 18px 0 15px 0;
+      font-family: 'avenirlight', sans-serif;
+      text-transform: uppercase;
 
-  a.button {
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    width: 65%;
-    padding: 18px 0 15px 0;
-    font-family: 'avenirlight', sans-serif;
-    text-transform: uppercase;
+      &:hover {
+        border-color: transparent;
+        color: #fff;
+      }
 
-    &:hover {
-      border-color: transparent;
     }
-
   }
-}
 
   .scroller-container {
     margin-top: 80%;
