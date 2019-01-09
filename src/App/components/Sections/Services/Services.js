@@ -65,7 +65,7 @@ class Services extends Component {
                     <span className='diamond'/>Printing Services
                   </li>
 
-                  <li className='services-list-item'>
+                  <li className='services-list-item pb-5'>
                     <span className='diamond'/>Start-up Starter Kits
                   </li>
                 </ul>
