@@ -59,6 +59,7 @@ class About extends Component {
 
                       <div className='art-rocket'>
 
+                                    {/* *** TODO: insert rocket here *** */}
                       </div>
                     </div>
                   </div>
