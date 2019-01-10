@@ -18,9 +18,9 @@ class Home extends Component {
               </div>
             </div>
 
-                <Button link="#contact" label="start project"/>
             <div className="row justify-content-center">
               <div className="col-10 col-lg-4 col-sm-6 col-md-6 align-items-end home-button">
+                <Button link="#contact" label="start project" styles="project-button"/>
               </div>
             </div>
 

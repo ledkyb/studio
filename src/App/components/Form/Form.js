@@ -67,7 +67,7 @@ class Form extends Component {
           </div>
           <div className="row form-group justify-content-end">
               <div onClick={this.submit}>
-                <Button link="#contact" label="send" styles="send-btn"/>
+                <Button link="#contact" label="send" styles="send-button"/>
               </div>
           </div>
         </form>
