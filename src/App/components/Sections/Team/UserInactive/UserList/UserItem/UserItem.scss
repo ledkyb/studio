@@ -3,14 +3,14 @@
 .team-user-item{
   img{  //user image size
     width: 200px;  
-    height: 175px;
+    height: 200px;
     @media screen and (max-width: 991px){
       width: 175px;
-      height: 150px;
+      height: 175px;
     }
     @media screen and (max-width: 767px){
       width: 125px;
-      height: 100px;
+      height: 125px;
     }
   }
   p{
@@ -38,7 +38,7 @@
   .team-user-item-hover{
     display: none;
     width: 200px;
-    height: 175px;
+    height: 200px;
     background-color: rgba(239, 60, 36, 0.9);
   }
 
