@@ -1,9 +1,9 @@
 @import '../../../index.scss';
 
-.submitBtn {
-  border: 1px solid black;
-  background-color: #fff;
-  color: black;
+.button {
+  border: 1px solid $orange;
+  background-color: rgba(255, 255, 255, 0);
+  color: $orange;
   font-family: avenirbook, sans-serif;
   width: 100%;
   padding: 0.5em 2.3em;
@@ -13,6 +13,7 @@
     text-decoration: none;
     color: #fff;
     background: $orange;
+    border:  1px solid $orange;
   }
 
 }
@@ -20,12 +21,12 @@
 .button-sub-text {
   font-size: 11px;
   font-family: 'avenirheavy', sans-serif;
-  margin: 20px auto 0 auto;
+  margin: 10px auto 0 auto;
   text-align: center;
 }
 
 @media (min-width: 992px) {
-  .submitBtn {
+  .button {
     border: 1px solid #EF3C24;
     color: #EF3C24;
     font-family: avenirbook, sans-serif;
@@ -37,6 +38,7 @@
       text-decoration: none;
       color: #fff;
       background: $orange;
+      border: 1px solid $orange;
     }
 
   }

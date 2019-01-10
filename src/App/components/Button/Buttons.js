@@ -4,7 +4,7 @@ import './Button.scss';
 class Button extends Component {
   render() {
     return (
-        <button className="submitBtn" href={this.props.link} >{this.props.label}</button>
+        <button className={`button ${this.props.styles}`} href={this.props.link} >{this.props.label}</button>
     )
   }
 }
