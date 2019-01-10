@@ -12,15 +12,15 @@ class Home extends Component {
         <section id="home" className="row" data-bg="light" data-section="home">
           <div className="container">
 
-            <div className="row">
-              <div className="col-10 offset-1 col-lg-4 offset-lg-4 col-sm-6 offset-sm-3 col-md-6 offset-md-3">
+            <div className="row justify-content-center">
+              <div className="col-10 col-lg-4 col-sm-6 col-md-6 align-items-end">
                 <img className="text-logo" src={textLogo} alt="Ledkyb Studios text logo"/>
               </div>
             </div>
 
-            <div className="row">
-              <div className="col-10 offset-1 col-lg-4 offset-lg-4 col-sm-6 offset-sm-3 col-md-6 offset-md-3 home-button">
                 <Button link="#contact" label="start project"/>
+            <div className="row justify-content-center">
+              <div className="col-10 col-lg-4 col-sm-6 col-md-6 align-items-end home-button">
               </div>
             </div>
 
