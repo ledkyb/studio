@@ -1,7 +1,7 @@
 @import '../../../../index.scss';
 
 h1 {
-  font-family: big-john;
+  font-family: big-john, sans-serif;
   font-size: 2rem;
   font-weight: 900;
   letter-spacing: 3px;
@@ -19,7 +19,7 @@ h1 {
 
 .header {
   height: 20vh;
-  font-family: avenirbook;
+  font-family: avenirbook, arial, sans-serif;
 }
 
 .formContainer {
