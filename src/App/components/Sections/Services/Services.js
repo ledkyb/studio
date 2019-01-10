@@ -85,7 +85,7 @@ class Services extends Component {
            </div>
 
             <div className="row">
-              <div className="offset-7 col-md-5 services-art-element">
+              <div className="offset-6 col-md-6 services-art-element">
 
                 <img src={servicesImage} alt="services art element"/>
               </div>
