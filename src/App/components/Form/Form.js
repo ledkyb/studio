@@ -19,9 +19,11 @@ class Form extends Component {
     console.log('Submitted');
     let data = this.state;
     console.log(data);
+    let dataToSend = new FormData(data);
+    console.log()
     fetch('https://postal.ledkyb.com/', {
       method: 'POST',
-      body: new FormData(data),  //Bodypaser used in server, no need to JSON.stringify
+      body: dataToSend,  //Bodypaser used in server, no need to JSON.stringify
       headers: {
         "Content-type": "application/x-www-form-urlencoded"
       }
