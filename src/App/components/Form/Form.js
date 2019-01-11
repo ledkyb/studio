@@ -25,7 +25,7 @@ class Form extends Component {
     })
       .then((res) => {
         window.test1 = res;
-        let resonse = res.json();
+        let response = res.json();
         console.log(response);
         window.test2 = response;
       })
