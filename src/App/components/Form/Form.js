@@ -19,7 +19,10 @@ class Form extends Component {
     console.log('Submitted');
     let data = this.state;
     console.log(data);
-    let dataToSend = new FormData(data);
+    let dataToSend = new FormData();
+    dataToSend.append('name', data.name);
+    dataToSend.append('email', data.email);
+    dataToSend.append('message', data.message);
     console.log(dataToSend);
     fetch('https://postal.ledkyb.com/', {
       method: 'POST',
