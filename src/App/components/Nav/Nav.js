@@ -71,7 +71,7 @@ class Nav extends Component {
 
 
               <div className="col col-md-1">
-                <a className="navbar-brand" href="https://www.google.com">
+                <a className="navbar-brand" href="/">
                   <img id="logo" src={this.state.logo}
                        alt="ledkyb studios logo"/>
                 </a>
@@ -83,28 +83,28 @@ class Nav extends Component {
                   <ul className="navbar-nav">
                     <li className="nav-item active">
                       <a className="nav-link"
-                         href="https://www.google.com">Home <span
+                         href="#home">Home <span
                           className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item">
                       <a className="nav-link"
-                         href="https://www.google.com">About</a>
+                         href="#about">About</a>
                     </li>
                     <li className="nav-item">
                       <a className="nav-link"
-                         href="https://www.google.com">Team</a>
+                         href="#team">Team</a>
                     </li>
                     <li className="nav-item">
                       <a className="nav-link"
-                         href="https://www.google.com">Blog</a>
+                         href="#blog">Blog</a>
                     </li>
                     <li className="nav-item">
                       <a className="nav-link"
-                         href="https://www.google.com">Services</a>
+                         href="#services">Services</a>
                     </li>
                     <li className="nav-item">
                       <a className="nav-link"
-                         href="https://www.google.com">Contact</a>
+                         href="#contact">Contact</a>
                     </li>
                   </ul>
                   <Social/>
