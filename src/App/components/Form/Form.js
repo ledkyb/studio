@@ -20,7 +20,7 @@ class Form extends Component {
     let data = this.state;
     console.log(data);
     let dataToSend = new FormData(data);
-    console.log()
+    console.log(dataToSend);
     fetch('https://postal.ledkyb.com/', {
       method: 'POST',
       body: dataToSend,  //Bodypaser used in server, no need to JSON.stringify
