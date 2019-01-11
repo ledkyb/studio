@@ -9,8 +9,8 @@ import stackOverflow from './Assets/Social/so-black.svg';
 import instagram from './Assets/Social/in-black.svg';
 
 class SocialMedia extends Component {
-    componentWillMount(){
-
+    state = {
+        companyName: 'ledkyb',
     }
 
     render(){
@@ -18,12 +18,36 @@ class SocialMedia extends Component {
           <section id="social" className="row">
               <div className="container d-flex justify-content-around">
 
-                  <img className="socialLogo" src={github} alt="Ledkyb GitHub Account link" />
-                  <img className="socialLogo" src={linkedIn} alt="Ledkyb LinkedIn Account link" />
-                  <img className="socialLogo" src={stackOverflow} alt="Ledkyb Stack Overflow Account link" />
-                  <img className="socialLogo" src={facebook} alt="Ledkyb Facebook Account link" />
-                  <img className="socialLogo" src={instagram} alt="Ledkyb Instagram Account link" />
-                  <img className="socialLogo" src={twitter} alt="Ledkyb Twitter Account link" />
+                  <img
+                      className="socialLogo"
+                      src={github}
+                      alt={`${this.state.companyName} GitHub page`}
+                  />
+                  <img
+                      className="socialLogo"
+                      src={linkedIn}
+                      alt={`${this.state.companyName} LinkedIn page`}
+                  />
+                  <img
+                      className="socialLogo"
+                      src={stackOverflow}
+                      alt={`${this.state.companyName} Stack Overflow page`}
+                  />
+                  <img
+                      className="socialLogo"
+                      src={facebook}
+                      alt={`${this.state.companyName} Facebook page`}
+                  />
+                  <img
+                      className="socialLogo"
+                      src={instagram}
+                      alt={`${this.state.companyName} Instagram page`}
+                  />
+                  <img
+                      className="socialLogo"
+                      src={twitter}
+                      alt={`${this.state.companyName} Twitter page`}
+                  />
 
               </div>
           </section>
