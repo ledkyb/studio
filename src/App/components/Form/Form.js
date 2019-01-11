@@ -24,7 +24,11 @@ class Form extends Component {
       body: data  //Bodypaser used in server, no need to JSON.stringify
     })
       .then((res) => res.json())
-      .then(response => console.log('Success!!!'))
+      .then(response => {
+        console.log('Success!!!');
+        console.log(response);
+        window.test = response;
+      })
       .then(() => {
         this.setState({
           name: '',
@@ -66,9 +70,9 @@ class Form extends Component {
             </div>
           </div>
           <div className="row form-group justify-content-end">
-              <div onClick={this.submit}>
-                <Button link="#contact" label="send" styles="send-button"/>
-              </div>
+            <div onClick={this.submit}>
+              <Button link="#contact" label="send" styles="send-button" />
+            </div>
           </div>
         </form>
       </div>
