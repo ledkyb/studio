@@ -75,11 +75,13 @@ class Services extends Component {
             </div>
 
            <div className="row services-art-element-mobile">
-             <div className="col-12">
-               <img className="cloud-two"
-                    src={cloudTwo} alt="cloud image"/>
-               <img className="cloud-3"
-                    src={cloud3} alt="cloud image"/>
+             <div className="col-12 mt-5">
+               <img className=" cloud-two"
+                    src={cloudTwo}
+                    alt=""/>
+               <img className=" cloud-3"
+                    src={cloud3}
+                    alt=""/>
 
              </div>
            </div>

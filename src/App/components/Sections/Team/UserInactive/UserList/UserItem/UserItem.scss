@@ -2,15 +2,21 @@
 
 .team-user-item{
   img{  //user image size
-    width: 200px;  
-    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
     @media screen and (max-width: 991px){
-      width: 175px;
-      height: 175px;
+      max-width: 175px;
+      max-height: 175px;
+      width: auto;
+      height: auto;
     }
     @media screen and (max-width: 767px){
-      width: 125px;
-      height: 125px;
+      max-width: 125px;
+      max-height: 125px;
+      width: auto;
+      height: auto;
     }
   }
   p{
@@ -28,7 +34,7 @@
     }
   }
 
-  
+
   .team-user-item-line{
     height: 2px;
     width: 25px;

@@ -13,18 +13,18 @@ class About extends Component {
         return(
           <section id='about' className='row'>
             <div className='container-fluid' >
-              <div className='row'>
+              <div className='row h-100 align-content-start'>
 
 
                 <div className="col-12 col-lg-6 orange-bg">
                   <div className='container-fluid'>
-                    <div className='container about-content-container float-right'>
-                      <p className='about-title big-john py-4 text-white'>NOT YOUR <br />AVERAGE STUDIO</p>
+                    <div className='container about-content-container float-right pt-5'>
+                      <span className='about-title big-john text-white'>NOT YOUR <br />AVERAGE STUDIO</span>
 
 
-                      <p className='desktop d-none d-lg-block avenir-light text-white pb-3'>We take advantage of bleeding edge technology to provide you with the power of an in-house creative team at a fraction of the cost.
+                      <p className='desktop d-none d-lg-block avenir-light text-white'>We take advantage of bleeding edge technology to provide you with the power of an in-house creative team at a fraction of the cost.
                       </p>
-                      <ul className='about-list desktop d-none d-lg-block avenir-light text-white pb-5'>
+                      <ul className='about-list desktop d-none d-lg-block avenir-light text-white pt-3'>
                         <li className='about-list-item about-li-top'><span className='diamond diamond-wh'></span>Exclusively Online</li>
 
                         <li className='about-list-item about-li-top'><span className='diamond diamond-wh'></span>Customer Centric</li>
@@ -42,13 +42,13 @@ class About extends Component {
 
                 <div className="col-12 col-lg-6">
                   <div className='container-fluid about-content'>
-                    <div className='container about-content-container float-left'>
-                      <p className='avenir-light'>Ledkyb Studios is based in the Inland Empire and we operate exclusively
+                    <div className='container about-content-container float-left pt-lg-5'>
+                      <span className='avenir-light'>Ledkyb Studios is based in the Inland Empire and we operate exclusively
                       online. This allows us to leverage our low overhead to invest in powerful in-house
                       tools. Our team is composed of designers, developers and project managers who are
                       passionate about what they do.
-                      </p>
-                      <ul className='row about-list d-none d-lg-block'>
+                      </span>
+                      <ul className='row about-list d-none d-lg-block pt-3'>
                         <li className='about-list-item'><span className='diamond'></span><a href="../Team/Team">Meet Your Team</a></li>
 
                         <li className='about-list-item'><span className='diamond'></span><a href="../Services/Services">Services We Offer</a></li>
@@ -59,6 +59,7 @@ class About extends Component {
 
                       <div className='art-rocket'>
 
+                                    {/* *** TODO: insert rocket here *** */}
                       </div>
                     </div>
                   </div>

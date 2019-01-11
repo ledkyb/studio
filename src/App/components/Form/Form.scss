@@ -37,19 +37,17 @@
     }
 
     // Modifies CSS for Button Component
-    .send-btn {
-        a.button {
-            width: fit-content;
-            margin: 0;
-            border: 1px solid black;
-            color: black;
-            font-family: 'avenirheavy', sans-serif;
+    .send-button {
+        width: fit-content;
+        margin: 0;
+        border: 1px solid $black;
+        color: $black;
+        font-family: 'avenirheavy', sans-serif;
 
-            &:hover {
-                text-decoration: none;
-                color: black;
-                background: #fff;
-            }
+        &:hover {
+            text-decoration: none;
+            color: $black;
+            background: #fff;
         }
     }
 
@@ -70,16 +68,14 @@
         }
 
         // Modifies CSS for Button Component
-        .send-btn {
-            a.button {
-                border: 1px solid #EF3C24;
-                color: #EF3C24;
-                font-family: inherit;
+        .send-button {
+            border: 1px solid $orange;
+            color: $orange;
+            font-family: inherit;
 
-                &:hover {
-                    color: #fff;
-                    background: $orange;
-                }
+            &:hover {
+                color: #fff;
+                background: $orange;
             }
         }
 

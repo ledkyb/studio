@@ -1,7 +1,7 @@
 @import '../../../../index.scss';
 
 h1 {
-  font-family: big-john;
+  font-family: big-john, sans-serif;
   font-size: 2rem;
   font-weight: 900;
   letter-spacing: 3px;
@@ -9,11 +9,18 @@ h1 {
 
 #contact {
   height: calc(100vh - 60px);
+  min-height: 766px;
+}
+
+#footer {
+  @media (min-width: 1555px) {
+    color: $black;
+  }
 }
 
 .header {
   height: 20vh;
-  font-family: avenirbook;
+  font-family: avenirbook, arial, sans-serif;
 }
 
 .formContainer {
@@ -102,8 +109,8 @@ h1 {
     height: 100vh;
   }
   .background {
-    background: url("Assets/Background/cloud-one.png") bottom -2em left 30em no-repeat, url("Assets/Background/cloud-two.png") bottom 0em left 4em no-repeat, url("Assets/Background/cloud-3.png") bottom -4em left -20em no-repeat, url("Assets/Background/cloud-3.png") white bottom -9em left -10em no-repeat;
-    background-size: 10em 5em, 30em 10em, 40em 20em, 40em 20em;
+    background: url("Assets/Background/cloud-one.png") bottom -1em left 30em no-repeat, url("Assets/Background/cloud-two.png") bottom 0em left 4em no-repeat, url("Assets/Background/cloud-3.png") bottom -3em left -20em no-repeat, url("Assets/Background/cloud-3.png") white bottom -7em left -10em no-repeat;
+    background-size: 10em 5em, 30em 11em, 40em 20em, 40em 20em;
   }
   .header {
     background-color: $orange;

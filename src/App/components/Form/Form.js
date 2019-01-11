@@ -37,27 +37,27 @@ class Form extends Component {
 
   render() {
     return (
-      <div className="form container bg-transparent">
+      <div className="form container col-10 bg-transparent">
         <form>
-          <div className="row">
-            <div className="col-lg-5 offset-lg-1 pr-lg-5 mb-4">
-              <div className="row form-group border-bot mb-lg-5">
+          <div className="row form-group justify-content-between">
+            <div className="col-lg-5">
+              <div className="row form-group border-bot">
                 <label
-                  className="col-2 col-sm-1 col-lg-2 my-0 p-0 pt-2 text-color"
+                  className="col-2 p-0 text-color"
                   htmlFor="name">Name</label>
                 <input
                   className="col-10 col-lg-9 form-control border-0 text-dark"
                   type="text" id="name" onChange={this.change} />
               </div>
-              <div className="row form-group border-bot mb-lg-0">
+              <div className="row form-group border-bot">
                 <label
-                  className="col-2 col-sm-1 col-lg-2 my-0 p-0 pt-2 text-color"
+                  className="col-2 p-0 text-color"
                   htmlFor="email">Email</label>
                 <input className="col-10 form-control border-0 text-dark"
                   type="text" id="email" onChange={this.change} />
               </div>
             </div>
-            <div className="col-lg-5 pl-lg-5 mb-4 pr-lg-2">
+            <div className="col-lg-5">
               <div className="row form-group h-100">
                 <textarea
                   className="col-12 form-control border-all rounded-0 text-dark h-100"
@@ -65,12 +65,10 @@ class Form extends Component {
               </div>
             </div>
           </div>
-          <div className="row form-group pr-lg-5 pt-lg-2">
-            <div className="ml-auto pr-lg-5">
-              <div className="send-btn" onClick={this.submit}>
-                <Button link="#contact" label="send" />
+          <div className="row form-group justify-content-end">
+              <div onClick={this.submit}>
+                <Button link="#contact" label="send" styles="send-button"/>
               </div>
-            </div>
           </div>
         </form>
       </div>

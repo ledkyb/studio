@@ -1,18 +1,19 @@
 @import '../../../index.scss';
 
-a.button {
-  border: 1px solid black;
-  color: black;
+.button {
+  border: 1px solid $orange;
+  background-color: rgba(255, 255, 255, 0);
+  color: $orange;
   font-family: avenirbook, sans-serif;
   width: 100%;
   padding: 0.5em 2.3em;
-  margin: 0 0 0 -30px;
   transition: 450ms width ease-in, 300ms background-color ease-in;
 
   &:hover {
     text-decoration: none;
     color: #fff;
     background: $orange;
+    border:  1px solid $orange;
   }
 
 }
@@ -20,24 +21,24 @@ a.button {
 .button-sub-text {
   font-size: 11px;
   font-family: 'avenirheavy', sans-serif;
-  margin: 20px auto 0 auto;
+  margin: 10px auto 0 auto;
   text-align: center;
 }
 
 @media (min-width: 992px) {
-  a.button {
+  .button {
     border: 1px solid #EF3C24;
     color: #EF3C24;
     font-family: avenirbook, sans-serif;
     width: 100%;
     padding: 0.5em 2.3em;
-    margin: 0 0 0 -30px;
     transition: 450ms width ease-in, 300ms background-color ease-in;
 
     &:hover {
       text-decoration: none;
       color: #fff;
       background: $orange;
+      border: 1px solid $orange;
     }
 
   }
