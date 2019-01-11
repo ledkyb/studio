@@ -23,12 +23,17 @@ class Form extends Component {
       method: 'POST',
       body: data  //Bodypaser used in server, no need to JSON.stringify
     })
-      .then((res) => res.json())
-      .then(response => {
-        console.log('Success!!!');
+      .then((res) => {
+        window.test1 = res;
+        let resonse = res.json();
         console.log(response);
-        window.test = response;
+        window.test2 = response;
       })
+      // .then(response => {
+      //   console.log('Success!!!');
+      //   console.log(response);
+      //   window.test = response;
+      // })
       .then(() => {
         this.setState({
           name: '',
