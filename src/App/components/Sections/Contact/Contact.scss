@@ -34,6 +34,19 @@ h1 {
 
 /* **** Responsive **** */
 
+/* Keeps elements within row */
+@media (max-height: 766px) {
+  .header {
+    min-height: 200px;
+  }
+  .formContainer {
+    min-height: 366px;
+  }
+  .footer {
+    min-height: 200px;
+  }
+}
+
 /* Extra small devices (phones, less than 767px) */
 @media (max-width: $screen-xs-max) {
   .formContainer {
