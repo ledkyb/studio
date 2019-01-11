@@ -18,36 +18,48 @@ class SocialMedia extends Component {
           <section id="social" className="row">
               <div className="container d-flex justify-content-around">
 
-                  <img
-                      className="socialLogo"
-                      src={github}
-                      alt={`${this.state.companyName} GitHub page`}
-                  />
-                  <img
-                      className="socialLogo"
-                      src={linkedIn}
-                      alt={`${this.state.companyName} LinkedIn page`}
-                  />
-                  <img
-                      className="socialLogo"
-                      src={stackOverflow}
-                      alt={`${this.state.companyName} Stack Overflow page`}
-                  />
-                  <img
-                      className="socialLogo"
-                      src={facebook}
-                      alt={`${this.state.companyName} Facebook page`}
-                  />
-                  <img
-                      className="socialLogo"
-                      src={instagram}
-                      alt={`${this.state.companyName} Instagram page`}
-                  />
-                  <img
-                      className="socialLogo"
-                      src={twitter}
-                      alt={`${this.state.companyName} Twitter page`}
-                  />
+                  <a href={`https://www.github.com/${this.state.companyName}`}>
+                      <img
+                          className="socialLogo"
+                          src={github}
+                          alt={`${this.state.companyName} GitHub page`}
+                      />
+                  </a>
+                  <a href={`https://www.linkedin.com/${this.state.companyName}`}>
+                      <img
+                          className="socialLogo"
+                          src={linkedIn}
+                          alt={`${this.state.companyName} LinkedIn page`}
+                      />
+                  </a>
+                  <a href={`https://www.stackoverflow.com/${this.state.companyName}`}>
+                      <img
+                          className="socialLogo"
+                          src={stackOverflow}
+                          alt={`${this.state.companyName} Stack Overflow page`}
+                      />
+                  </a>
+                  <a href={`https://www.facebook.com/${this.state.companyName}`}>
+                      <img
+                          className="socialLogo"
+                          src={facebook}
+                          alt={`${this.state.companyName} Facebook page`}
+                      />
+                  </a>
+                  <a href={`https://www.instagram.com/${this.state.companyName}`}>
+                      <img
+                          className="socialLogo"
+                          src={instagram}
+                          alt={`${this.state.companyName} Instagram page`}
+                      />
+                  </a>
+                  <a href={`https://www.twitter.com/${this.state.companyName}`}>
+                      <img
+                          className="socialLogo"
+                          src={twitter}
+                          alt={`${this.state.companyName} Twitter page`}
+                      />
+                  </a>
 
               </div>
           </section>
