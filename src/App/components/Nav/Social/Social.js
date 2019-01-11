@@ -28,7 +28,7 @@ class Social extends Component {
                   onClick={e => { window.location.href = `https://www.github.com/${this.state.companyName}`}}>
                     <img
                       src={github}
-                      alt="ledkyb's github page"
+                      alt={`${this.state.companyName}'s github page`}
                     />
                 </div>
                 <div
