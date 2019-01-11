@@ -31,6 +31,10 @@ class SingleUserImg extends Component{
     this.scrollAnim.initScrollAnim();
   }
 
+  componentWillUnmount(){
+    window.removeEventListener('resize', this.checkIfMobile);
+  }
+
   checkIfMobile = () => {
     if(window.innerWidth <= 991){
       this.setState({

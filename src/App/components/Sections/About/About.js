@@ -10,7 +10,7 @@ class About extends Component {
     }
 
     render(){
-        return( 
+        return(
           <section id='about' className='row'>
             <div className='container-fluid' >
               <div className='row h-100 align-content-start'>
@@ -65,7 +65,7 @@ class About extends Component {
                   </div>
                 </div>
 
-              </div> 
+              </div>
             </div>
           </section>
         )

@@ -14,7 +14,7 @@ export const teamInfo = [
       twitter: "https://twitter.com",
       stackoverflow: "https://stackoverflow.com"
     },
-    desc: "John does a lot of awesome things around the site and he does x,y,z and even z! While he does dabble a little with a, b and c; John also enjoys martinis. John is responsible for keeping track of all the ducks in the office and Spotify playlists."   
+    desc: "John does some awesome things around the site and he does x,y,z and even z! While he does dabble a little with a, b and c; John also enjoys martinis. John is responsible for keeping track of all the ducks in the office and Spotify playlists."   
   },
   {
     id: 2,

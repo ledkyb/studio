@@ -41,7 +41,11 @@ class UserList extends Component {
       this.nextUserGroup
     );
     this.scrollAnim.initScrollAnim();
-  } 
+  }
+  
+  componentWillUnmount(){
+    window.removeEventListener('resize', this.checkIfMobile);
+  }
 
   checkIfMobile = () => {
     if(window.innerWidth <= 991){

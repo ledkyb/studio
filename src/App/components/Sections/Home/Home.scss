@@ -15,14 +15,24 @@
 
   .home-button {
     margin-top: 100px;
-  }
+  
+    a.button {
+      border: 1px solid #EF3C24;
+      color: #EF3C24;
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      width: 65%;
+      padding: 18px 0 15px 0;
+      font-family: 'avenirlight', sans-serif;
+      text-transform: uppercase;
 
-  a.button {
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    width: 65%;
-    padding: 15px 0;
+      &:hover {
+        border-color: transparent;
+        color: #fff;
+      }
+
+    }
   }
 
   .scroller-container {
@@ -49,9 +59,11 @@
   }
 
   @media only screen and (max-width: 767px) {
-    a.button {
-      width: 100%;
-      max-width: 215px;
+    .home-button{
+      a.button {
+        width: 100%;
+        max-width: 215px;
+      }
     }
   }
 
@@ -61,12 +73,6 @@
       margin: 80px auto 0 auto;
       display: block;
     }
-
-    a.button {
-      color: #fff;
-      background-color: $orange;
-    }
-
   }
 
   @media only screen and (max-width: 425px) {

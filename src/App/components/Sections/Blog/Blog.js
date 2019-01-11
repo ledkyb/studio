@@ -7,7 +7,7 @@ class Blog extends Component {
   componentWillMount(){
 
   }
-
+// 990 px width is mobile
   render(){
     return(
       <div id="blog" className="container" >
