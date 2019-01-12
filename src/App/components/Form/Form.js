@@ -17,37 +17,23 @@ class Form extends Component {
 
   submit = e => {
     console.log('Submitted');
-    let data = this.state;
-    console.log(data);
-    let dataToSend = new FormData();
-    dataToSend.append('name', data.name);
-    dataToSend.append('email', data.email);
-    dataToSend.append('message', data.message);
-    console.log(dataToSend);
+    const dataToSend = Object.keys(this.state).map((key) => {
+      return encodeURIComponent(key) + '=' + encodeURIComponent(this.state[key]);
+    }).join('&');
+
     fetch('https://postal.ledkyb.com/', {
       method: 'POST',
-      body: dataToSend,  //Bodypaser used in server, no need to JSON.stringify
+      body: dataToSend,
       headers: {
-        "Content-type": "application/x-www-form-urlencoded"
+        "Content-type": "application/x-www-form-urlencoded;charset=UTF-8"
       }
     })
       .then((res) => {
-        window.test1 = res;
-        let response = res.json();
-        console.log(response);
-        window.test2 = response;
+        return res.json();
       })
-      // .then(response => {
-      //   console.log('Success!!!');
-      //   console.log(response);
-      //   window.test = response;
-      // })
-      .then(() => {
-        this.setState({
-          name: '',
-          email: '',
-          message: ''
-        });
+      .then(response => {
+        console.log('Success!!!');
+        console.log(response);
       })
       .catch(error => console.error('Error:', error));
   };
