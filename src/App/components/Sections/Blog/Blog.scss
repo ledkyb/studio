@@ -152,6 +152,23 @@
     
 }
 
+
+
+
+@media screen and (max-width: 990px) { 
+  .topContainer { 
+    width: 100%; 
+    padding: 0px ;
+    margin: 0px ;
+    max-width: 100%;
+  } 
+  .container-fluid {
+    padding: 0px;
+  }
+}
+
+
+
 @media ( min-width: 990px) {
   .postOne {
     max-width: 430px;    

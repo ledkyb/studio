@@ -10,7 +10,7 @@ class Blog extends Component {
 // 990 px width is mobile
   render(){
     return(
-      <div  className="container p-0" >
+      <div  className="container topContainer p-0 " >
         <div id="carouselExampleControls"  class="carousel  slide " data-ride="carousel">              
           <div class="carousel-inner">
 
