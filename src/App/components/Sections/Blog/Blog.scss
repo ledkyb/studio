@@ -100,40 +100,39 @@
   }
 }
 
-/* *** Merge Conflict 1/2 *** */
 @media (min-width: $screen-lg-min) {
-/* *** End of Merge Conflict 1/2 *** */
-  .postOne {
-    max-width: 430px;
-  }
-  .postTwo,.postThree{
-    min-width: 330px;
-  }
+    .postOne {
+        max-width: 430px;
+    }
+    .postTwo, .postThree {
+        min-width: 330px;
+    }
 }
 
-/* *** Merge Conflict 2/2 *** */
-@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
-  .postTitle1{
-    font-size: 1.5rem;
-  }
-  .postTitle2{
-    font-size: 1.5rem;
-@media ( max-width: 990px){
-  .postTitle1, .postTitle2, .postTitle3{
-    font-size: 1.1rem;
-  }
-  .small{
-    font-size: .7rem;
-  }
-}
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    .postTitle1 {
+        font-size: 1.5rem;
+    }
+    .postTitle2 {
+        font-size: 1.5rem;
+    }
 
-@media (max-width: 575px) {
-  .postTitle1, .postTitle2,.postTitle3, .authorInfo {
-    margin-left: 4vw;
-    margin-right: 5vw;
-  }
+    @media ( max-width: 990px) {
+        .postTitle1, .postTitle2, .postTitle3 {
+            font-size: 1.1rem;
+        }
+        .small {
+            font-size: .7rem;
+        }
+    }
+
+    @media (max-width: 575px) {
+        .postTitle1, .postTitle2,.postTitle3, .authorInfo {
+            margin-left: 4vw;
+            margin-right: 5vw;
+        }
+    }
 }
-/* *** End of Merge Conflict 2/2 *** */
 
 @media (max-width: 475px) {
   .postTitle1, .postTitle2,.postTitle3, .authorInfo {
