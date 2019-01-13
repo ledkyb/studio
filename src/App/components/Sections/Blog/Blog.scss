@@ -7,11 +7,6 @@
   max-height: 100%;
   background-repeat: no-repeat;
 }
-
-#blog{
-  padding: 0px;
-  min-height: 766px;
-}
 #blog2{
   background-image: url("../Blog/AssetsB/post-two.jpg");
   background-size: 100% 100%;
@@ -137,34 +132,5 @@
 @media (max-width: 300px) {
   .postTitle1, .postTitle2,.postTitle3, .authorInfo {
     margin-left: 6.5vw;
-  }
-}
-/* **** Responsive **** */
-
-/* Extra small devices (phones, less than 767px) */
-@media (max-width: $screen-xs-max) {
-  #blog {
-    height: calc(100vh - 60px);
-  }
-}
-
-/* Small devices (tablets, 768px to 991px) */
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  #blog {
-    height: calc(100vh - 60px);
-  }
-}
-
-/* Medium devices (desktops, 992px to 1199px) */
-@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-  #blog {
-    height: 100vh;
-  }
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: $screen-lg-min) {
-  #blog {
-    height: 100vh;
   }
 }

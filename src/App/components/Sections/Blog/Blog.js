@@ -11,7 +11,7 @@ class Blog extends Component {
 // 990 px width is mobile
 // 575 px width and below is xs
   render(){
-    return( 
+    return(
       <div  className="container topContainer p-0 " >
         <div className="row m-0">
           <div className="col-lg-12 p-0">
@@ -25,7 +25,7 @@ class Blog extends Component {
                     <div id="blog1" className="p-0 col-12 col-lg-7 ">                  
                       <div  className=" postOne mx-lg-auto mt-5 ">   
                         <a href="#"  >
-                          <p  className="postTitle1 text-left text-white h4 mb-sm-0 mb-lg-1 pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-2 font-weight-bold ">POST TITLE, LIMITED TO TWO LINES OF TEXT p1 </p>
+                          <p  className="postTitle1 text-left text-white h4 mb-sm-0 mb-lg-1 pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-2 font-weight-bold ">POST TITLE, LIMITED TO TWO LINES OF TEXT </p>
                         </a>
                         <p className="small authorInfo text-white mb-1 pl-sm-4 pl-lg-2 pb-lg-2">John Doe <span className="verticalBar">|</span> Category <span className="verticalBar">|</span> November 22nd,2018 </p>                    
                       </div>                        
@@ -35,7 +35,7 @@ class Blog extends Component {
                       <div id="blog2" className="col-12 p-0 "> 
                         <div  className=" postTwo ">
                             <a href="#"  >
-                              <p className="postTitle2 text-left text-white h5 mb-0 pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-1  font-weight-bold ">POST TITLE, LIMITED TO TWO LINES OF TEXT p2</p>
+                              <p className="postTitle2 text-left text-white h5 mb-0 pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-1  font-weight-bold ">POST TITLE, LIMITED TO TWO LINES OF TEXT </p>
                             </a>
                             <p className="small authorInfo text-white mb-1 pl-sm-4 pl-lg-2 ">John Doe <span className="verticalBar">|</span> Category <span className="verticalBar">|</span> November 22nd,2018 </p>
                         </div>
@@ -44,7 +44,7 @@ class Blog extends Component {
                       <div id="blog3" className="col-12 "> 
                         <div  className=" postThree ">
                             <a href="#"  >
-                              <p className="postTitle3 text-left text-white h6 mb-0  pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-1 font-weight-bold ">POST TITLE, LIMITED TO TWO LINES OF TEXT p3</p>
+                              <p className="postTitle3 text-left text-white h6 mb-0  pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-1 font-weight-bold ">POST TITLE, LIMITED TO TWO LINES OF TEXT </p>
                             </a>
                             <p className="small authorInfo text-white mb-1 pl-sm-4 pl-lg-2  ">John Doe <span className="verticalBar">|</span> Category <span className="verticalBar">|</span> November 22nd,2018 </p>
                         </div>
@@ -61,7 +61,7 @@ class Blog extends Component {
                     <div id="blog1" className="p-0 col-12 col-lg-7 ">                  
                       <div  className=" postOne mx-lg-auto mt-5 ">   
                         <a href="#"  >
-                          <p  className="postTitle1 text-left text-white h4 mb-sm-0 mb-lg-1 pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-2 font-weight-bold ">POST TITLE, LIMITED TO TWO LINES OF TEXT p1 </p>
+                          <p  className="postTitle1 text-left text-white h4 mb-sm-0 mb-lg-1 pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-2 font-weight-bold ">POST TITLE, LIMITED TO TWO LINES OF TEXT </p>
                         </a>
                         <p className="small authorInfo text-white mb-1 pl-sm-4 pl-lg-2 pb-lg-2">John Doe <span className="verticalBar">|</span> Category <span className="verticalBar">|</span> November 22nd,2018 </p>                    
                       </div>                        
@@ -71,7 +71,7 @@ class Blog extends Component {
                       <div id="blog2" className="col-12 p-0 "> 
                         <div  className=" postTwo ">
                             <a href="#"  >
-                              <p className="postTitle2 text-left text-white h5 mb-0 pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-1  font-weight-bold ">POST TITLE, LIMITED TO TWO LINES OF TEXT p2</p>
+                              <p className="postTitle2 text-left text-white h5 mb-0 pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-1  font-weight-bold ">POST TITLE, LIMITED TO TWO LINES OF TEXT </p>
                             </a>
                             <p className="small authorInfo text-white mb-1 pl-sm-4 pl-lg-2 ">John Doe <span className="verticalBar">|</span> Category <span className="verticalBar">|</span> November 22nd,2018 </p>
                         </div>
@@ -80,7 +80,7 @@ class Blog extends Component {
                       <div id="blog3" className="col-12 "> 
                         <div  className=" postThree ">
                             <a href="#"  >
-                              <p className="postTitle3 text-left text-white h6 mb-0  pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-1 font-weight-bold ">POST TITLE, LIMITED TO TWO LINES OF TEXT p3</p>
+                              <p className="postTitle3 text-left text-white h6 mb-0  pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-1 font-weight-bold ">POST TITLE, LIMITED TO TWO LINES OF TEXT </p>
                             </a>
                             <p className="small authorInfo text-white mb-1 pl-sm-4 pl-lg-2  ">John Doe <span className="verticalBar">|</span> Category <span className="verticalBar">|</span> November 22nd,2018 </p>
                         </div>
@@ -96,7 +96,7 @@ class Blog extends Component {
                     <div id="blog1" className="p-0 col-12 col-lg-7 ">                  
                       <div  className=" postOne mx-lg-auto mt-5 ">   
                         <a href="#"  >
-                          <p  className="postTitle1 text-left text-white h4 mb-sm-0 mb-lg-1 pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-2 font-weight-bold ">POST TITLE, LIMITED TO TWO LINES OF TEXT p1 </p>
+                          <p  className="postTitle1 text-left text-white h4 mb-sm-0 mb-lg-1 pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-2 font-weight-bold ">POST TITLE, LIMITED TO TWO LINES OF TEXT </p>
                         </a>
                         <p className="small authorInfo text-white mb-1 pl-sm-4 pl-lg-2 pb-lg-2">John Doe <span className="verticalBar">|</span> Category <span className="verticalBar">|</span> November 22nd,2018 </p>                    
                       </div>                        
@@ -133,12 +133,11 @@ class Blog extends Component {
                 <span className="sr-only">Next</span>
               </a>
             </div> 
-          </div> 
+          </div>
         </div>                                         
- 
       </div>
-    )
-  }
+    )      
+  }    
 }
 
 
