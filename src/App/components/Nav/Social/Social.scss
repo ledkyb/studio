@@ -1,3 +1,5 @@
+@import "../../../../index.scss";
+
 #socialMenu {
   position: relative;
   top: 10px;
@@ -18,7 +20,7 @@
     }
   }
 
-  @media screen and (min-width: 991px){
+  @media screen and (min-width: $screen-lg-min){
     display: none;
   }
 

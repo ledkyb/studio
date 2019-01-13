@@ -53,7 +53,7 @@
 
 }
 
-@media (min-width: 992px) {
+@media (min-width: $screen-lg-min) {
     .form {
         .text-color {
             color: #EF3C24;

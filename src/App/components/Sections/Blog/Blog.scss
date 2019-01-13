@@ -157,7 +157,7 @@
     
 }
 
-@media ( min-width: 990px) {
+@media (min-width: $screen-lg-min) {
   .postOne {
     max-width: 430px;    
   }
@@ -170,7 +170,7 @@
 }
 
 
-@media (min-width: 768px ) and ( max-width: 990px){
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
   .postTitle1{
     font-size: 1.5rem;
   }
@@ -185,28 +185,28 @@
 
 /* **** Responsive **** */
 
-/* Extra small devices (phones, less than 767px) */
+/* Extra small devices */
 @media (max-width: $screen-xs-max) {
   #blog {
     height: calc(100vh - 60px);
   }
 }
 
-/* Small devices (tablets, 768px to 991px) */
+/* Small devices */
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
   #blog {
     height: calc(100vh - 60px);
   }
 }
 
-/* Medium devices (desktops, 992px to 1199px) */
+/* Medium devices */
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
   #blog {
     height: 100vh;
   }
 }
 
-/* Large devices (large desktops, 1200px and up) */
+/* Large devices */
 @media (min-width: $screen-lg-min) {
   #blog {
     height: 100vh;

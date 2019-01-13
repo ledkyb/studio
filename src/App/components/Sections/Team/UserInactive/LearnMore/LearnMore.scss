@@ -6,7 +6,7 @@
   h2{
     margin: -20px 0;
     font-size: 6rem;
-    @media screen and (max-width: 991px){
+    @media screen and (max-width: $screen-md-max){
       margin: -10px 0;
       font-size: 4rem;
     }    
@@ -14,7 +14,7 @@
   h3{
     margin: -25px 0;
     font-size: 4.5rem;
-    @media screen and (max-width: 991px){
+    @media screen and (max-width: $screen-md-max){
       margin: -15px 0;
       font-size: 2.5rem;
     }
@@ -22,7 +22,7 @@
   p{
     // min-width: 325px;
     font-family: avenirlight, sans-serif;
-    @media screen and (max-width: 991px){
+    @media screen and (max-width: $screen-md-max){
       font-size: .75rem;
     }
   }

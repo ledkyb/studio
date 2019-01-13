@@ -1,3 +1,5 @@
+@import '../../../../../../index.scss';
+
 .single-user-img{
   background-color: #fff;
   
@@ -8,14 +10,14 @@
     width: auto;
     height: auto;
 
-    @media screen and (max-width: 1199px){
+    @media screen and (max-width: $screen-lg-max){
       max-width: 400px;
       max-height: 400px;
       width: auto;
       height: auto;
     }
 
-    @media screen and (max-width: 991px){
+    @media screen and (max-width: $screen-md-max){
       max-width: 200px;
       max-height: 200px;
       width: auto;

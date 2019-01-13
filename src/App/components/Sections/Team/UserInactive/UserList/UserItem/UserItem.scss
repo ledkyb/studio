@@ -6,13 +6,13 @@
     max-height: 200px;
     width: auto;
     height: auto;
-    @media screen and (max-width: 991px){
+    @media screen and (max-width: $screen-md-max){
       max-width: 175px;
       max-height: 175px;
       width: auto;
       height: auto;
     }
-    @media screen and (max-width: 767px){
+    @media screen and (max-width: $screen-sm-max){
       max-width: 125px;
       max-height: 125px;
       width: auto;
@@ -22,14 +22,14 @@
   p{
     font-size: .85rem;
     margin: -5px 0;
-    @media screen and (max-width: 991px){
+    @media screen and (max-width: $screen-md-max){
       font-size: .5rem;
     }
   }
 
   .team-user-item-title{
     font-size: .75rem;
-    @media screen and (max-width: 991px){
+    @media screen and (max-width: $screen-md-max){
       font-size: .45rem;
     }
   }
@@ -65,7 +65,7 @@
     background-color: $gray;
   }
 
-  @media screen and (min-width: 991px){  //HOVER only on desktop
+  @media screen and (min-width: $screen-md-max){  //HOVER only on desktop
 
     &:hover{
       .team-user-item-hover,

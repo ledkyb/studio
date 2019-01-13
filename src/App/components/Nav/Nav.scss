@@ -67,7 +67,7 @@
       text-align: right;
     }
 
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: $screen-md-max) {
       position: fixed !important;
       left: 0 !important;
       right: 0 !important;

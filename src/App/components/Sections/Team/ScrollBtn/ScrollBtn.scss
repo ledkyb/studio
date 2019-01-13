@@ -1,9 +1,11 @@
+@import '../../../../../index.scss';
+
 .team-scroll-btn-container{
   height: 100%;
   width: 100%;
   z-index: 2;
 
-  @media screen and (max-width: 991px){
+  @media screen and (max-width: $screen-md-max){
     height: 50px;
     width: 100%;
     bottom: 0;
@@ -14,7 +16,7 @@
     width: 40px;
     height: auto;
     transform: rotate(90deg);
-    @media screen and (max-width: 991px){
+    @media screen and (max-width: $screen-md-max){
       width: 15px;
       transform: rotate(0deg);
     }
@@ -26,7 +28,7 @@
     transform: rotate(-90deg);
     margin-bottom: 50px;
     cursor: pointer;
-    @media screen and (max-width: 991px){
+    @media screen and (max-width: $screen-md-max){
       width: 15px;
       transform: rotate(180deg);
     }
