@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './SocialMedia.scss';
 
-import facebook from './Assets/Social/fb-black.svg';
-import twitter from './Assets/Social/tw-black.svg';
-import github from './Assets/Social/git-black.svg';
-import linkedIn from './Assets/Social/li-black.svg';
-import stackOverflow from './Assets/Social/so-black.svg';
-import instagram from './Assets/Social/in-black.svg';
+import {ReactComponent as FbLogo} from './Assets/Social/fb-black.svg';
+import {ReactComponent as TwLogo} from './Assets/Social/tw-black.svg';
+import {ReactComponent as GhLogo} from './Assets/Social/git-black.svg';
+import {ReactComponent as LiLogo} from './Assets/Social/li-black.svg';
+import {ReactComponent as SoLogo} from './Assets/Social/so-black.svg';
+import {ReactComponent as InLogo} from './Assets/Social/in-black.svg';
 
 class SocialMedia extends Component {
     state = {
@@ -16,47 +16,42 @@ class SocialMedia extends Component {
     render(){
         return(
           <section id="social" className="row">
-              <div className="container d-flex justify-content-around">
+              <div className="container d-flex flex-wrap justify-content-between">
 
                   <a href={`https://www.github.com/${this.state.companyName}`}>
-                      <img
+                      <GhLogo
                           className="socialLogo"
-                          src={github}
                           alt={`${this.state.companyName} GitHub page`}
                       />
                   </a>
                   <a href={`https://www.linkedin.com/${this.state.companyName}`}>
-                      <img
+                      <LiLogo
                           className="socialLogo"
-                          src={linkedIn}
                           alt={`${this.state.companyName} LinkedIn page`}
                       />
                   </a>
                   <a href={`https://www.stackoverflow.com/${this.state.companyName}`}>
-                      <img
+                      <SoLogo
                           className="socialLogo"
-                          src={stackOverflow}
                           alt={`${this.state.companyName} Stack Overflow page`}
                       />
                   </a>
                   <a href={`https://www.facebook.com/${this.state.companyName}`}>
-                      <img
+                      <FbLogo
                           className="socialLogo"
-                          src={facebook}
                           alt={`${this.state.companyName} Facebook page`}
+                          title={this.state.companyName}
                       />
                   </a>
                   <a href={`https://www.instagram.com/${this.state.companyName}`}>
-                      <img
+                      <InLogo
                           className="socialLogo"
-                          src={instagram}
                           alt={`${this.state.companyName} Instagram page`}
                       />
                   </a>
                   <a href={`https://www.twitter.com/${this.state.companyName}`}>
-                      <img
+                      <TwLogo
                           className="socialLogo"
-                          src={twitter}
                           alt={`${this.state.companyName} Twitter page`}
                       />
                   </a>

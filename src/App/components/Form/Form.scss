@@ -55,28 +55,11 @@
 
 @media (min-width: $screen-lg-min) {
     .form {
-        .text-color {
-            color: #EF3C24;
-        }
-
-        .border-bot {
-            border-bottom: 1px solid #EF3C24;
-        }
-
-        .border-all {
-            border: 1px solid #EF3C24
-        }
-
         // Modifies CSS for Button Component
-        .send-button {
+        .send-button:hover {
+            color: #fff;
+            background: $orange;
             border: 1px solid $orange;
-            color: $orange;
-            font-family: inherit;
-
-            &:hover {
-                color: #fff;
-                background: $orange;
-            }
         }
 
     }

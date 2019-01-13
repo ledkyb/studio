@@ -7,6 +7,10 @@ h1 {
   letter-spacing: 3px;
 }
 
+a {
+  color: $orange;
+}
+
 #contact {
   height: calc(100vh - 60px);
   min-height: 766px;
@@ -35,28 +39,22 @@ h1 {
 /* **** Responsive **** */
 
 /* Keeps elements within row */
-@media (max-height: 766px) {
+@media (max-width: $screen-md-max) and (max-height: 766px) {
   .header {
     min-height: 200px;
   }
   .formContainer {
-    min-height: 366px;
+    min-height: 300px;
   }
   .footer {
-    min-height: 200px;
+    min-height: 250px;
   }
 }
 
 /* Extra small devices */
 @media (max-width: $screen-xs-max) {
-  .formContainer {
-    max-width: 100%;
-  }
-  a {
-    color: $orange;
-  }
   .background {
-    background: url("Assets/Background/cloud-3.png") bottom -7em left -10em no-repeat, url("Assets/Background/cloud-3.png") white bottom -9em left 1em no-repeat;
+    background: url("Assets/Background/cloud-3.png") bottom -5em left -12em no-repeat, url("Assets/Background/cloud-3.png") white bottom -8em left 3em no-repeat;
     background-size: 30em 15em, 30em 15em;
   }
   .headerText, #footer {
@@ -66,12 +64,6 @@ h1 {
 
 /* Small devices */
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  .formContainer {
-    max-width: 100%;
-  }
-  a {
-    color: $orange;
-  }
   .background {
     background: url("Assets/Background/cloud-two.png") bottom -1em left 10em no-repeat, url("Assets/Background/cloud-3.png") white bottom -5em left -10em no-repeat;
     background-size: 25em 8em, 30em 14em;
@@ -81,11 +73,7 @@ h1 {
 /* Medium devices */
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
   h1 {
-    color: #fff;
     font-size: 3rem;
-  }
-  a {
-    color: #fff;
   }
   #contact {
     height: 100vh;
@@ -95,28 +83,23 @@ h1 {
     background-size: 8em 4em, 30em 10em, 40em 20em;
   }
   .header {
-    background-color: $orange;
     height: 30vh;
   }
   .headerText {
     font-size: 1.2em;
   }
   .formContainer {
-    height: 60vh;
+    height: 45vh;
   }
   .footer {
-    height: 10vh;
+    height: 25vh;
   }
 }
 
 /* Large devices */
 @media (min-width: $screen-lg-min) {
   h1 {
-    color: #fff;
     font-size: 3rem;
-  }
-  a {
-    color: #fff;
   }
   #contact {
     height: 100vh;
@@ -126,7 +109,6 @@ h1 {
     background-size: 10em 5em, 30em 11em, 40em 20em, 40em 20em;
   }
   .header {
-    background-color: $orange;
     height: 30vh;
   }
   .headerText {

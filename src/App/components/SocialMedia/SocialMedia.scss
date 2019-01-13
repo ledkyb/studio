@@ -7,4 +7,11 @@
 .socialLogo {
   height: 40px;
   width: 40px;
+  stroke: $black;
+  stroke-width: 7px;
+  fill: none;
+
+  &:hover {
+    stroke: $orange;
+  }
 }
