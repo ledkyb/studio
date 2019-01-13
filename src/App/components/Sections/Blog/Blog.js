@@ -11,7 +11,7 @@ class Blog extends Component {
 // 990 px width is mobile
 // 575 px width and below is xs
   render(){
-    return(
+    return( 
       <div  className="container topContainer p-0 " >
         <div className="row m-0">
           <div className="col-lg-12 p-0">
@@ -133,11 +133,12 @@ class Blog extends Component {
                 <span className="sr-only">Next</span>
               </a>
             </div> 
-          </div>
+          </div> 
         </div>                                         
+ 
       </div>
-    )      
-  }    
+    )
+  }
 }
 
 

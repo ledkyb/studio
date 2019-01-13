@@ -1,10 +1,11 @@
 #socialMenu {
   position: relative;
-  bottom: 0;
-  top: 375px;
-  left: 25px;
+  top: 10px;
+  left: 15px;
 
   .social-menu-icon {
+    text-align: left;
+
     img {
       cursor: pointer;
       transition: 200ms all ease-in-out;
