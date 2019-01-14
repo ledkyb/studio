@@ -16,25 +16,30 @@ class Form extends Component {
   };
 
   submit = e => {
-    console.log('Submitted');
-    let data = this.state;
-    console.log(data);
+    e.preventDefault();
+
+    const dataToSend = Object.keys(this.state).map((key) => {
+      return encodeURIComponent(key) + '=' + encodeURIComponent(this.state[key]);
+    }).join('&');
+
     fetch('https://postal.ledkyb.com/', {
       method: 'POST',
-      body: data  //Bodypaser used in server, no need to JSON.stringify
+      headers: {
+        "Content-type": "application/x-www-form-urlencoded"
+      },
+      body: dataToSend
     })
-      .then((res) => res.json())
-      .then(response => {
-        console.log('Success!!!');
-        console.log(response);
-        window.test = response;
-      })
-      .then(() => {
-        this.setState({
-          name: '',
-          email: '',
-          message: ''
-        });
+      .then((res) => res.status)
+      .then((status) => {
+        if (status === 200) {
+          console.log('Success!!!');
+          alert(`Thank you ${this.state.name}.  Your message has been sent.`);
+          this.setState({
+            name: '',
+            email: '',
+            message: ''
+          });
+        }
       })
       .catch(error => console.error('Error:', error));
   };
@@ -51,21 +56,21 @@ class Form extends Component {
                   htmlFor="name">Name</label>
                 <input
                   className="col-10 col-lg-9 form-control border-0 text-dark"
-                  type="text" id="name" onChange={this.change} />
+                  type="text" id="name" value={this.state.name} onChange={this.change} />
               </div>
               <div className="row form-group border-bot">
                 <label
                   className="col-2 p-0 text-color"
                   htmlFor="email">Email</label>
                 <input className="col-10 form-control border-0 text-dark"
-                  type="text" id="email" onChange={this.change} />
+                  type="text" id="email" value={this.state.email} onChange={this.change} />
               </div>
             </div>
             <div className="col-lg-5">
               <div className="row form-group h-100">
                 <textarea
                   className="col-12 form-control border-all rounded-0 text-dark h-100"
-                  id="message" onChange={this.change} />
+                  id="message" value={this.state.message} onChange={this.change} />
               </div>
             </div>
           </div>
