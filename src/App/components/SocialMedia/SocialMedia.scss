@@ -1,7 +1,9 @@
 @import '../../../index.scss';
 
 #social {
-
+    * {
+        transition: 30ms all ease-in-out;
+    }
 }
 
 .socialLogo {
