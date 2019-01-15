@@ -10,12 +10,12 @@ class Tracker extends Component {
               <nav className="secondary-navigation">
                 <ul>
 
-                  <li className="active" ><a href="#home"> </a></li>
-                  <li><a href="#about"> </a></li>
-                  <li><a href="#team"> </a></li>
-                  <li><a href="#blog"> </a></li>
-                  <li><a href="#services"> </a></li>
-                  <li><a href="#contact"> </a></li>
+                  <li className="active" ><a href="#home" tabIndex="-1"> </a></li>
+                  <li><a href="#about" tabIndex="-1"> </a></li>
+                  <li><a href="#team" tabIndex="-1"> </a></li>
+                  <li><a href="#blog" tabIndex="-1"> </a></li>
+                  <li><a href="#services" tabIndex="-1"> </a></li>
+                  <li><a href="#contact" tabIndex="-1"> </a></li>
 
                 </ul>
               </nav>
