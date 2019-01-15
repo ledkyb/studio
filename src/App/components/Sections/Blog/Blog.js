@@ -12,8 +12,8 @@ class Blog extends Component {
 // 575 px width and below is xs
   render(){
     return(
-      <div  className="container topContainer p-0 " >
-        <div className="row m-0">
+      <div id="blog"  className="row" >
+        <div className="container-fluid p-0">
           <div className="col-lg-12 p-0">
             <div  id="carouselExampleControls"  className="carousel  slide " data-ride="carousel" >              
               <div className="carousel-inner ">
