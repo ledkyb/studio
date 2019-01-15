@@ -42,12 +42,13 @@
         margin: 0;
         border: 1px solid $black;
         color: $black;
-        font-family: 'avenirheavy', sans-serif;
+        font-family: 'avenirbook', sans-serif;
 
         &:hover {
             text-decoration: none;
-            color: $black;
-            background: #fff;
+            color: $light-gray;
+            background: $orange;
+            border: 1px solid $orange;
         }
     }
 
