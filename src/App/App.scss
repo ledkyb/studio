@@ -56,6 +56,18 @@
   transition: 300ms all ease-in;
 }
 
+// global focus
+*:focus,
+.form input:focus,
+.form textarea:focus  {
+  outline: 0;
+  // outline: 5px auto -webkit-focus-ring-color;
+  border: 1px solid $light-orange;
+  -webkit-box-shadow: none;
+  box-shadow: 0 0 5px 2px $orange;
+  transition: 0s;
+}
+
 // art elements
 .diamond {
   width: 10px;

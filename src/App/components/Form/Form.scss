@@ -10,18 +10,11 @@
 
     label {
         font-family: 'avenirheavy', sans-serif;
-    }
-
-    input:focus {
-        box-shadow: none;
+        font-size: 14px;
     }
 
     textarea {
         resize: none;
-    }
-
-    textarea:focus {
-        box-shadow: none;
     }
 
     .text-color {
@@ -46,21 +39,10 @@
 
         &:hover {
             text-decoration: none;
-            color: $black;
-            background: #fff;
-        }
-    }
-
-}
-
-@media (min-width: $screen-lg-min) {
-    .form {
-        // Modifies CSS for Button Component
-        .send-button:hover {
             color: #fff;
             background: $orange;
             border: 1px solid $orange;
         }
-
     }
+
 }
