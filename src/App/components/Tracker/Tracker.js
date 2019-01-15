@@ -6,11 +6,7 @@ class Tracker extends Component {
     super(props);
     this.elemIdList = ['home', 'about', 'team', 'blog', 'services', 'contact']; //id of sections
     this.state = {
-      home: '',
-      about: '',
-      team: '',
-      services: '',
-      contact: ''
+      activeList: ['', '', '', '', '', '']
     }
   }
   componentDidMount() {
@@ -50,28 +46,9 @@ class Tracker extends Component {
 
   //Changes which section has active className
   checkActiveSection = index => {
-    switch(index){
-      case 0:
-        this.setState({home: 'active', about:''});
-        break;
-      case 1:
-        this.setState({home: '', about: 'active', team: ''});
-        break;
-      case 2:
-        this.setState({about: '', team: 'active', blog: ''});
-        break;
-      case 3: 
-        this.setState({team: '', blog: 'active', services: ''});
-        break;
-      case 4:
-        this.setState({blog: '', services: 'active', contact: ''});
-        break;
-      case 5:
-        this.setState({services: '', contact: 'active'});
-        break;
-      default:
-        this.setState({home: '', about: '', team: '', blog: '', services: '', contact: ''});
-    }
+    const newActiveList = ['', '', '', '', '', ''];
+    newActiveList[index] = 'active';
+    this.setState({activeList: newActiveList});
   }
 
   render() {
@@ -82,12 +59,12 @@ class Tracker extends Component {
               <nav className="secondary-navigation">
                 <ul>
 
-                  <li className={this.state.home} onClick={() => this.handleScrollToElement("home")}><a href="#home"> </a></li>
-                  <li className={this.state.about} onClick={() => this.handleScrollToElement("about")}><a href="#about"> </a></li>
-                  <li className={this.state.team} onClick={() => this.handleScrollToElement("team")}><a href="#team"> </a></li>
-                  <li className={this.state.blog} onClick={() => this.handleScrollToElement("blog")}><a href="#blog"> </a></li>
-                  <li className={this.state.services} onClick={() => this.handleScrollToElement("services")}><a href="#services"> </a></li>
-                  <li className={this.state.contact} onClick={() => this.handleScrollToElement("contact")}><a href="#contact"> </a></li>
+                  <li className={this.state.activeList[0]} onClick={() => this.handleScrollToElement("home")}><a href="#home"> </a></li>
+                  <li className={this.state.activeList[1]} onClick={() => this.handleScrollToElement("about")}><a href="#about"> </a></li>
+                  <li className={this.state.activeList[2]} onClick={() => this.handleScrollToElement("team")}><a href="#team"> </a></li>
+                  <li className={this.state.activeList[3]} onClick={() => this.handleScrollToElement("blog")}><a href="#blog"> </a></li>
+                  <li className={this.state.activeList[4]} onClick={() => this.handleScrollToElement("services")}><a href="#services"> </a></li>
+                  <li className={this.state.activeList[5]} onClick={() => this.handleScrollToElement("contact")}><a href="#contact"> </a></li>
 
                 </ul>
               </nav>
