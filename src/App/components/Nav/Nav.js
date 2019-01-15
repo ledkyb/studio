@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import './Nav.scss';
-import Hamburger from './Logo/Assets/menu.svg';
+
+import togglerDark from './Logo/Assets/menu.svg';
+import togglerLight from './Logo/Assets/menu-white.svg';
+
 import Social from './Social/Social';
 
 import darkLogo from './Logo/Assets/icon-color.svg';
@@ -33,7 +36,7 @@ class Nav extends Component {
   switchLogo() {
     const logo = document.getElementById('logo'),
         sections = document.querySelectorAll('[data-section]'),
-        scrollPosition = Number(document.documentElement.scrollTop) + 15;
+        scrollPosition = Number(document.documentElement.scrollTop) + 25;
 
     if (document.body.contains(logo)) {
       let selected = null;
@@ -118,7 +121,7 @@ class Nav extends Component {
                         aria-expanded="false"
                         aria-label="Toggle navigation"
                         onClick={this.switch}>
-                  <img src={Hamburger} alt="mobile menu"/>
+                  <img src={this.state.bg === 'dark' ? togglerLight : togglerDark} alt="mobile menu"/>
                 </button>
 
               </div>
