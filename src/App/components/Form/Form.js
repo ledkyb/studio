@@ -49,13 +49,13 @@ class Form extends Component {
       <div className="form container col-10 bg-transparent">
         <form>
           <div className="row form-group justify-content-between">
-            <div className="col-lg-5">
+            <div className="col-lg-5 mb-4 mb-lg-0">
               <div className="row form-group border-bot">
                 <label
                   className="col-2 p-0 text-color"
                   htmlFor="name">Name</label>
                 <input
-                  className="col-10 col-lg-9 form-control border-0 text-dark"
+                  className="col-10 form-control border-0 text-dark"
                   type="text" id="name" value={this.state.name} onChange={this.change} />
               </div>
               <div className="row form-group border-bot">
@@ -74,7 +74,7 @@ class Form extends Component {
               </div>
             </div>
           </div>
-          <div className="row form-group justify-content-end">
+          <div className="row justify-content-end">
             <div onClick={this.submit}>
               <Button link="#contact" label="send" styles="send-button" />
             </div>
