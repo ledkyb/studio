@@ -1,5 +1,6 @@
 @import '../../../index.scss';
 .tracker {
+  z-index: 4;
   position: relative;
 
   .secondary-navigation-container {
