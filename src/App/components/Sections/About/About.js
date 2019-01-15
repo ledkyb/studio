@@ -11,7 +11,7 @@ class About extends Component {
 
     render(){
         return(
-          <section id='about' className='row'>
+          <section id='about' className='row' data-bg="dark" data-section="about">
             <div className='container-fluid' >
               <div className='row h-100 align-content-start'>
 

@@ -19,7 +19,7 @@ import Contact from './components/Sections/Contact/Contact';
 class App extends Component {
   render() {
     return (
-        <div className="container-fluid" >
+        <div className="app-content" >
          {/*components*/}
           <Nav/>
           <Tracker/>

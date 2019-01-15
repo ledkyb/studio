@@ -3,18 +3,10 @@ import './Blog.scss';
 import 'bootstrap';
 import 'popper.js';
 
-// import code from '../../../../../public/images/blog/post-one.jpg'
-
 class Blog extends Component {
-  componentWillMount() {
-
-  }
-
-// 990 px width is mobile
-// 575 px width and below is xs
   render() {
     return (
-        <div id="blog" className="row">
+        <section id="blog" className="row">
           <div className="container-fluid p-0">
             <div className="col-lg-12 p-0">
               <div id="carouselExampleControls" className="carousel  slide "
@@ -198,7 +190,7 @@ class Blog extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </section>
     );
   }
 }

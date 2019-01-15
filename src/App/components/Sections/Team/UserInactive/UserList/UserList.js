@@ -156,7 +156,7 @@ class UserList extends Component {
 
   render(){
     return (
-      <div className=" team-user-container col col-lg-6 d-flex flex-column justify-content-center align-items-center">
+      <div className=" team-user-container col col-lg-6 d-flex flex-column justify-content-center align-items-center" data-bg="light" data-section="usersTop">
 
         <div ref={div => this.groupElement = div} className="team-user-item-list d-flex flex-wrap justify-content-around justify-content-lg-between align-items-end align-items-lg-start">
           {this.state.currentGroup}
