@@ -3,6 +3,7 @@ import './Form.scss';
 import Button from '../Button/Buttons';
 
 class Form extends Component {
+
   state = {
     name: '',
     email: '',
@@ -33,7 +34,7 @@ class Form extends Component {
       .then((status) => {
         if (status === 200) {
           console.log('Success!!!');
-          alert(`Thank you ${this.state.name}.  Your message has been sent.`);
+          alert(`Thank you ${this.state.name}. Your message has been sent.`);
           this.setState({
             name: '',
             email: '',
@@ -49,27 +50,31 @@ class Form extends Component {
       <div className="form container col-10 bg-transparent">
         <form>
           <div className="row form-group justify-content-between">
-            <div className="col-lg-5">
+            <div className="col-lg-5 mb-2 mb-lg-0">
               <div className="row form-group border-bot">
-                <label
-                  className="col-2 p-0 text-color"
-                  htmlFor="name">Name</label>
-                <input
-                  className="col-10 col-lg-9 form-control border-0 text-dark"
-                  type="text" id="name" value={this.state.name} onChange={this.change} />
+                <div className="col-12 pb-1 pl-0">
+                  <label
+                    className="p-0 m-0 d-inline-block mr-3 text-color"
+                    htmlFor="name">Name</label>
+                  <input
+                    className="p-0 border-0 text-dark d-inline-block w-75"
+                    type="text" id="name" value={this.state.name} onChange={this.change} />
+                </div>
               </div>
-              <div className="row form-group border-bot">
-                <label
-                  className="col-2 p-0 text-color"
-                  htmlFor="email">Email</label>
-                <input className="col-10 form-control border-0 text-dark"
-                  type="text" id="email" value={this.state.email} onChange={this.change} />
+              <div className="row form-group mb-lg-0 border-bot">
+                <div className="col-12 pb-1 pl-0 mt-1 mt-lg-4">
+                  <label
+                    className="p-0 m-0 d-inline-block mr-3 text-color"
+                    htmlFor="email">Email</label>
+                  <input className="border-0 text-dark d-inline-block w-75"
+                    type="text" id="email" value={this.state.email} onChange={this.change} />
+                </div>
               </div>
             </div>
             <div className="col-lg-5">
               <div className="row form-group h-100">
                 <textarea
-                  className="col-12 form-control border-all rounded-0 text-dark h-100"
+                  className="col-12 form-control rounded-0 text-dark h-100 border-all"
                   id="message" value={this.state.message} onChange={this.change} />
               </div>
             </div>
