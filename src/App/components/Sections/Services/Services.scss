@@ -40,24 +40,25 @@
 
   .services-art-element-mobile {
 
-    .cloud-3 {
-      display: block;
-      position: absolute;
-      bottom: -20px;
-      max-width: 75%;
-      left: -100px;
-      z-index: -1;
-    }
+    img:first-child {
+       bottom: -112px;
+       width: 125%;
+       max-width: 150%;
+       left: -15px;
+       -webkit-transform: rotateY(180deg);
+       transform: rotateY(180deg);
+       z-index: 0;
+      }
 
-  .cloud-two {
-     bottom: -112px;
-     width: 125%;
-      max-width: 150%;
-      left: -15px;
-      -webkit-transform: rotateY(180deg);
-      transform: rotateY(180deg);
-      z-index: 0;
-    }
+      img:last-child {
+        display: block;
+        position: absolute;
+        bottom: -20px;
+        max-width: 75%;
+        left: -100px;
+        z-index: -1;
+      }
+
 
     @media screen and (min-width: $screen-lg-min) {
       padding-top: 3rem;
@@ -120,43 +121,5 @@
 
   }
 
-
-  /*@keyframes cloud-3-animate {
-    from {right: 180px;
-          top: 175px;}
-    to {right: -9999px; top: 120px;}
-  }*/
-  @keyframes cloud-3-animate {
-    0% {
-      right: 180px;
-      top: 175px;
-    }
-    75% {
-      right: 9999px;
-      top: 120px;
-    }
-    100% {
-      display: none;
-    }
-  }
-
-  /*@keyframes cloud-two-animate {
-    from {right: 40px;
-          bottom: 60px;}
-    to {right: -9999px; top: 120px;}
-  }*/
-  @keyframes cloud-two-animate {
-    0% {
-      right: 40px;
-      bottom: 60px;
-    }
-    75% {
-      right: -9999px;
-      top: 120px;
-    }
-    100% {
-      display: none;
-    }
-  }
 
 }

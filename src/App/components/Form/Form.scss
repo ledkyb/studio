@@ -13,6 +13,10 @@
         font-size: 14px;
     }
 
+    input:focus {
+        outline: none;
+    }
+
     textarea {
         resize: none;
     }
@@ -35,7 +39,7 @@
         margin: 0;
         border: 1px solid $black;
         color: $black;
-        font-family: 'avenirheavy', sans-serif;
+        font-family: 'avenirbook', sans-serif;
 
         &:hover {
             text-decoration: none;

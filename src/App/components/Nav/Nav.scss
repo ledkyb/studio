@@ -63,6 +63,10 @@
       transform: rotateZ(270deg);
     }
 
+    .nav-light {
+      filter: brightness(100);
+    }
+
     #navbarNav {
       text-align: right;
     }

@@ -10,6 +10,7 @@ button:focus {
   color: $orange;
   font-family: avenirbook, sans-serif;
   width: 100%;
+  cursor: pointer;
   padding: 0.5em 2.3em;
   transition: 450ms width ease-in, 300ms background-color ease-in;
 
