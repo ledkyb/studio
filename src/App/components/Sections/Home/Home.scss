@@ -4,7 +4,6 @@
   background-image: url("Assets/hero-image-overlayed.jpg");
   background-color: #fff;
   background-size: cover;
-  min-height: 766px;
 
   .text-logo {
     transition: 450ms all ease-in;
@@ -15,7 +14,7 @@
 
   .home-button {
     margin-top: 100px;
-  
+
     a.button {
       border: 1px solid #EF3C24;
       color: #EF3C24;
@@ -92,35 +91,5 @@
         margin-top: 50px;
       }
     }
-  }
-}
-
-/* **** Responsive **** */
-
-/* Extra small devices */
-@media (max-width: $screen-xs-max) {
-  #home {
-    height: calc(100vh - 60px);
-  }
-}
-
-/* Small devices */
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  #home {
-    height: calc(100vh - 60px);
-  }
-}
-
-/* Medium devices */
-@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-  #home {
-    height: calc(100vh - 78.41px);
-  }
-}
-
-/* Large devices */
-@media (min-width: $screen-lg-min) {
-  #home {
-    height: calc(100vh - 78.41px);
   }
 }

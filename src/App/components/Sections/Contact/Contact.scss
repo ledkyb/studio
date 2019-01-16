@@ -11,11 +11,6 @@ a {
   color: $orange;
 }
 
-#contact {
-  height: calc(100vh - 60px);
-  min-height: 766px;
-}
-
 #footer {
   @media (min-width: 1555px) {
     color: $black;
@@ -75,9 +70,6 @@ a {
   h1 {
     font-size: 3rem;
   }
-  #contact {
-    height: 100vh;
-  }
   .background {
     background: url("Assets/Background/cloud-one.png") bottom -1em left 27em no-repeat, url("Assets/Background/cloud-two.png") bottom 0em left 2em no-repeat, url("Assets/Background/cloud-3.png") white bottom -6em left -15em no-repeat;
     background-size: 8em 4em, 30em 10em, 40em 20em;
@@ -100,9 +92,6 @@ a {
 @media (min-width: $screen-lg-min) {
   h1 {
     font-size: 3rem;
-  }
-  #contact {
-    height: 100vh;
   }
   .background {
     background: url("Assets/Background/cloud-one.png") bottom -1em left 30em no-repeat, url("Assets/Background/cloud-two.png") bottom 0em left 4em no-repeat, url("Assets/Background/cloud-3.png") bottom -3em left -20em no-repeat, url("Assets/Background/cloud-3.png") white bottom -7em left -10em no-repeat;
