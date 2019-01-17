@@ -1,9 +1,16 @@
 @import "../../../../index.scss";
 
 #services {
+  min-height: 766px;
+
+  overflow: hidden;
 
   .section-title {
     font-size: 3.1rem;
+
+    @media screen and (max-width: 767.98px){
+      font-size: 2.0rem;
+    }
 
     span {
 
@@ -20,7 +27,7 @@
 
     .services-list-item {
       font-family: avenirbook, sans-serif;
-      font-size: 1.65rem;
+      font-size: 1.45rem;
       list-style-type: none;
     }
 
@@ -39,24 +46,28 @@
   }
 
   .services-art-element-mobile {
+    max-height: 30vh;
+    .cloud-two {
+    /*  display: block;
+      position: absolute;
+      bottom: -112px;*/
+      width: 125%;
+      max-width: 150%;
 
-    img:first-child {
-       bottom: -112px;
-       width: 125%;
-       max-width: 150%;
-       left: -15px;
-       -webkit-transform: rotateY(180deg);
-       transform: rotateY(180deg);
-       z-index: 0;
+      left: -15px;
+      -webkit-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+      z-index: 0;
       }
 
-      img:last-child {
-        display: block;
-        position: absolute;
-        bottom: -20px;
-        max-width: 75%;
-        left: -100px;
-        z-index: -1;
+      .cloud-3 {
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      max-width: 65%;
+
+      left: -100px;
+      z-index: -1;
       }
 
 
@@ -99,7 +110,7 @@
 
       .services-list-item {
         font-family: avenirbook, sans-serif;
-        font-size: .9rem;
+        font-size: 1.0rem;
         list-style-type: none;
       }
     }
@@ -122,4 +133,34 @@
   }
 
 
+}
+
+/* **** Responsive **** */
+
+/* Extra small devices (phones, less than 767px) */
+@media (max-width: $screen-xs-max) {
+  #services {
+    height: calc(100vh - 60px);
+  }
+}
+
+/* Small devices (tablets, 768px to 991px) */
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  #services {
+    height: calc(100vh - 60px);
+  }
+}
+
+/* Medium devices (desktops, 992px to 1199px) */
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  #services {
+    height: 100vh;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+  #services {
+    height: 100vh;
+  }
 }
