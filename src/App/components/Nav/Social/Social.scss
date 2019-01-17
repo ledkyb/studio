@@ -1,23 +1,16 @@
 @import "../../../../index.scss";
 
 #socialMenu {
+  * {
+      transition: 30ms all ease-in-out;
+  }
+
   position: relative;
   top: 10px;
   left: 15px;
 
   .social-menu-icon {
     text-align: left;
-
-    img {
-      cursor: pointer;
-      transition: 200ms all ease-in-out;
-
-      &:hover {
-        width: 55px;
-        margin-left: -2.5px;
-        margin-bottom: -5px;
-      }
-    }
   }
 
   @media screen and (min-width: $screen-lg-min){
