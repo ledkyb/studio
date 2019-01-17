@@ -151,7 +151,7 @@ body {
 
 /* Medium devices */
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-  #about, #blog, #contact, #home, #services, #team, .team-bg{
+  #about, #blog, #contact, #home, #services, #team, .team-bg {
     height: calc(100vh - 60px);
     min-height: 766px;
   }
