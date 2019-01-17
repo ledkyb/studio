@@ -59,18 +59,36 @@ class Tracker extends Component {
               <nav className="secondary-navigation">
                 <ul>
 
-                  <li className={this.state.activeList[0]} onClick={() => this.handleScrollToElement("home")}><a href="#home"> </a></li>
-                  <li className={this.state.activeList[1]} onClick={() => this.handleScrollToElement("about")}><a href="#about"> </a></li>
-                  <li className={this.state.activeList[2]} onClick={() => this.handleScrollToElement("team")}><a href="#team"> </a></li>
-                  <li className={this.state.activeList[3]} onClick={() => this.handleScrollToElement("blog")}><a href="#blog"> </a></li>
-                  <li className={this.state.activeList[4]} onClick={() => this.handleScrollToElement("services")}><a href="#services"> </a></li>
-                  <li className={this.state.activeList[5]} onClick={() => this.handleScrollToElement("contact")}><a href="#contact"> </a></li>
-                  <li className="active" ><a href="#home" tabIndex="-1"> </a></li>
-                  <li><a href="#about" tabIndex="-1"> </a></li>
-                  <li><a href="#team" tabIndex="-1"> </a></li>
-                  <li><a href="#blog" tabIndex="-1"> </a></li>
-                  <li><a href="#services" tabIndex="-1"> </a></li>
-                  <li><a href="#contact" tabIndex="-1"> </a></li>
+                  <li
+                    className={this.state.activeList[0]}
+                    onClick={() => this.handleScrollToElement("home")}>
+                      <a href="#home" title="Jump to Home section" tabIndex="-1" > </a>
+                  </li>
+                  <li
+                    className={this.state.activeList[1]}
+                    onClick={() => this.handleScrollToElement("about")}>
+                      <a href="#about" title="Jump to About section" tabIndex="-1" > </a>
+                  </li>
+                  <li
+                    className={this.state.activeList[2]}
+                    onClick={() => this.handleScrollToElement("team")}>
+                      <a href="#team" title="Jump to Team section" tabIndex="-1" > </a>
+                  </li>
+                  <li
+                    className={this.state.activeList[3]}
+                    onClick={() => this.handleScrollToElement("blog")}>
+                      <a href="#blog" title="Jump to Blog section" tabIndex="-1" > </a>
+                  </li>
+                  <li
+                    className={this.state.activeList[4]}
+                    onClick={() => this.handleScrollToElement("services")}>
+                      <a href="#services" title="Jump to Services section" tabIndex="-1" > </a>
+                  </li>
+                  <li
+                    className={this.state.activeList[5]}
+                    onClick={() => this.handleScrollToElement("contact")}>
+                      <a href="#contact" title="Jump to Contact section" tabIndex="-1" > </a>
+                  </li>
 
                 </ul>
               </nav>
