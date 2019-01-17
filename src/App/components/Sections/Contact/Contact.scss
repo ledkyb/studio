@@ -75,7 +75,7 @@ a {
     background-size: 8em 4em, 30em 10em, 40em 20em;
   }
   .header {
-    height: 30vh;
+    height: calc(30vh - 60px);
   }
   .headerText {
     font-size: 1.2em;
