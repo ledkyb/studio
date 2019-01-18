@@ -5,9 +5,10 @@
 }
 
 #blog1, #blog2, #blog3 {
-  background-size: 100% 100%;
-  height: calc(33vh - 36px);
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  height: calc(33vh - 36px);
 }
 
 #blog1 {
