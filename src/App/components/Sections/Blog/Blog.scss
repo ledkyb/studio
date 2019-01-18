@@ -112,14 +112,26 @@
 
 /* Extra small devices */
 @media (max-width: $screen-xs-max) {
+  .postTitle1, .postTitle2,.postTitle3, .authorInfo {
+      margin-left: 15vw;
+      margin-right: 15vw;
+  }
 }
 
 /* Small devices */
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .postTitle1, .postTitle2,.postTitle3, .authorInfo {
+      margin-left: 5vw;
+      margin-right: 5vw;
+  }
 }
 
 /* Medium devices */
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  .postTitle1, .postTitle2,.postTitle3, .authorInfo {
+      margin-left: 3vw;
+      margin-right: 3vw;
+  }
   .postTitle1 {
       font-size: 1.5rem;
   }
