@@ -39,6 +39,10 @@
   font-size: 1.3rem;
 }
 
+.small {
+    font-size: 0.7rem;
+}
+
 .verticalBar {
   color: #EF3C24;
 }
@@ -132,10 +136,7 @@
       margin-left: 3vw;
       margin-right: 3vw;
   }
-  .postTitle1 {
-      font-size: 1.5rem;
-  }
-  .postTitle2 {
+  .postTitle1, .postTitle2, .postTitle3 {
       font-size: 1.5rem;
   }
 
