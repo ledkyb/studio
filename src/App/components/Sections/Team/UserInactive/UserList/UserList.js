@@ -48,7 +48,7 @@ class UserList extends Component {
   }
 
   checkIfMobile = () => {
-    if(window.innerWidth <= 991){
+    if(document.getElementById('team-bg').offsetWidth <= 991){
       this.setState({
         currentGroup: [this.userList[0], this.userList[1]], 
         showPrevArrow: {opacity: "0", cursor: "default"},
