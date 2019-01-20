@@ -127,7 +127,7 @@ class Team extends Component {
             <section id="team" className="row">
 
                 {/* Team Section Background */}
-                <div className="team-bg position-absolute w-100 d-flex flex-column flex-lg-row">
+                <div id="team-bg" className="team-bg position-absolute w-100 d-flex flex-column flex-lg-row">
                     <div className="team-left-bg w-100 h-100 d-flex align-items-end">
                         <div className="team-btn-bg d-flex d-lg-none w-100" data-bg="dark" data-section="usersControls"/>
                     </div>
