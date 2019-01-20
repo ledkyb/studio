@@ -73,6 +73,36 @@
     }
 }
 
+/* *** Carousel Indicators *** */
+.item img {
+  width: 100%;
+  height: auto
+}
+
+ol.carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+}
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+  float: left;
+  width: 33%;
+  height: 5px;
+  margin: 0;
+  border-radius: 0;
+  border: 0;
+  background: transparent;
+}
+
+ol.carousel-indicators li.active {
+  background: $light-orange;
+}
+
 /* **** Responsive **** */
 
 /* Extra small devices */

@@ -196,6 +196,12 @@ class Blog extends Component {
                   </div>
                 </div>
 
+                {/* Slide Indicators */}
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
 
                 <a className="carousel-control-prev"
                    href="#carouselExampleControls"
