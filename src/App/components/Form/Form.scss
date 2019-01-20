@@ -10,6 +10,7 @@
 
     label {
         font-family: 'avenirheavy', sans-serif;
+        font-size: 14px;
     }
 
     input:focus {
@@ -18,10 +19,6 @@
 
     textarea {
         resize: none;
-    }
-
-    textarea:focus {
-        box-shadow: none;
     }
 
     .text-color {
@@ -46,39 +43,10 @@
 
         &:hover {
             text-decoration: none;
-            color: $light-gray;
+            color: #fff;
             background: $orange;
             border: 1px solid $orange;
         }
     }
 
-}
-
-@media (min-width: 992px) {
-    .form {
-        .text-color {
-            color: #EF3C24;
-        }
-
-        .border-bot {
-            border-bottom: 1px solid #EF3C24;
-        }
-
-        .border-all {
-            border: 1px solid #EF3C24
-        }
-
-        // Modifies CSS for Button Component
-        .send-button {
-            border: 1px solid $orange;
-            color: $orange;
-            font-family: inherit;
-
-            &:hover {
-                color: #fff;
-                background: $orange;
-            }
-        }
-
-    }
 }

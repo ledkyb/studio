@@ -12,7 +12,7 @@ class Services extends Component {
     return (
         <section id="services" className="row" data-bg="light" data-section="services">
 
-          <div className="container">
+          <div className="container h-100">
 
             <div className='row mt-5 mb-3'>
               <p className='section-title big-john pl-3'>SERVICES

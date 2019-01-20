@@ -4,7 +4,6 @@
   background-image: url("Assets/hero-image-overlayed.jpg");
   background-color: #fff;
   background-size: cover;
-  min-height: 766px;
 
   .text-logo {
     transition: 450ms all ease-in;
@@ -15,7 +14,7 @@
 
   .home-button {
     margin-top: 100px;
-  
+
     .button {
       border: 1px solid #EF3C24;
       color: #EF3C24;
@@ -43,14 +42,14 @@
     font-family: slime-joe, sans-serif;
   }
 
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: $screen-xl-min) {
     .text-logo {
       max-width: 200px;
     }
 
   }
 
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: $screen-md-max) {
     .text-logo {
       max-width: 225px;
       margin-top: 200px;
@@ -58,7 +57,7 @@
 
   }
 
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: $screen-sm-max) {
     .home-button{
       a.button {
         width: 100%;
@@ -67,7 +66,7 @@
     }
   }
 
-  @media only screen and (max-width: 575px) {
+  @media only screen and (max-width: $screen-xs-max) {
     #home .text-logo {
       max-width: 230px;
       margin: 80px auto 0 auto;
@@ -92,35 +91,5 @@
         margin-top: 50px;
       }
     }
-  }
-}
-
-/* **** Responsive **** */
-
-/* Extra small devices (phones, less than 767px) */
-@media (max-width: $screen-xs-max) {
-  #home {
-    height: calc(100vh - 60px);
-  }
-}
-
-/* Small devices (tablets, 768px to 991px) */
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  #home {
-    height: calc(100vh - 60px);
-  }
-}
-
-/* Medium devices (desktops, 992px to 1199px) */
-@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-  #home {
-    height: calc(100vh - 78.41px);
-  }
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: $screen-lg-min) {
-  #home {
-    height: calc(100vh - 78.41px);
   }
 }

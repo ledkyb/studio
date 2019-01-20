@@ -1,7 +1,7 @@
 @import "../../../../index.scss";
 
 #services {
-  min-height: 766px;
+  overflow: hidden;
 
   .section-title {
     font-size: 3.1rem;
@@ -61,7 +61,7 @@
       }
 
 
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: $screen-lg-min) {
       padding-top: 3rem;
       display: none;
     }
@@ -70,7 +70,7 @@
 
   .services-art-element {
 
-    @media screen and (max-width: 991.98px){
+    @media screen and (max-width: $screen-md-max){
       display: none;
     }
 
@@ -123,34 +123,4 @@
   }
 
 
-}
-
-/* **** Responsive **** */
-
-/* Extra small devices (phones, less than 767px) */
-@media (max-width: $screen-xs-max) {
-  #services {
-    height: calc(100vh - 60px);
-  }
-}
-
-/* Small devices (tablets, 768px to 991px) */
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  #services {
-    height: calc(100vh - 60px);
-  }
-}
-
-/* Medium devices (desktops, 992px to 1199px) */
-@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-  #services {
-    height: 100vh;
-  }
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: $screen-lg-min) {
-  #services {
-    height: 100vh;
-  }
 }

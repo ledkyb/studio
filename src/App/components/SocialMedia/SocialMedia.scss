@@ -1,10 +1,19 @@
 @import '../../../index.scss';
 
 #social {
-
+    * {
+        transition: 30ms all ease-in-out;
+    }
 }
 
 .socialLogo {
   height: 40px;
   width: 40px;
+  stroke: $black;
+  stroke-width: 7px;
+  fill: none;
+
+  &:hover {
+    stroke: $orange;
+  }
 }

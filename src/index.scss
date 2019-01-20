@@ -6,10 +6,16 @@ $gray : #D9E1E2;
 $light-gray : #DDE5ED;
 $black : #212322;
 
-/* Media Query Values */
-$screen-lg-min: 1200px;
-$screen-md-max: 1200px;
-$screen-md-min: 992px;
-$screen-sm-max: 992px;
-$screen-sm-min: 768px;
-$screen-xs-max: 768px;
+/*
+ * *** Media Query Values ***
+ *  - Usage example: @media (min-width: $screen-size-min) {...}
+ *                   @media (max-width: $screen-size-max) {...}
+ */
+$screen-xl-min: 1200px;
+$screen-lg-max: 1199.98px;
+$screen-lg-min: 992px;
+$screen-md-max: 991.98px;
+$screen-md-min: 768px;
+$screen-sm-max: 767.98px;
+$screen-sm-min: 576px;
+$screen-xs-max: 575.98px;

@@ -1,119 +1,214 @@
 @import '../../../../index.scss';
 
-#blog1{
-  background-image: url("../Blog/AssetsB/post-one.jpg");
-  background-size: 100% 100%;
-  height: 80vh;
-  max-height: 100%;
-  background-repeat: no-repeat;
-}
-#blog2{
-  background-image: url("../Blog/AssetsB/post-two.jpg");
-  background-size: 100% 100%;
-  height: 45vh;
-  background-repeat: no-repeat;
-}
-#blog3{
-  background-image: url("../Blog/AssetsB/post-two.jpg");
-  background-size: 100% 100%;
-  height: 35vh;
-  background-repeat: no-repeat;
-}
-.postOne{
-  background-color: black;      
-  background-color: rgba(0,0,0,.8); 
-  height: auto;
-}
-.postTwo, .postThree{
-  background-color: black;     
-  background-color: rgba(0,0,0,.8); 
-  height: auto;
-  position: absolute;
-  left: 30px;
-  bottom: 30px; 
-  width: 21vw;
-}
-.postTitle1{
-  // font-family: "Arial Black", Gadget, sans-serif; 
-}
-.postTitle2{
-  // font-family: "Arial Black", Gadget, sans-serif; 
-    
-}
-.postTitle3{
-  // font-family: "Arial Black", Gadget, sans-serif; 
-}
-.verticalBar {
-  color: #EF3C24;
-}
-.carosuel{
-  background-color: rgba(0,0,1,.5);  
-}
-.carousel-control-next, .carousel-control-prev{
-  width: 90px;
-  opacity: .4;
-
+#blog {
+    overflow: hidden;
 }
 
-@media (max-height: 1280px ) and ( max-width: 990px) {
-  #blog1, #blog2{
-    max-height: 26vh ;
-  }
-  #blog3{
-    max-height: 26vh;
-    margin-bottom: 3rem;
-  }
-  .postOne, .postTwo,.postThree {
+#blog1, #blog2, #blog3 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc(33vh - 36px);
+}
+
+#blog1 {
+    background-image: url("../Blog/AssetsB/post-one.jpg");
+    min-height: 239.4px;
+}
+
+#blog2, #blog3 {
+    background-image: url("../Blog/AssetsB/post-two.jpg");
+    min-height: 239.3px;
+}
+
+.postOne, .postTwo, .postThree {
+    background-color: black;
+    background-color: rgba(0,0,0,.8);
+    width: 100%;
+    height: auto;
     position: absolute;
-    bottom: 0; 
-    left: 0px;    
-    width: 100%
-    }
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+}
 
-  .carousel-control-prev, .carousel-control-next{
+.postTitle1, .postTitle2, .postTitle3 {
+    font-family: big-john, Gadget, sans-serif;
+    font-size: 1.3rem;
+}
+
+.small {
+    font-size: 0.7rem;
+}
+
+.verticalBar {
+    color: #EF3C24;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF7F41' viewBox='1 1 6 6'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 0.5 0.5 3-3-3-3z'/%3E%3C/svg%3E");
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF7F41' viewBox='0 0 6 6'%3E%3Cpath d='M5.25 0l-3 3 3 3 0.5-0.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next, .carousel-control-prev {
+    height: 48px;
+    width: 50%;
     background-color: #EF3C24;
     opacity: 1;
-    height: 3rem;
-    bottom: 0;
-    width: 50%;
-    margin-top: 78vh;
-  }   
+    top: 100%;
+}
+.carousel-control-next:hover, .carousel-control-prev:hover {
+    .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFF' viewBox='1 1 6 6'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 0.5 0.5 3-3-3-3z'/%3E%3C/svg%3E");
+    }
+    .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFF' viewBox='0 0 6 6'%3E%3Cpath d='M5.25 0l-3 3 3 3 0.5-0.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
 }
 
-@media ( min-width: 990px) {
-  .postOne {
-    max-width: 430px;    
-  }
-  .postTwo,.postThree{
-    min-width: 330px;
-  }
+/* *** Carousel Indicators *** */
+.item img {
+  width: 100%;
+  height: auto
 }
 
-
-@media ( max-width: 990px){
-  .postTitle1, .postTitle2, .postTitle3{
-    font-size: 1.1rem;
-  }  
-  .small{
-    font-size: .7rem;
-  }  
+ol.carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  left: 0;
+  right: 0;
+  width: auto;
 }
 
-@media (max-width: 575px) {
-  .postTitle1, .postTitle2,.postTitle3, .authorInfo {
-    margin-left: 4vw;
-    margin-right: 5vw;
-  }
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+  float: left;
+  width: 33%;
+  height: 5px;
+  margin: 0;
+  border-radius: 0;
+  border: 0;
+  background: transparent;
 }
 
-@media (max-width: 475px) {
-  .postTitle1, .postTitle2,.postTitle3, .authorInfo {
-    margin-left: 5vw;
-  }
+ol.carousel-indicators li.active {
+  background: $light-orange;
 }
 
-@media (max-width: 300px) {
-  .postTitle1, .postTitle2,.postTitle3, .authorInfo {
-    margin-left: 6.5vw;
+/* **** Responsive **** */
+
+/* Extra small devices */
+@media (max-width: $screen-xs-max) {
+    .postTitle1, .postTitle2,.postTitle3, .authorInfo {
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+}
+
+/* Small devices */
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .postTitle1, .postTitle2,.postTitle3, .authorInfo {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+}
+
+/* Medium devices */
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    .postTitle1, .postTitle2,.postTitle3, .authorInfo {
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+    .postTitle1, .postTitle2, .postTitle3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Large devices */
+@media (min-width: $screen-lg-min) {
+    #blog1 {
+        height: 100vh;
+    }
+    #blog2 {
+        height: 60vh;
+    }
+    #blog3 {
+        height: 40vh;
+    }
+    .postOne {
+        position: absolute;
+        left: 25%;
+        bottom: 70%;
+        width: 35vw;
+        max-width: 430px;
+    }
+    .postTwo, .postThree {
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+        width: 21vw;
+        min-width: 330px;
+    }
+    .postTitle1 {
+        font-size: 1.5rem;
+    }
+    .postTitle2, .postTitle3 {
+        font-size: 1.3rem;
+    }
+    .small {
+        font-size: 0.8rem;
+    }
+    .carousel-control-next, .carousel-control-prev {
+        height: 100%;
+        width: 10%;
+        background-color: rgba(0, 0, 0, 0);
+        opacity: 1;
+        top: 0;
+    }
+    .carousel-control-next {
+        background-image: linear-gradient(to right, rgba(0, 0, 1, 0.1), rgba(0, 0, 1, 1));
+    }
+    .carousel-control-prev {
+        background-image: linear-gradient(to left, rgba(0, 0, 1, 0.1), rgba(0, 0, 1, 1));
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 50px;
+        height: 50px;
+    }
+    .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF7F41' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 0.5 0.5 3-3-3-3z'/%3E%3C/svg%3E");
+    }
+    .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF7F41' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-3 3 3 3 0.5-0.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+    /* Changes arrow color on control hover */
+    .carousel-control-next:hover, .carousel-control-prev:hover {
+        opacity: 1;
+
+        .carousel-control-next-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFF' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 0.5 0.5 3-3-3-3z'/%3E%3C/svg%3E");
+        }
+        .carousel-control-prev-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFF' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-3 3 3 3 0.5-0.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+        }
+    }
+}
+
+/* Extra Large Devices - Side Scroller Appears */
+@media (min-width: 1367px) {
+  /* TODO: decide UI for large screens */
+  #blog {
+      max-width: 1140px;
+      margin-left: auto;
+      margin-right: auto;
   }
 }

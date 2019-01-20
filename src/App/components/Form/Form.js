@@ -3,7 +3,6 @@ import './Form.scss';
 import Button from '../Button/Buttons';
 
 class Form extends Component {
-
   state = {
     name: '',
     email: '',
@@ -50,7 +49,7 @@ class Form extends Component {
       <div className="form container col-10 bg-transparent">
         <form>
           <div className="row form-group justify-content-between">
-            <div className="col-lg-5 mb-2 mb-lg-0">
+            <div className="col-lg-5 mb-4 mb-lg-0">
               <div className="row form-group border-bot">
                 <div className="col-12 pb-1 pl-0">
                   <label
@@ -79,7 +78,7 @@ class Form extends Component {
               </div>
             </div>
           </div>
-          <div className="row form-group justify-content-end">
+          <div className="row justify-content-end">
             <div onClick={this.submit}>
               <Button link="#contact" label="send" styles="send-button" />
             </div>

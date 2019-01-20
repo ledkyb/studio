@@ -15,7 +15,7 @@ class Contact extends Component {
               <div className="background container-fluid">
 
                       <div className="header row text-center">
-                          <div className="col-12 align-self-end align-self-lg-center">
+                          <div className="col-12 px-5 align-self-end align-self-lg-center">
                               <h1 className="text-uppercase">
                                   Start Your Project
                               </h1>
@@ -31,11 +31,11 @@ class Contact extends Component {
                           <Form />
                       </div>
 
-                      <div className="footer row justify-content-between align-items-md-end">
-                          <div className="col-12 align-self-start col-lg-4 align-self-lg-center">
+                      <div className="footer row justify-content-between align-items-md-end pb-1 pb-lg-3">
+                          <div className="col-12 px-4 align-self-start col-lg-4 align-self-lg-end">
                               <SocialMedia />
                           </div>
-                          <div className="col-12 align-self-end col-lg-6 order-lg-first align-self-lg-center">
+                          <div className="col-12 pb-3 align-self-end pb-sm-0 col-lg-6 order-lg-first align-self-lg-end">
                               <Footer />
                           </div>
                       </div>

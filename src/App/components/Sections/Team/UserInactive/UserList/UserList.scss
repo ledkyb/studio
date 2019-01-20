@@ -10,7 +10,7 @@
     height: 530px;
     z-index: 3;
     
-    @media screen and (max-width: 991px){
+    @media screen and (max-width: $screen-md-max){
       z-index: 0;
       width: 100%;
     }
