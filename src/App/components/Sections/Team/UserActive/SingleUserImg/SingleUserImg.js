@@ -36,7 +36,7 @@ class SingleUserImg extends Component{
   }
 
   checkIfMobile = () => {
-    if(window.innerWidth <= 991){
+    if(document.getElementById('team-bg').offsetWidth <= 991){
       this.setState({
         isMobile: true
       });
