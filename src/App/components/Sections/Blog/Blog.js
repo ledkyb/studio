@@ -169,7 +169,7 @@ class Blog extends Component {
                 </div>
 
 
-                <a className="carousel-control-prev carosuel"
+                <a className="carousel-control-prev"
                    href="#carouselExampleControls"
                    role="button"
                    data-slide="prev">
@@ -178,7 +178,7 @@ class Blog extends Component {
                   <span className="sr-only">Previous</span>
                 </a>
 
-                <a className="col-12 col-lg-2 carousel-control-next carosuel"
+                <a className="col-12 col-lg-2 carousel-control-next"
                    href="#carouselExampleControls"
                    role="button"
                    data-slide="next">
