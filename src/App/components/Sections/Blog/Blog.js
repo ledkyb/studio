@@ -19,7 +19,7 @@ class Blog extends Component {
                       {/* blog one */}
                       <div id="blog1" className="p-0 col-12 col-lg-7 ">
                         <div className=" postOne mx-lg-auto mt-5 ">
-                          <a href="#">
+                          <a href="#blog">
                             <p className="postTitle1 text-left text-white h4 mb-sm-0 mb-lg-1 pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-2 font-weight-bold ">POST
                               TITLE, LIMITED TO TWO LINES OF TEXT </p>
                           </a>
@@ -35,7 +35,7 @@ class Blog extends Component {
                         {/* blog two */}
                         <div id="blog2" className="col-12 p-0 ">
                           <div className=" postTwo ">
-                            <a href="#">
+                            <a href="#blog">
                               <p className="postTitle2 text-left text-white h5 mb-0 pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-1  font-weight-bold ">POST
                                 TITLE, LIMITED TO TWO LINES OF TEXT </p>
                             </a>
@@ -49,7 +49,7 @@ class Blog extends Component {
                         {/* blog three */}
                         <div id="blog3" className="col-12 ">
                           <div className=" postThree ">
-                            <a href="#">
+                            <a href="#blog">
                               <p className="postTitle3 text-left text-white h6 mb-0  pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-1 font-weight-bold ">POST
                                 TITLE, LIMITED TO TWO LINES OF TEXT </p>
                             </a>
@@ -71,7 +71,7 @@ class Blog extends Component {
                       {/* blog one */}
                       <div id="blog1" className="p-0 col-12 col-lg-7 ">
                         <div className=" postOne mx-lg-auto mt-5 ">
-                          <a href="#">
+                          <a href="#blog">
                             <p className="postTitle1 text-left text-white h4 mb-sm-0 mb-lg-1 pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-2 font-weight-bold ">POST
                               TITLE, LIMITED TO TWO LINES OF TEXT </p>
                           </a>
@@ -87,7 +87,7 @@ class Blog extends Component {
                         {/* blog two */}
                         <div id="blog2" className="col-12 p-0 ">
                           <div className=" postTwo ">
-                            <a href="#">
+                            <a href="#blog">
                               <p className="postTitle2 text-left text-white h5 mb-0 pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-1  font-weight-bold ">POST
                                 TITLE, LIMITED TO TWO LINES OF TEXT </p>
                             </a>
@@ -101,7 +101,7 @@ class Blog extends Component {
                         {/* blog three */}
                         <div id="blog3" className="col-12 ">
                           <div className=" postThree ">
-                            <a href="#">
+                            <a href="#blog">
                               <p className="postTitle3 text-left text-white h6 mb-0  pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-1 font-weight-bold ">POST
                                 TITLE, LIMITED TO TWO LINES OF TEXT </p>
                             </a>
@@ -122,7 +122,7 @@ class Blog extends Component {
                       {/* blog one */}
                       <div id="blog1" className="p-0 col-12 col-lg-7 ">
                         <div className=" postOne mx-lg-auto mt-5 ">
-                          <a href="#">
+                          <a href="#blog">
                             <p className="postTitle1 text-left text-white h4 mb-sm-0 mb-lg-1 pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-2 font-weight-bold ">POST
                               TITLE, LIMITED TO TWO LINES OF TEXT </p>
                           </a>
@@ -138,7 +138,7 @@ class Blog extends Component {
                         {/* blog two */}
                         <div id="blog2" className="col-12 p-0 ">
                           <div className=" postTwo ">
-                            <a href="#">
+                            <a href="#blog">
                               <p className="postTitle2 text-left text-white h5 mb-0 pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-1  font-weight-bold ">POST
                                 TITLE, LIMITED TO TWO LINES OF TEXT p2</p>
                             </a>
@@ -152,7 +152,7 @@ class Blog extends Component {
                         {/* blog three */}
                         <div id="blog3" className="col-12 ">
                           <div className=" postThree ">
-                            <a href="#">
+                            <a href="#blog">
                               <p className="postTitle3 text-left text-white h6 mb-0  pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-1 font-weight-bold ">POST
                                 TITLE, LIMITED TO TWO LINES OF TEXT p3</p>
                             </a>
