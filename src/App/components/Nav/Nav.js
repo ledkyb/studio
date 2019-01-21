@@ -28,7 +28,7 @@ class Nav extends Component {
 
   positionTracker() {
     window.addEventListener('scroll', e => {
-      if (window.screen && window.screen.width < 991){
+      if (window.screen && window.screen.width <= 991){
         this.switchLogo();
       }
     });

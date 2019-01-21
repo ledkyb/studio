@@ -28,10 +28,11 @@ class App extends Component {
           {/*sections*/}
           <Home/>
           <About/>
+          <Services/>
           <Team/>
           <Blog/>
-          <Services/>
           <Contact/>
+
         </div>
     );
   }

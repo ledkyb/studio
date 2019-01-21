@@ -93,12 +93,6 @@ class Services extends Component {
               </div>
             </div>
 
-            <div className="row">
-              <div className="offset-5 col-2 mar">
-                <Scroller color="orange" layers={3} />
-              </div>
-            </div>
-
           </div>
 
         </section>

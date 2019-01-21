@@ -204,11 +204,3 @@ ol.carousel-indicators li.active {
 }
 
 /* Extra Large Devices - Side Scroller Appears */
-@media (min-width: 1367px) {
-  /* TODO: decide UI for large screens */
-  #blog {
-      max-width: 1140px;
-      margin-left: auto;
-      margin-right: auto;
-  }
-}

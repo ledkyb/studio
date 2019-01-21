@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Scroller from '../../Scroller/Scroller';
 import './Home.scss';
 
 
@@ -27,12 +26,6 @@ class Home extends Component {
             <div className="row">
               <div className="col-10 offset-1">
                 <p className="button-sub-text">Ready to start your project?</p>
-              </div>
-            </div>
-
-            <div className="row">
-              <div className="offset-5 col-2 mt-5">
-                <Scroller color="orange" layers={3} />
               </div>
             </div>
 
