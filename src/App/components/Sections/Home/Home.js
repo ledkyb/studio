@@ -8,7 +8,7 @@ import Button from '../../Button/Buttons';
 class Home extends Component {
   render() {
     return (
-        <section id="home" className="container-fluid pl-0" data-bg="light" data-section="home">
+        <section id="home" className="row" data-bg="light" data-section="home">
           <div className="container">
 
             <div className="row justify-content-center">

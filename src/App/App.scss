@@ -119,8 +119,6 @@
 }
 
 body {
-  width: 100vw;
-  overflow-x: hidden;
 
   @media screen and (max-width: $screen-md-max) {
     padding-bottom: 60px;

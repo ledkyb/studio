@@ -5,15 +5,16 @@
 
 
   .about-content-container {
-    max-width: 550px;
+    max-width: 540px;
 
     @media screen and (max-width: 1199.98px){
       max-width: 450px;
     }
 
     @media screen and (max-width: 991.98px){
-      max-width: 720px;
+      max-width: 690px;
       float: none !important;
+      margin: 0 auto;
     }
 
     @media screen and (max-width: 767px){
@@ -44,9 +45,6 @@
     }
 
   }
-
-
-
 
   .about-list {
 

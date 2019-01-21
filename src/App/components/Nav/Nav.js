@@ -70,7 +70,7 @@ class Nav extends Component {
 
   render() {
     return (
-        <div className="container-fluid nav">
+        <div id="nav" className="container-fluid">
           <nav className="container">
             <div className="row">
 

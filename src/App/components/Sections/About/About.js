@@ -17,8 +17,8 @@ class About extends Component {
 
 
                 <div className="col-12 col-lg-6 orange-bg">
-                  <div className='container-fluid'>
-                    <div className='container about-content-container float-right pt-5'>
+
+                    <div className='about-content-container float-right pt-5'>
                       <span className='about-title big-john text-white'>NOT YOUR <br />AVERAGE STUDIO</span>
 
 
@@ -36,13 +36,12 @@ class About extends Component {
                         <li className='about-list-item about-li-top'><span className='diamond diamond-wh'></span>Honest & Straightforward</li>
                       </ul>
                     </div>
-                  </div>
                 </div>
 
 
                 <div className="col-12 col-lg-6">
-                  <div className='container-fluid about-content'>
-                    <div className='container about-content-container float-left pt-lg-5'>
+                  <div className='about-content'>
+                    <div className='about-content-container float-left pt-lg-5'>
                       <span className='avenir-light'>Ledkyb Studios is based in the Inland Empire and we operate exclusively
                       online. This allows us to leverage our low overhead to invest in powerful in-house
                       tools. Our team is composed of designers, developers and project managers who are
