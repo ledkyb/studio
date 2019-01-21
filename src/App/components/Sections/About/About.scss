@@ -3,6 +3,16 @@
 #about {
   background: $orange;
 
+  .rocket-background {
+    background-image: url("./Assets/rocket.svg");
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 770px 400px;
+
+    @media screen and (max-width: 991px){
+      background-image: none;
+    }
+  }
 
   .about-content-container {
     max-width: 540px;
@@ -18,8 +28,9 @@
     }
 
     @media screen and (max-width: 767px){
-     max-width: 550px;
+     max-width: 515px;
     }
+
 
   }
 

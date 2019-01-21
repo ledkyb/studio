@@ -28,8 +28,8 @@ class App extends Component {
           {/*sections*/}
           <Home/>
           <About/>
-          <Services/>
           <Team/>
+          <Services/>
           <Blog/>
           <Contact/>
 
