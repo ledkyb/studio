@@ -20,6 +20,7 @@ class Nav extends Component {
       bg: 'light',
       logo: this.logo['dark'],
     };
+    this.switch = this.switch.bind(this);
   }
 
   componentDidMount() {
@@ -66,6 +67,10 @@ class Nav extends Component {
 
     nav.classList.toggle('slide-nav');
     menuButton.classList.toggle('nav-rotated');
+
+    if (menuButton.classList.contains('nav-rotated') && this.state.bg === 'dark') {
+      this.setState({ bg: 'light' })
+    }
   }
 
   render() {
