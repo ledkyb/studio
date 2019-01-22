@@ -94,7 +94,7 @@ class Nav extends Component {
                     <li className="nav-item active">
                       <a className="nav-link"
                          href="#home">Home <span
-                          className="sr-only">(current)</span></a>
+                         className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item">
                       <a className="nav-link"
