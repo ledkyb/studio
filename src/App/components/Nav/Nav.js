@@ -29,8 +29,12 @@ class Nav extends Component {
 
   positionTracker() {
     window.addEventListener('scroll', e => {
+      const menuButton = document.querySelector('.navbar-toggler');
+
       if (window.screen && window.screen.width <= 991){
-        this.switchLogo();
+        if (!menuButton.classList.contains('nav-rotated')){
+          this.switchLogo();
+        }
       }
     });
 
@@ -63,14 +67,20 @@ class Nav extends Component {
 
   switch() {
     const nav = document.getElementById('navbarNav'),
-        menuButton = document.querySelector('.navbar-toggler');
+        menuButton = document.querySelector('.navbar-toggler'),
+        menuToggler = document.getElementById('menu-toggler');
+
+    if (!menuButton.classList.contains('nav-rotated')) {
+      menuToggler.setAttribute('src', togglerDark);
+    } else {
+      menuToggler.setAttribute('src', togglerLight);
+    }
 
     nav.classList.toggle('slide-nav');
     menuButton.classList.toggle('nav-rotated');
 
-    if (menuButton.classList.contains('nav-rotated') && this.state.bg === 'dark') {
-      this.setState({ bg: 'light' })
-    }
+
+
   }
 
   render() {
@@ -128,7 +138,7 @@ class Nav extends Component {
                         aria-expanded="false"
                         aria-label="Toggle navigation"
                         onClick={this.switch}>
-                  <img src={this.state.bg === 'dark' ? togglerLight : togglerDark} alt="mobile menu"/>
+                  <img id="menu-toggler" src={this.state.bg === 'dark' ? togglerLight : togglerDark} alt="mobile menu"/>
                 </button>
 
               </div>
