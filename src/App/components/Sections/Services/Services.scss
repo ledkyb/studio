@@ -21,7 +21,7 @@
 
     .services-list-item {
       font-family: avenirbook, sans-serif;
-      font-size: 1.65rem;
+      font-size: 1.5rem;
       list-style-type: none;
     }
 
@@ -40,24 +40,27 @@
   }
 
   .services-art-element-mobile {
+    min-height: 150px;
+    .cloud-two {
 
-    img:first-child {
-       bottom: -112px;
-       width: 125%;
-       max-width: 150%;
+       top: 50px;
+       max-width: 120%;
        left: -15px;
        -webkit-transform: rotateY(180deg);
        transform: rotateY(180deg);
        z-index: 0;
+       vertical-align: bottom;
       }
 
-      img:last-child {
-        display: block;
+      .cloud-3 {
+      /*  display: block; */
         position: absolute;
         bottom: -20px;
-        max-width: 75%;
+
+        max-width: 65%;
         left: -100px;
         z-index: -1;
+
       }
 
 
@@ -78,6 +81,7 @@
 
 
   @media screen and (max-width: 425.98px) {
+
     .section-title {
       padding-top: 2rem;
     }
@@ -100,7 +104,7 @@
 
       .services-list-item {
         font-family: avenirbook, sans-serif;
-        font-size: .9rem;
+        font-size: 1rem;
         list-style-type: none;
       }
     }
@@ -117,10 +121,25 @@
     }
 
     .section-title {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
     }
 
   }
 
+  @media screen and (max-width: 575.98px) {
+    .padding-sm-screen {
+      padding-left: 2rem;
+    }
+
+    .section-title {
+      font-size: 1.9rem;
+    }
+    .services-list {
+
+      .services-list-item {
+        font-size: 1.2rem;
+      }
+    }
+  }
 
 }

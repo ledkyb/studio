@@ -9,7 +9,7 @@ class About extends Component {
               <div className='row h-100 align-content-start pt-5 align-content-lg-stretch pt-lg-0'>
 
 
-                <div className="col-12 col-lg-6 orange-bg">
+                <div className="col-12 col-lg-6 orange-bg pl-2">
 
                     <div className='about-content-container float-right pt-5'>
                       <span className='about-title big-john text-white'>NOT YOUR <br />AVERAGE STUDIO</span>

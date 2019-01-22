@@ -17,6 +17,7 @@
   .about-content-container {
     max-width: 540px;
 
+
     @media screen and (max-width: 1199.98px){
       max-width: 450px;
     }
@@ -29,6 +30,11 @@
 
     @media screen and (max-width: 767px){
      max-width: 515px;
+    }
+
+    @media screen and (max-width: 575.98px){
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
     }
 
 
