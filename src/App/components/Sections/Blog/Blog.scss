@@ -86,7 +86,9 @@ ol.carousel-indicators {
   left: 0;
   right: 0;
   width: auto;
+  z-index: 0
 }
+
 
 ol.carousel-indicators li,
 ol.carousel-indicators li.active {

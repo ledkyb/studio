@@ -17,6 +17,7 @@ class Nav extends Component {
       dark: darkLogo,
     };
     this.state = {
+      save: '',
       bg: 'light',
       logo: this.logo['dark'],
     };
@@ -29,6 +30,8 @@ class Nav extends Component {
 
   positionTracker() {
     window.addEventListener('scroll', e => {
+      const menuButton = document.querySelector('.navbar-toggler');
+
       if (window.screen && window.screen.width <= 991){
         this.switchLogo();
       }
@@ -61,19 +64,38 @@ class Nav extends Component {
     }
   }
 
-  switch() {
+  switch(event) {
     const nav = document.getElementById('navbarNav'),
-        menuButton = document.querySelector('.navbar-toggler');
+        menuButton = document.querySelector('.navbar-toggler'),
+        menuToggler = document.getElementById('menu-toggler');
 
     nav.classList.toggle('slide-nav');
     menuButton.classList.toggle('nav-rotated');
 
-    if (menuButton.classList.contains('nav-rotated') && this.state.bg === 'dark') {
-      this.setState({ bg: 'light' })
+    if (event === 'click'){
+      if (menuButton.classList.contains('nav-rotated')){
+        menuToggler.setAttribute('src', togglerDark);
+      } else {
+        menuToggler.setAttribute('src', this.state.bg === 'dark' ? togglerLight : togglerDark)
+      }
     }
+
+
+
+
+
   }
 
   render() {
+    let menuToggler = document.querySelector('.navbar-toggler'),
+        imageSource = null;
+
+    if (menuToggler && menuToggler.classList.contains('nav-rotated')) {
+      imageSource = togglerDark;
+    } else {
+      imageSource = this.state.bg === 'dark' ? togglerLight : togglerDark
+    }
+
     return (
         <div id="nav" className="container-fluid">
           <nav className="container">
@@ -127,8 +149,10 @@ class Nav extends Component {
                         aria-controls="navbarNav"
                         aria-expanded="false"
                         aria-label="Toggle navigation"
-                        onClick={this.switch}>
-                  <img src={this.state.bg === 'dark' ? togglerLight : togglerDark} alt="mobile menu"/>
+                        onClick={event => {this.switch("click")}}>
+
+
+                  <img id="menu-toggler" src={imageSource} alt="mobile menu"/>
                 </button>
 
               </div>
