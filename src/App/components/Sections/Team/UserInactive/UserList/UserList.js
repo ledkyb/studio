@@ -12,6 +12,11 @@ import ScrollBtn from '../../ScrollBtn/ScrollBtn';
 //Scroll Animation
 import { ScrollAnim } from '../../ScrollAnim/ScrollAnim';
 
+//Fetch Team
+import { fetchTeam } from '../../fetchTeam';
+
+let teamList = [];
+
 class UserList extends Component {
   constructor(props){
     super(props);
@@ -20,7 +25,7 @@ class UserList extends Component {
     this.groupElement = null;
 
     //load users from team-info.js
-    this.userList = teamInfo.map((user, i) => {
+    this.userList = teamList.map((user, i) => {
       return (<UserItem key={i} user={user} loadUser={this.props.loadUser} />);
     });
 
@@ -41,6 +46,7 @@ class UserList extends Component {
       this.nextUserGroup
     );
     this.scrollAnim.initScrollAnim();
+    teamList = fetchTeam("https://api.ledkyb.com/api/members")
   }
   
   componentWillUnmount(){

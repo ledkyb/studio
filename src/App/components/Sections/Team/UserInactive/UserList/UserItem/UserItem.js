@@ -22,7 +22,7 @@ const UserItem = ({ user, loadUser }) => {
           <div className="team-user-item-line mx-1 mx-lg-3"></div>
           <div>
             <p className="font-weight-bold">{name}</p>
-            <p className="team-user-item-title mt-1 mt-lg-0">{title}</p>
+            <p className="team-user-item-title mt-1 mt-lg-0 flex-wrap">{title}</p>
           </div>
         </div>
       </div>

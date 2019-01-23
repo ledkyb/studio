@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 
 import './Team.scss';
 
-import {teamInfo} from './team-info';
+import { teamInfo } from './team-info';
 
 //components
 import UserInactive from './UserInactive/UserInactive';
 import UserActive from './UserActive/UserActive';
 
-const teamList = teamInfo;
+// const teamList = teamInfo;
+const teamList = [];
 
 class Team extends Component {
     constructor(props){
