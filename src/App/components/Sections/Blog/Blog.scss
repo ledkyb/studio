@@ -12,12 +12,12 @@
 }
 
 #blog1 {
-    background-image: url("../Blog/AssetsB/post-one.jpg");
+    background-image: url("Assets/post-one.jpg");
     min-height: 239.4px;
 }
 
 #blog2, #blog3 {
-    background-image: url("../Blog/AssetsB/post-two.jpg");
+    background-image: url("Assets/post-two.jpg");
     min-height: 239.3px;
 }
 
@@ -86,7 +86,9 @@ ol.carousel-indicators {
   left: 0;
   right: 0;
   width: auto;
+  z-index: 0
 }
+
 
 ol.carousel-indicators li,
 ol.carousel-indicators li.active {
@@ -204,11 +206,3 @@ ol.carousel-indicators li.active {
 }
 
 /* Extra Large Devices - Side Scroller Appears */
-@media (min-width: 1367px) {
-  /* TODO: decide UI for large screens */
-  #blog {
-      max-width: 1140px;
-      margin-left: auto;
-      margin-right: auto;
-  }
-}

@@ -29,9 +29,10 @@ class App extends Component {
           <Home/>
           <About/>
           <Team/>
-          <Blog/>
           <Services/>
+          <Blog/>
           <Contact/>
+
         </div>
     );
   }

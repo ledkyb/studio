@@ -59,12 +59,12 @@
 // global focus
 *:focus,
 .form input:focus,
-.form textarea:focus  {
+.form textarea:focus {
   outline: 0;
   // outline: 5px auto -webkit-focus-ring-color;
-  border: 1px solid $light-orange;
+  border: none;
   -webkit-box-shadow: none;
-  box-shadow: 0 0 5px 2px $orange;
+  box-shadow: none;
   transition: 0s;
 }
 #social a {
@@ -119,9 +119,7 @@
 }
 
 body {
-  width: 100vw;
   overflow-x: hidden;
-
   @media screen and (max-width: $screen-md-max) {
     padding-bottom: 60px;
   }
