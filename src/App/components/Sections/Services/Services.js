@@ -12,7 +12,7 @@ class Services extends Component {
     return (
         <section id="services" className="row" data-bg="light" data-section="services">
 
-          <div className="container h-100">
+          <div className="container h-100 padding-sm-screen">
 
             <div className='row mt-5 mb-3'>
               <p className='section-title big-john pl-3'>SERVICES
@@ -75,11 +75,11 @@ class Services extends Component {
             </div>
 
            <div className="row services-art-element-mobile">
-             <div className="col-12 mt-5">
-               <img className=" cloud-two"
+             <div className="col-12">
+               <img className="cloud-two"
                     src={cloudTwo}
                     alt=""/>
-               <img className=" cloud-3"
+               <img className="cloud-3"
                     src={cloud3}
                     alt=""/>
 
