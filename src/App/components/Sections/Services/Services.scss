@@ -105,21 +105,21 @@
 /* Extra small devices */
 @media (max-width: $screen-xs-max) {
     .services-art {
-        background: url(./Assets/cloud-two.svg) bottom no-repeat, url(./Assets/cloud-3.svg) -5% 100% / 45% local no-repeat;
+        background: url(./Assets/cloud-two.svg) bottom no-repeat, url(./Assets/cloud-3.svg) -10% 103%/50% local no-repeat;
     }
 }
 
 /* Small devices */
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
     .services-art {
-        background: url(./Assets/cloud-two.svg) bottom no-repeat, url(./Assets/cloud-3.svg) -5% 100% / 45% local no-repeat;
+        background: url(./Assets/cloud-two.svg) bottom no-repeat, url(./Assets/cloud-3.svg) -10% 103%/50% local no-repeat;
     }
 }
 
 /* Medium devices */
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
     .services-art {
-        background: url(./Assets/cloud-two.svg) bottom no-repeat, url(./Assets/cloud-3.svg) -5% 100% / 45% local no-repeat;
+        background: url(./Assets/cloud-two.svg) bottom no-repeat, url(./Assets/cloud-3.svg) -10% 103%/50% local no-repeat;
     }
 }
 
