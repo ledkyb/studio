@@ -34,8 +34,6 @@ class Team extends Component {
 
     //Loads selected active user into state
     loadUser = (user) => {
-        console.log(user);
-        console.log(this.state.teamList[1].id === user.id);
         if(this.state.teamList[0].id === user.id){
             this.setState({ 
                 currentUser: user,
