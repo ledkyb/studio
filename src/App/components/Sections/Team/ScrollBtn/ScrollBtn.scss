@@ -17,7 +17,7 @@
     height: auto;
     transform: rotate(90deg);
     @media screen and (max-width: $screen-md-max){
-      width: 15px;
+      width: 20px;
       transform: rotate(0deg);
     }
   }
@@ -29,7 +29,7 @@
     margin-bottom: 50px;
     cursor: pointer;
     @media screen and (max-width: $screen-md-max){
-      width: 15px;
+      width: 20px;
       transform: rotate(180deg);
     }
   }
