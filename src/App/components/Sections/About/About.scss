@@ -1,18 +1,6 @@
 @import "../../../../index.scss";
 
 #about {
-  background: $orange;
-
-  .rocket-background {
-    background-image: url("./Assets/rocket.svg");
-    background-repeat: no-repeat;
-    background-position: 0 100%;
-    background-size: 770px 400px;
-
-    @media screen and (max-width: 991.98px){
-      background-image: none;
-    }
-  }
 
   .about-content-container {
     max-width: 540px;
@@ -97,6 +85,10 @@
   }
 }
 
+.rocket-background-mobile {
+  background: $orange url("./Assets/rocket.svg") 0% 100% / 100% no-repeat;
+  z-index: 6;
+}
 
 
 @media screen and (min-width: $screen-lg-min) {
@@ -132,6 +124,9 @@
       }
     }
 
+    .rocket-background {
+      background: url("./Assets/rocket.svg") 0% 100% / 770px 400px no-repeat;
+    }
   }
 
 }
