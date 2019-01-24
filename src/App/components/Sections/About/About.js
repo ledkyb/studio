@@ -41,11 +41,11 @@ class About extends Component {
                       passionate about what they do.
                       </span>
                       <ul className='row about-list d-none d-lg-block pt-3'>
-                        <li className='about-list-item'><span className='diamond' /><a href="../Team/Team">Meet Your Team</a></li>
+                        <li className='about-list-item'><span className='diamond' /><a href="#team">Meet Your Team</a></li>
 
-                        <li className='about-list-item'><span className='diamond' /><a href="../Services/Services">Services We Offer</a></li>
+                        <li className='about-list-item'><span className='diamond' /><a href="#services">Services We Offer</a></li>
 
-                        <li className='about-list-item'><span className='diamond' /><a href="../Blog/Blog">Check Our Blog Out</a></li>
+                        <li className='about-list-item'><span className='diamond' /><a href="#blog">Check Our Blog Out</a></li>
                       </ul>
                     </div>
                   </div>
