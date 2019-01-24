@@ -75,6 +75,7 @@ class UserList extends Component {
   //position to determine which animation to play
   handleAnimScrollNext = () => {
     const endOfList = this.state.teamList[this.state.teamList.length - 1] !== this.state.currentGroup[this.state.currentGroup.length - 1];
+    
     if (this.scrollAnim.checkActiveAnim && endOfList) {
       if (this.state.isMobile) {
         this.scrollAnim.playLeft();
@@ -86,6 +87,7 @@ class UserList extends Component {
 
   handleAnimScrollPrev = () => {
     const startOfList = this.state.teamList[0] !== this.state.currentGroup[0];
+
     if (this.scrollAnim.checkActiveAnim && startOfList) {
       if (this.state.isMobile) {
         this.scrollAnim.playRight();
@@ -99,6 +101,7 @@ class UserList extends Component {
   nextUserGroup = () => {
     let currentPos = this.state.teamList.indexOf(this.state.currentGroup[this.state.currentGroup.length - 1]);
     const remainingUsers = (this.state.teamList.length - 1) - currentPos;
+
     let groupSize;
     if (this.state.isMobile) {
       groupSize = 2;
@@ -164,6 +167,7 @@ class UserList extends Component {
     if(this.state.hasError){
       throw new Error('Failed to load user');
     }
+
     return (
       <div className=" team-user-container col col-lg-6 d-flex flex-column justify-content-center align-items-center" data-bg="light" data-section="usersTop">
 
