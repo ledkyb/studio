@@ -10,9 +10,10 @@ import Scroller from '../../Scroller/Scroller';
 class Services extends Component {
   render() {
     return (
-        <section id="services" className="row" data-bg="light" data-section="services">
-
+        <section id="services" className="row " data-bg="light" data-section="services">
+          <div className="services-art-mobile">
           <div className="container h-100 padding-sm-screen">
+
 
             <div className='row mt-5 mb-3'>
               <p className='section-title big-john pl-3'>SERVICES
@@ -23,7 +24,7 @@ class Services extends Component {
               </p>
             </div>
 
-            <div className='row services-list'>
+            <div className='row services-list col-xl-12'>
 
               <div className='col-md-6'>
                 <ul >
@@ -74,7 +75,7 @@ class Services extends Component {
 
             </div>
 
-           <div className="row services-art-element-mobile">
+           {/*<div className="row services-art-element-mobile">
              <div className="col-12">
                <img className="cloud-two"
                     src={cloudTwo}
@@ -85,14 +86,14 @@ class Services extends Component {
 
              </div>
            </div>
-
+*/}
             <div className="row">
               <div className="offset-6 col-md-6 services-art-element">
 
                 <img src={servicesImage} alt="services art element"/>
               </div>
             </div>
-
+            </div>
           </div>
 
         </section>
