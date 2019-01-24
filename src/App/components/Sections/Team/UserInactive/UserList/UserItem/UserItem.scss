@@ -29,8 +29,11 @@
 
   .team-user-item-title{
     font-size: .75rem;
+    max-width: 125px;
     @media screen and (max-width: $screen-md-max){
       font-size: .45rem;
+      max-width: 75px;
+      height: 15px;
     }
   }
 

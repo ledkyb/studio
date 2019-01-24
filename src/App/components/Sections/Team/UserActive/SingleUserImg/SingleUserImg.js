@@ -75,7 +75,7 @@ class SingleUserImg extends Component{
     const { user, showPrevArrow, showNextArrow } = this.props;
     return (
       <div className="single-user-img col col-lg-6 h-100 d-flex flex-row justify-content-center align-items-center">
-        <img ref={img => this.imgElement = img} src={user.img} alt={user.name} />
+        <img ref={img => this.imgElement = img} src={user.image} alt={user.firstName} />
         <ScrollBtn 
           onClickPrev={this.handleAnimScrollPrev} 
           onClickNext={this.handleAnimScrollNext} 
