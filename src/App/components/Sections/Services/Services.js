@@ -11,7 +11,7 @@ class Services extends Component {
   render() {
     return (
         <section id="services" className="row " data-bg="light" data-section="services">
-          <div className="services-art-mobile">
+          <div className="container-fluid services-art-mobile">
           <div className="container h-100 padding-sm-screen">
 
 
