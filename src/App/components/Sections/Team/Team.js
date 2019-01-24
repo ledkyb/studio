@@ -2,18 +2,16 @@ import React, { Component } from 'react';
 
 import './Team.scss';
 
-import {teamInfo} from './team-info';
-
 //components
 import UserInactive from './UserInactive/UserInactive';
 import UserActive from './UserActive/UserActive';
-
-const teamList = teamInfo;
 
 class Team extends Component {
     constructor(props){
         super(props);
         this.state = {
+            hasError: false,
+            teamList: [],
             currentUser: '',
             showPrevArrow: {opacity: "0", cursor: "default"},
             showNextArrow: {opacity: "1", cursor: "pointer"},
@@ -22,9 +20,23 @@ class Team extends Component {
         }
     }
 
+    componentDidMount(){
+        //Fetch team data and rerenders screen with team
+        fetch('https://api.ledkyb.com/api/members')
+        .then(response => response.json())
+        .then(team => {
+            this.setState({ teamList: team });
+        })
+        .catch(err => {
+            this.setState({ hasError: true });
+        });
+    }
+
     //Loads selected active user into state
     loadUser = (user) => {
-        if(teamList[0] === user){
+        console.log(user);
+        console.log(this.state.teamList[1].id === user.id);
+        if(this.state.teamList[0].id === user.id){
             this.setState({ 
                 currentUser: user,
                 showNextArrow: {opacity: "1", cursor: "pointer"},
@@ -32,7 +44,7 @@ class Team extends Component {
                 endOfNext: false,
                 endOfPrev: true
             });
-        } else if (teamList[teamList.length -1] === user){
+        } else if (this.state.teamList[this.state.teamList.length -1].id === user.id){
             this.setState({
                 currentUser: user,
                 showPrevArrow: {opacity: "1", cursor: "pointer"},
@@ -54,20 +66,20 @@ class Team extends Component {
 
     //Loads previous active user into state
     prevUser = (user) => {
-        let userIndex = teamList.findIndex(teamUser => {
-            return teamUser === user;
+        let userIndex = this.state.teamList.findIndex(teamUser => {
+            return teamUser.id === user.id;
         });
         if(userIndex > 0){
             const prevIndex = userIndex - 1;
             if(prevIndex > 0){
                 this.setState({ 
-                    currentUser: teamList[prevIndex], 
+                    currentUser: this.state.teamList[prevIndex], 
                     showNextArrow: {opacity: "1", cursor: "pointer"},
                     endOfNext: false
                 });
             } else {
                 this.setState({ 
-                    currentUser: teamList[prevIndex],
+                    currentUser: this.state.teamList[prevIndex],
                     showPrevArrow: {opacity: "0", cursor: "default"},
                     endOfPrev: true
                 });
@@ -77,20 +89,20 @@ class Team extends Component {
 
     //Loads next active user into state
     nextUser = (user) => {
-        let userIndex = teamList.findIndex(teamUser => {
+        let userIndex = this.state.teamList.findIndex(teamUser => {
             return teamUser.id === user.id;
         });
-        if(userIndex < teamList.length - 1){
+        if(userIndex < this.state.teamList.length - 1){
             const nextIndex = userIndex + 1;
-            if(nextIndex < teamList.length -1 ){
+            if(nextIndex < this.state.teamList.length -1 ){
                 this.setState({ 
-                    currentUser: teamList[nextIndex], 
+                    currentUser: this.state.teamList[nextIndex], 
                     showPrevArrow: {opacity: "1", cursor: "pointer"},
                     endOfPrev: false
                 });
             } else {
                 this.setState({ 
-                    currentUser: teamList[nextIndex],
+                    currentUser: this.state.teamList[nextIndex],
                     showNextArrow: {opacity: "0", cursor: "default"},
                     endOfNext: true 
                 });
