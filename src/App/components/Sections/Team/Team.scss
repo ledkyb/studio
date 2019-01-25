@@ -1,0 +1,20 @@
+@import '../../../../index.scss';
+
+#team {
+  background-color: #fff;
+}
+
+.team-bg{
+  // height: 100%;
+  left: 0;
+
+  .team-btn-bg{
+    height: 50px;
+    background-color: $light-orange;
+    z-index: 1;
+  }
+
+  .team-right-bg{
+    background-color: $orange;
+  }
+}

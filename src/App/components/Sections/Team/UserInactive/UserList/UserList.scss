@@ -1,0 +1,19 @@
+@import "../../../../../../index.scss";
+
+.team-user-container{  //Left Section
+  background-color: #fff;
+  
+  .team-user-item-list{
+    transition: 0s all;
+
+    width: 450px;
+    height: 530px;
+    z-index: 3;
+    
+    @media screen and (max-width: $screen-md-max){
+      z-index: 0;
+      width: 100%;
+    }
+  }
+
+}

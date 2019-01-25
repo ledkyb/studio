@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import './Nav.scss';
-import Hamburger from './Logo/Assets/menu.svg';
+
+import togglerDark from './Logo/Assets/menu.svg';
+import togglerLight from './Logo/Assets/menu-white.svg';
+
 import Social from './Social/Social';
 
 import darkLogo from './Logo/Assets/icon-color.svg';
@@ -14,9 +17,11 @@ class Nav extends Component {
       dark: darkLogo,
     };
     this.state = {
+      save: '',
       bg: 'light',
       logo: this.logo['dark'],
     };
+    this.switch = this.switch.bind(this);
   }
 
   componentDidMount() {
@@ -25,7 +30,11 @@ class Nav extends Component {
 
   positionTracker() {
     window.addEventListener('scroll', e => {
-      this.switchLogo();
+      const menuButton = document.querySelector('.navbar-toggler');
+
+      if (window.screen && window.screen.width <= 991){
+        this.switchLogo();
+      }
     });
 
   }
@@ -33,7 +42,7 @@ class Nav extends Component {
   switchLogo() {
     const logo = document.getElementById('logo'),
         sections = document.querySelectorAll('[data-section]'),
-        scrollPosition = Number(document.documentElement.scrollTop) + 15;
+        scrollPosition = Number(document.documentElement.scrollTop) + 25;
 
     if (document.body.contains(logo)) {
       let selected = null;
@@ -55,23 +64,42 @@ class Nav extends Component {
     }
   }
 
-  switch() {
+  switch(event) {
     const nav = document.getElementById('navbarNav'),
-        menuButton = document.querySelector('.navbar-toggler');
+        menuButton = document.querySelector('.navbar-toggler'),
+        menuToggler = document.getElementById('menu-toggler');
 
     nav.classList.toggle('slide-nav');
     menuButton.classList.toggle('nav-rotated');
+
+    if (event === 'click'){
+      if (menuButton.classList.contains('nav-rotated')){
+        menuToggler.setAttribute('src', togglerDark);
+      } else {
+        menuToggler.setAttribute('src', this.state.bg === 'dark' ? togglerLight : togglerDark)
+      }
+    }
+
   }
 
   render() {
+    let menuToggler = document.querySelector('.navbar-toggler'),
+        imageSource = null;
+
+    if (menuToggler && menuToggler.classList.contains('nav-rotated')) {
+      imageSource = togglerDark;
+    } else {
+      imageSource = this.state.bg === 'dark' ? togglerLight : togglerDark
+    }
+
     return (
-        <div className="container-fluid nav">
+        <div id="nav" className="container-fluid">
           <nav className="container">
             <div className="row">
 
 
               <div className="col col-md-1">
-                <a className="navbar-brand" href="https://www.google.com">
+                <a className="navbar-brand" href="/">
                   <img id="logo" src={this.state.logo}
                        alt="ledkyb studios logo"/>
                 </a>
@@ -83,28 +111,28 @@ class Nav extends Component {
                   <ul className="navbar-nav">
                     <li className="nav-item active">
                       <a className="nav-link"
-                         href="https://www.google.com">Home <span
-                          className="sr-only">(current)</span></a>
+                         href="#home">Home <span
+                         className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item">
                       <a className="nav-link"
-                         href="https://www.google.com">About</a>
+                         href="#about">About</a>
                     </li>
                     <li className="nav-item">
                       <a className="nav-link"
-                         href="https://www.google.com">Team</a>
+                         href="#team">Team</a>
                     </li>
                     <li className="nav-item">
                       <a className="nav-link"
-                         href="https://www.google.com">Blog</a>
+                         href="#blog">Blog</a>
                     </li>
                     <li className="nav-item">
                       <a className="nav-link"
-                         href="https://www.google.com">Services</a>
+                         href="#services">Services</a>
                     </li>
                     <li className="nav-item">
                       <a className="nav-link"
-                         href="https://www.google.com">Contact</a>
+                         href="#contact">Contact</a>
                     </li>
                   </ul>
                   <Social/>
@@ -117,8 +145,10 @@ class Nav extends Component {
                         aria-controls="navbarNav"
                         aria-expanded="false"
                         aria-label="Toggle navigation"
-                        onClick={this.switch}>
-                  <img src={Hamburger} alt="mobile menu"/>
+                        onClick={event => {this.switch("click")}}>
+
+
+                  <img id="menu-toggler" src={imageSource} alt="mobile menu"/>
                 </button>
 
               </div>

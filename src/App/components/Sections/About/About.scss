@@ -1,0 +1,132 @@
+@import "../../../../index.scss";
+
+#about {
+
+  .about-content-container {
+    max-width: 540px;
+
+
+    @media screen and (max-width: 1199.98px){
+      max-width: 450px;
+    }
+
+    @media screen and (max-width: 991.98px){
+      max-width: 690px;
+      float: none !important;
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: 767.98px){
+     max-width: 515px;
+    }
+
+    @media screen and (max-width: 575.98px){
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+
+  }
+
+  .about-title {
+    font-size: 2.0rem;
+
+  }
+
+  .desktop{
+    font-size: 1.3rem;
+    background: $orange;
+
+
+  }
+
+
+  .about-content {
+    font-size: 1.25rem;
+    color: white;
+
+    p {
+      padding-top: 1.0rem;
+    }
+
+  }
+
+  .about-list {
+
+    .about-list-item {
+      font-family: avenirbook, sans-serif;
+      list-style-type: none;
+    }
+
+
+    ul {
+      padding-left: 30px;
+
+    }
+
+    .diamond-wh {
+      background: white;
+        top: 0.80rem;
+        width: 7px;
+        height: 7px;
+        left: -25px;
+
+    }
+
+    a {
+      color: $black;
+
+      &:hover {
+            color: $orange;
+        }
+    }
+
+
+  }
+}
+
+.rocket-background-mobile {
+  background: $orange url("./Assets/rocket.svg") 0% 100% / 100% no-repeat;
+  z-index: 6;
+}
+
+
+@media screen and (min-width: $screen-lg-min) {
+  #about {
+    background: none;
+
+    .about-title {
+      font-size: 2.5rem;
+    }
+
+    .about-content {
+      background: none;
+      color: $black;
+      font-size: 1.3rem;
+
+      p {
+        padding-top: 2.5rem;
+      }
+    }
+
+    .about-list {
+      .diamond {
+        top: 1.25rem;
+      }
+      .diamond-wh {
+        height: 10px;
+        width: 10px;
+        top: 1.25rem;
+        left: -25px;
+      }
+      .about-li-top {
+        padding-bottom: 1.0rem;
+      }
+    }
+
+    .rocket-background {
+      background: url("./Assets/rocket.svg") 0% 100% / 770px 400px no-repeat;
+    }
+  }
+
+}

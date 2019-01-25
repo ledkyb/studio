@@ -1,18 +1,24 @@
 @import '../../../index.scss';
 
-a.button {
-  border: 1px solid #EF3C24;
-  color: #EF3C24;
-  font-family: slime-joe, sans-serif;
+button:focus {
+  outline: 0;
+}
+
+.button {
+  border: 1px solid $orange;
+  background-color: rgba(255, 255, 255, 0);
+  color: $orange;
+  font-family: avenirbook, sans-serif;
   width: 100%;
-  padding: 15px 40px;
-  margin: 0 0 0 -30px;
+  cursor: pointer;
+  padding: 0.5em 2.3em;
   transition: 450ms width ease-in, 300ms background-color ease-in;
 
   &:hover {
     text-decoration: none;
     color: #fff;
     background: $orange;
+    border:  1px solid $orange;
   }
 
 }
@@ -20,6 +26,25 @@ a.button {
 .button-sub-text {
   font-size: 11px;
   font-family: 'avenirheavy', sans-serif;
-  margin: 20px auto 0 auto;
+  margin: 10px auto 0 auto;
   text-align: center;
+}
+
+@media (min-width: $screen-lg-min) {
+  .button {
+    border: 1px solid #EF3C24;
+    color: #EF3C24;
+    font-family: avenirbook, sans-serif;
+    width: 100%;
+    padding: 0.5em 2.3em;
+    transition: 450ms width ease-in, 300ms background-color ease-in;
+
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+      background: $orange;
+      border: 1px solid $orange;
+    }
+
+  }
 }

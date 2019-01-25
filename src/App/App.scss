@@ -26,6 +26,10 @@
   src: url("../fonts/slim-joe.otf") format("opentype");
 }
 
+.orange-bg {
+  background-color: $orange;
+}
+
 //font classes
 .avenir-light {
   font-family: avenirlight, sans-serif;
@@ -50,6 +54,21 @@
 // global transitions
 * {
   transition: 300ms all ease-in;
+}
+
+// global focus
+*:focus,
+.form input:focus,
+.form textarea:focus  {
+  outline: 0;
+  border: 1px auto $orange;
+  -webkit-box-shadow: none;
+  box-shadow: 0 0 5px 2px $light-orange;
+  transition: 0s;
+}
+
+#social a {
+  border-radius: 50%;
 }
 
 // art elements
@@ -99,18 +118,52 @@
   border: 1px solid $light-gray;
 }
 
-// global limiters
 body {
-  width: 100vw;
   overflow-x: hidden;
+  @media screen and (max-width: $screen-md-max) {
+    padding-bottom: 60px;
+  }
 }
 
 .fit {
   width: 100vw;
 }
 
-section.row {
-  @media screen and (max-width: 425px){
-    max-height: 768px;
+#about, #blog, #contact, #home, #services, #team, .team-bg {
+  max-width: 100vw;
+  margin: 0;
+}
+
+/* **** Responsive **** */
+
+/* Extra small devices */
+@media (max-width: $screen-xs-max) {
+  #about, #blog, #contact, #home, #services, #team, .team-bg {
+    height: calc(100vh - 60px);
+    min-height: 766px;
+  }
+}
+
+/* Small devices */
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  #about, #blog, #contact, #home, #services, #team, .team-bg {
+    height: calc(100vh - 60px);
+    min-height: 766px;
+  }
+}
+
+/* Medium devices */
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  #about, #blog, #contact, #home, #services, #team, .team-bg {
+    height: calc(100vh - 60px);
+    min-height: 766px;
+  }
+}
+
+/* Large devices */
+@media (min-width: $screen-lg-min) {
+  #about, #blog, #contact, #home, #services, #team, .team-bg {
+    height: 100vh;
+    min-height: 766px;
   }
 }

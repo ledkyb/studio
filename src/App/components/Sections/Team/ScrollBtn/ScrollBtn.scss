@@ -1,0 +1,35 @@
+@import '../../../../../index.scss';
+
+.team-scroll-btn-container{
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+
+  @media screen and (max-width: $screen-md-max){
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    padding: 0 20%;
+  }
+
+  .team-scroll-up-btn{
+    width: 40px;
+    height: auto;
+    transform: rotate(90deg);
+    @media screen and (max-width: $screen-md-max){
+      width: 20px;
+      transform: rotate(0deg);
+    }
+  }
+
+  .team-scroll-down-btn{
+    width: 40px;
+    height: auto;
+    transform: rotate(-90deg);
+    cursor: pointer;
+    @media screen and (max-width: $screen-md-max){
+      width: 20px;
+      transform: rotate(180deg);
+    }
+  }
+}

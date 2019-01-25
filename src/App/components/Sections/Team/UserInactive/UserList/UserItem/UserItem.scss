@@ -1,0 +1,82 @@
+@import "../../../../../../../index.scss";
+
+.team-user-item{
+  img{  //user image size
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    @media screen and (max-width: $screen-md-max){
+      max-width: 175px;
+      max-height: 175px;
+      width: auto;
+      height: auto;
+    }
+    @media screen and (max-width: $screen-sm-max){
+      max-width: 125px;
+      max-height: 125px;
+      width: auto;
+      height: auto;
+    }
+  }
+  p{
+    font-size: .85rem;
+    margin: -5px 0;
+    @media screen and (max-width: $screen-md-max){
+      font-size: .5rem;
+    }
+  }
+
+  .team-user-item-title{
+    font-size: .75rem;
+    max-width: 125px;
+    @media screen and (max-width: $screen-md-max){
+      font-size: .45rem;
+      max-width: 75px;
+      height: 15px;
+    }
+  }
+
+
+  .team-user-item-line{
+    height: 2px;
+    width: 25px;
+    background-color: $orange;
+  }
+
+  .team-user-item-hover{
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(239, 60, 36, 0.9);
+  }
+
+  .team-user-item-hover-plus{
+    height: 50px;
+    width: 50px;
+  }
+
+  .team-user-item-hover-x{
+    height: 2px;
+    width: 50px;
+    background-color: $gray;
+  }
+
+  .team-user-item-hover-y{
+    height: 50px;
+    width: 2px;
+    background-color: $gray;
+  }
+
+  @media screen and (min-width: $screen-md-max){  //HOVER only on desktop
+
+    &:hover{
+      .team-user-item-hover,
+      .team-user-item-hover-plus{
+        display: flex;
+        cursor: pointer;
+      }
+    }
+
+  }
+}

@@ -4,7 +4,6 @@
   background-image: url("Assets/hero-image-overlayed.jpg");
   background-color: #fff;
   background-size: cover;
-  min-height: 766px;
 
   .text-logo {
     transition: 450ms all ease-in;
@@ -15,28 +14,42 @@
 
   .home-button {
     margin-top: 100px;
-  }
 
-  a.button {
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    width: 65%;
-    padding: 15px 0;
+    .button {
+      border: 1px solid #EF3C24;
+      color: #EF3C24;
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      width: 65%;
+      padding: 18px 0 15px 0;
+      font-family: 'avenirlight', sans-serif;
+      text-transform: uppercase;
+
+      &:hover {
+        border-color: transparent;
+        color: #fff;
+      }
+
+    }
   }
 
   .scroller-container {
     margin-top: 80%;
   }
 
-  @media only screen and (max-width: 1200px) {
+  .project-button {
+    font-family: slime-joe, sans-serif;
+  }
+
+  @media only screen and (max-width: $screen-xl-min) {
     .text-logo {
       max-width: 200px;
     }
 
   }
 
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: $screen-md-max) {
     .text-logo {
       max-width: 225px;
       margin-top: 200px;
@@ -44,25 +57,21 @@
 
   }
 
-  @media only screen and (max-width: 767px) {
-    a.button {
-      width: 100%;
-      max-width: 215px;
+  @media only screen and (max-width: $screen-sm-max) {
+    .home-button{
+      a.button {
+        width: 100%;
+        max-width: 215px;
+      }
     }
   }
 
-  @media only screen and (max-width: 575px) {
+  @media only screen and (max-width: $screen-xs-max) {
     #home .text-logo {
       max-width: 230px;
       margin: 80px auto 0 auto;
       display: block;
     }
-
-    a.button {
-      color: #fff;
-      background-color: $orange;
-    }
-
   }
 
   @media only screen and (max-width: 425px) {

@@ -1,0 +1,15 @@
+@import '../../../../../../../index.scss';
+
+.team-social-networks{
+  img{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+
+    @media screen and (max-width: $screen-md-max){
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

@@ -1,28 +1,112 @@
 @import '../../../../index.scss';
 
-#contact {
-  background-image: url("Assets/Background/cloud-3.png");
-  background-color: #fff;
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  // background-size: 2000px;
-  height: 80vh;
+h1 {
+  font-family: big-john, sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 3px;
 }
 
-h1 {
-  color: #fff;
+a {
+  color: $orange;
+}
+
+#footer {
+  @media (min-width: 1555px) {
+    color: $black;
+  }
 }
 
 .header {
-  background-color: $orange;
-  height: 30%;
+  height: 20vh;
+  font-family: avenirbook, arial, sans-serif;
 }
 
-.form {
-  background-color: #fff;
-  height: 50%;
+.formContainer {
+  height: 45vh;
 }
 
 .footer {
-  height: 20%;
+  height: calc(35vh - 60px);
+}
+
+
+/* **** Responsive **** */
+
+/* Keeps elements within row */
+@media (max-width: $screen-md-max) and (max-height: 766px) {
+  .header {
+    min-height: 200px;
+  }
+  .formContainer {
+    min-height: 300px;
+  }
+  .footer {
+    min-height: 250px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: $screen-xs-max) {
+  .background {
+    background: url("Assets/Background/cloud-3.png") bottom -5em left -12em no-repeat, url("Assets/Background/cloud-3.png") white bottom -8em left 3em no-repeat;
+    background-size: 30em 15em, 30em 15em;
+  }
+  .headerText, #footer {
+    font-size: small;
+  }
+}
+
+/* Small devices */
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .background {
+    background: url("Assets/Background/cloud-two.png") bottom -1em left 10em no-repeat, url("Assets/Background/cloud-3.png") white bottom -5em left -10em no-repeat;
+    background-size: 25em 8em, 30em 14em;
+  }
+}
+
+/* Medium devices */
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  h1 {
+    font-size: 3rem;
+  }
+  .background {
+    background: url("Assets/Background/cloud-one.png") bottom -1em left 27em no-repeat, url("Assets/Background/cloud-two.png") bottom 0em left 2em no-repeat, url("Assets/Background/cloud-3.png") white bottom -6em left -15em no-repeat;
+    background-size: 8em 4em, 30em 10em, 40em 20em;
+  }
+  .header {
+    height: calc(30vh - 60px);
+  }
+  .headerText {
+    font-size: 1.2em;
+  }
+  .formContainer {
+    height: 45vh;
+  }
+  .footer {
+    height: 25vh;
+  }
+}
+
+/* Large devices */
+@media (min-width: $screen-lg-min) {
+  h1 {
+    font-size: 3rem;
+  }
+  .background {
+    background: url("Assets/Background/cloud-one.png") bottom -1em left 30em no-repeat, url("Assets/Background/cloud-two.png") bottom 0em left 4em no-repeat, url("Assets/Background/cloud-3.png") bottom -3em left -20em no-repeat, url("Assets/Background/cloud-3.png") white bottom -7em left -10em no-repeat;
+    background-size: 10em 5em, 30em 11em, 40em 20em, 40em 20em;
+  }
+  .header {
+    height: 30vh;
+  }
+  .headerText {
+    font-size: 1.3em;
+  }
+  .formContainer {
+    height: 60vh;
+  }
+  .footer {
+    height: 10vh;
+  }
 }
