@@ -22,15 +22,15 @@
     }
 
     .text-color {
-        color: black;
+        color: $black;
     }
 
     .border-bot {
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid $black;
     }
 
     .border-all {
-        border: 1px solid black;
+        border: 1px solid $black;
     }
 
     // Modifies CSS for Button Component
