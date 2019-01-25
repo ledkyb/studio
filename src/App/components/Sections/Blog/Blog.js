@@ -23,15 +23,15 @@ class Blog extends Component {
                       <div className="postOne mx-lg-auto mt-5">
                         <a href="#blog">
                           <p className="postTitle1 text-left text-white h4 mb-sm-0 mb-lg-1 pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-2 font-weight-bold">
-                            POST TITLE, LIMITED TO TWO LINES OF TEXT
+                            This is our blog section
                             </p>
                         </a>
                         <p className="small authorInfo text-white mb-1 pl-sm-4 pl-lg-2 pb-lg-2">
-                          John Doe
+                          Author Name
                             <span className="verticalBar"> | </span>
                           Category
                             <span className="verticalBar"> | </span>
-                          November 22nd,2018
+                          Coming soon,2019
                           </p>
                       </div>
                     </div>
@@ -42,15 +42,15 @@ class Blog extends Component {
                         <div className="postTwo">
                           <a href="#blog">
                             <p className="postTitle2 text-left text-white h5 mb-0 pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-1 font-weight-bold">
-                              POST TITLE, LIMITED TO TWO LINES OF TEXT
+                              We are currently working on it
                               </p>
                           </a>
                           <p className="small authorInfo text-white mb-1 pl-sm-4 pl-lg-2 ">
-                            John Doe
+                            Author Name
                               <span className="verticalBar"> | </span>
                             Category
                               <span className="verticalBar"> | </span>
-                            November 22nd,2018
+                              Coming soon,2019
                             </p>
                         </div>
                       </div>
@@ -59,135 +59,15 @@ class Blog extends Component {
                         <div className="postThree">
                           <a href="#blog">
                             <p className="postTitle3 text-left text-white h6 mb-0 pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-1 font-weight-bold">
-                              POST TITLE, LIMITED TO TWO LINES OF TEXT
-                              </p>
+                              We're looking forward to showing you the result
+                            </p>
                           </a>
                           <p className="small authorInfo text-white mb-1 pl-sm-4 pl-lg-2">
-                            John Doe
+                            Author Name
                               <span className="verticalBar"> | </span>
                             Category
                               <span className="verticalBar"> | </span>
-                            November 22nd,2018
-                            </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* silde two */}
-                <div className="carousel-item">
-                  <div className="row">
-                    {/* blog one */}
-                    <div id="blog1" className="p-0 col-12 col-lg-7">
-                      <div className="postOne mx-lg-auto mt-5">
-                        <a href="#blog">
-                          <p className="postTitle1 text-left text-white h4 mb-sm-0 mb-lg-1 pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-2 font-weight-bold">
-                            POST TITLE, LIMITED TO TWO LINES OF TEXT
-                            </p>
-                        </a>
-                        <p className="small authorInfo text-white mb-1 pl-sm-4 pl-lg-2 pb-lg-2">
-                          John Doe
-                            <span className="verticalBar"> | </span>
-                          Category
-                            <span className="verticalBar"> | </span>
-                          November 22nd,2018
-                          </p>
-                      </div>
-                    </div>
-                    {/* container for blog 2 and 3 */}
-                    <div className="col-12 col-lg-5 px-0">
-                      {/* blog two */}
-                      <div id="blog2" className="col-12 p-0">
-                        <div className="postTwo">
-                          <a href="#blog">
-                            <p className="postTitle2 text-left text-white h5 mb-0 pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-1 font-weight-bold">
-                              POST TITLE, LIMITED TO TWO LINES OF TEXT
-                              </p>
-                          </a>
-                          <p className="small authorInfo text-white mb-1 pl-sm-4 pl-lg-2">
-                            John Doe
-                              <span className="verticalBar"> | </span>
-                            Category
-                              <span className="verticalBar"> | </span>
-                            November 22nd,2018
-                            </p>
-                        </div>
-                      </div>
-                      {/* blog three */}
-                      <div id="blog3" className="col-12">
-                        <div className="postThree">
-                          <a href="#blog">
-                            <p className="postTitle3 text-left text-white h6 mb-0 pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-1 font-weight-bold">
-                              POST TITLE, LIMITED TO TWO LINES OF TEXT
-                              </p>
-                          </a>
-                          <p className="small authorInfo text-white mb-1 pl-sm-4 pl-lg-2">
-                            John Doe
-                              <span className="verticalBar"> | </span>
-                            Category
-                              <span className="verticalBar"> | </span>
-                            November 22nd,2018
-                            </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* slide three */}
-                <div className="carousel-item">
-                  <div className="row">
-                    {/* blog one */}
-                    <div id="blog1" className="p-0 col-12 col-lg-7">
-                      <div className="postOne mx-lg-auto mt-5">
-                        <a href="#blog">
-                          <p className="postTitle1 text-left text-white h4 mb-sm-0 mb-lg-1 pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-2 font-weight-bold">
-                            POST TITLE, LIMITED TO TWO LINES OF TEXT
-                            </p>
-                        </a>
-                        <p className="small authorInfo text-white mb-1 pl-sm-4 pl-lg-2 pb-lg-2">
-                          John Doe
-                            <span className="verticalBar"> | </span>
-                          Category
-                            <span className="verticalBar"> | </span>
-                          November 22nd,2018
-                          </p>
-                      </div>
-                    </div>
-                    {/* container for blog 2 and 3 */}
-                    <div className="col-12 col-lg-5 px-0">
-                      {/* blog two */}
-                      <div id="blog2" className="col-12 p-0">
-                        <div className="postTwo">
-                          <a href="#blog">
-                            <p className="postTitle2 text-left text-white h5 mb-0 pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-1 font-weight-bold">
-                              POST TITLE, LIMITED TO TWO LINES OF TEXT
-                              </p>
-                          </a>
-                          <p className="small authorInfo text-white mb-1 pl-sm-4 pl-lg-2">
-                            John Doe
-                              <span className="verticalBar"> | </span>
-                            Category
-                              <span className="verticalBar"> | </span>
-                            November 22nd,2018
-                            </p>
-                        </div>
-                      </div>
-                      {/* blog three */}
-                      <div id="blog3" className="col-12">
-                        <div className="postThree">
-                          <a href="#blog">
-                            <p className="postTitle3 text-left text-white h6 mb-0 pl-sm-4 pl-lg-2 pr-lg-4 pt-lg-1 font-weight-bold">
-                              POST TITLE, LIMITED TO TWO LINES OF TEXT
-                              </p>
-                          </a>
-                          <p className="small authorInfo text-white mb-1 pl-sm-4 pl-lg-2">
-                            John Doe
-                              <span className="verticalBar"> | </span>
-                            Category
-                              <span className="verticalBar"> | </span>
-                            November 22nd,2018
+                            Coming soon, 2019
                             </p>
                         </div>
                       </div>
