@@ -4,7 +4,7 @@ import './Tracker.scss';
 class Tracker extends Component {
   constructor(props){
     super(props);
-    this.elemIdList = ['home', 'about', 'team', 'blog', 'services', 'contact']; //id of sections
+    this.elemIdList = ['home', 'about', 'team', 'services', 'blog', 'contact']; //id of sections
     this.state = {
       activeList: ['', '', '', '', '', '']
     }
@@ -76,13 +76,13 @@ class Tracker extends Component {
                   </li>
                   <li
                     className={this.state.activeList[3]}
-                    onClick={() => this.handleScrollToElement("blog")}>
-                      <a href="#blog" title="Jump to Blog section" tabIndex="-1" > </a>
+                    onClick={() => this.handleScrollToElement("services")}>
+                      <a href="#services" title="Jump to Services section" tabIndex="-1" > </a>
                   </li>
                   <li
                     className={this.state.activeList[4]}
-                    onClick={() => this.handleScrollToElement("services")}>
-                      <a href="#services" title="Jump to Services section" tabIndex="-1" > </a>
+                    onClick={() => this.handleScrollToElement("blog")}>
+                      <a href="#blog" title="Jump to Blog section" tabIndex="-1" > </a>
                   </li>
                   <li
                     className={this.state.activeList[5]}
