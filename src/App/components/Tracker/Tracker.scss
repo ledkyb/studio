@@ -32,8 +32,11 @@
     .active {
       background-color: $orange;
     }
-  }
-
+     ul > .whiteBorder{
+       border: 2px solid #FFFFFF
+    }
+   }
+  
   @media only screen and (max-width: 1366px){
     display: none;
 }
