@@ -34,11 +34,10 @@
     }
      ul > .whiteBorder{
        border: 2px solid #FFFFFF;
+       &:nth-child(3){background-color: #ffff};
     }
-    .whiteBorder:nth-child(3){background-color: #FFFFFF};
    }
-  
+  }
   @media only screen and (max-width: 1366px){
     display: none;
-}
 }
