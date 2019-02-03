@@ -47,9 +47,15 @@ class Tracker extends Component {
   //Changes which section has active className
   checkActiveSection = index => {
     const newActiveList = ['', '', '', '', '', ''];
-    newActiveList[index] = 'active';
-    this.setState({activeList: newActiveList});
+    if(index === 2){
+      newActiveList.fill("whiteBorder")
+      this.setState({activeList: newActiveList});     
+    }else{
+    	newActiveList[index] = 'active';
+    	this.setState({activeList: newActiveList});
+    }
   }
+
 
   render() {
     return (
