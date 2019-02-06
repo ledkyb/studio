@@ -15,7 +15,7 @@ class ErrorBoundry extends Component{
   render(){
     if(this.state.hasError){
       return(
-        <div class="bg-white col col-lg-6 d-flex flex-column justify-content-center align-items-center">
+        <div className="bg-white col col-lg-6 d-flex flex-column justify-content-center align-items-center">
           <h2>Sorry, we couldn't load the team, please try again.</h2>
         </div>
       );
