@@ -17,7 +17,7 @@ const UserItem = ({ user, loadUser }) => {
 
       {/* Item */}
       <div onClick={() => {loadUser(user)}} >
-        <img alt="user" src={image} />
+        <img alt={`Ledkyb team member ${firstName} ${lastName}`} src={image} />
         <div className="mb-5 mb-lg-0 d-flex align-items-center py-4">
           <div className="team-user-item-line mx-1 mx-lg-3"></div>
           <div>
